@@ -1,0 +1,3 @@
+: dup 1 pick ;
+: log dup 1 - if div 2 skip drop 0 ;
+: div 2 / log 1 + ;

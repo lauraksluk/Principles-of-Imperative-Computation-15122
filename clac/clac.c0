@@ -1,0 +1,311 @@
+/*
+ * Clac, stack-based calculator language
+ *
+ * 15-122 Principles of Imperative Computation
+ */
+
+#use <string>
+#use <parse>
+#use <conio>
+#use <args>
+#use <util>
+
+/* From the perspective of the clac-main.c0 file, state_t is an
+ * abstract type. (typedef ____* state_t) This file contains the
+ * implementation of the state_t type. You will add new fields to this
+ * struct when you do task 4. */
+struct state_header {
+  dict_t dictionary;
+  qstack_t return_stack;
+};
+typedef struct state_header* state_t;
+
+state_t init_state()
+//@ensures \result != NULL;
+{
+  state_t state = alloc(struct state_header);
+  state->dictionary = dict_new();
+  state->return_stack = qstack_new();
+  return state;
+}
+
+void add_def(state_t ST, queue_t Q, string name_token)
+{
+  queue_t definition = queue_new();
+  string t = deq(Q);
+  while (!queue_empty(Q) && !string_equal(t, ";")) {
+    enq(definition, t);
+    t = deq(Q);
+  }
+  if (!string_equal(t, ";")) {
+    error("unexpected end of input");
+  }
+
+  //if (dict_lookup(ST->dictionary, name_token) == NULL) {
+  dict_insert(ST->dictionary, name_token, definition);
+  // } 
+}
+
+void safeDiv(stack_t S, int x, int y)
+{
+  if (y == 0 || (x == int_min() && y == -1)) {
+    error("division by 0");
+  } else {
+    int answer = x/y;
+    push(S, answer);
+  }
+}
+
+void safeMod(stack_t S, int x, int y)
+{
+  if (y == 0 || (x == int_min() && y == -1)) {
+    error("division by 0");
+  } else {
+    int answer = x % y;
+    push(S, answer);
+  }
+}
+
+int pow(int x, int y)
+//@requires y >= 0;
+{
+  if (y == 0) return 1;
+  int result = 1;
+  while (y > 0)
+  //@loop_invariant y >= 0;
+  {
+    result = result * x;
+    y = y - 1;
+  }
+  //@assert y == 0;
+  return result;
+}
+
+int pick(stack_t S, int n)
+{
+  stack_t temp = stack_new();
+  while (n > 0) {
+    if (!stack_empty(S)) {
+      push(temp, pop(S));
+      n--;
+    } else {error("not enough elements on stack");}
+  }
+  int result = pop(temp);
+  push(temp, result);
+  while (!stack_empty(temp)) {
+    push(S, pop(temp));
+  }
+  return result;
+}
+
+/* Main clac interpreter. */
+/* Return true: clac top-level interpreter will expect more input */
+/* Return false: clac top-level interpreter will exit */
+bool eval(queue_t Q, stack_t S, state_t ST)
+//@requires Q != NULL && S != NULL && ST != NULL;
+//@ensures \result == false || queue_empty(Q);
+{
+  while (!queue_empty(Q)) {
+    string tok = deq(Q); 
+    
+    if (string_equal(tok, "print")) {
+      if (!stack_empty(S)){
+        int x = pop(S);
+        printint(x); print("\n");
+      } else {error("stack is empty");}
+
+    } else if (string_equal(tok, "quit")) {
+      return false;
+
+    } else if (string_equal(tok, "+")) {
+      if (!stack_empty(S)){
+        int y = pop(S);
+        if (!stack_empty(S)) {
+          int x = pop(S);
+          int answer = x + y;
+          push(S, answer);
+        } else {error("not enough tokens for operation");}
+      } else {error("stack is empty");}
+    
+    } else if (string_equal(tok, "-")) {
+      if (!stack_empty(S)){
+        int y = pop(S);
+        if (!stack_empty(S)) {
+          int x = pop(S);
+          int answer = x - y;
+          push(S, answer);
+        } else {error("not enough tokens for operation");}
+      } else {error("stack is empty");}
+
+    } else if (string_equal(tok, "*")) {
+      if (!stack_empty(S)){
+        int y = pop(S);
+        if (!stack_empty(S)) {
+          int x = pop(S);
+          int answer = x*y;
+          push(S, answer);
+        } else {error("not enough tokens for operation");}
+      } else {error("stack is empty");}
+    
+    } else if (string_equal(tok, "/")) {
+      if (!stack_empty(S)){
+        int y = pop(S);
+        if (!stack_empty(S)) {
+          int x = pop(S);
+          safeDiv(S, x, y);
+        } else {error("not enough tokens for operation");}
+      } else {error("stack is empty");}
+    
+    } else if (string_equal(tok, "%")) {
+      if (!stack_empty(S)){
+        int y = pop(S);
+        if (!stack_empty(S)) {
+          int x = pop(S);
+          safeMod(S, x, y);
+        } else {error("not enough tokens for operation");}
+      } else {error("stack is empty");}
+    
+    } else if (string_equal(tok, "<")) {
+      if (!stack_empty(S)){
+        int y = pop(S);
+        if (!stack_empty(S)) {
+          int x = pop(S);
+          if (x < y) {
+            push(S, 1);
+          } else {
+            push(S, 0);
+          }
+        } else {error("not enough tokens for operation");}
+      } else {error("stack is empty");}
+    
+    } else if (string_equal(tok, "**")) {
+      if (!stack_empty(S)){
+        int y = pop(S);
+        if (!stack_empty(S)) {
+          int x = pop(S);
+          if (y < 0) {
+            error("negative exponents are not valid");
+          } else {
+            int answer = pow(x,y);
+            push(S, answer);
+          }
+        } else {error("not enough tokens for operation");}
+      } else {error("stack is empty");}
+    
+    } else if (string_equal(tok, "drop")) {
+      if (!stack_empty(S)) {
+        int x = pop(S);
+      } else {error("stack is empty");}
+    
+    } else if (string_equal(tok, "swap")) {
+      if (!stack_empty(S)) {
+        int y = pop(S);
+        if (!stack_empty(S)) {
+          int x = pop(S);
+          push(S, y);
+          push(S, x);
+        } else {error("not enough tokens for operation");}
+      } else {error("stack is empty");}
+    
+    } else if (string_equal(tok, "rot")) {
+      if (!stack_empty(S)) {
+        int z = pop(S);
+        if (!stack_empty(S)) {
+          int y = pop(S);
+          if (!stack_empty(S)) {
+            int x = pop(S);
+            push(S, y);
+            push(S, z);
+            push(S, x);
+          } else {error("not enough tokens for operation");}
+        } else {error("not enough tokens for operation");}
+      }else {error("stack is empty");}
+    
+    } else if (string_equal(tok, "if")) {
+      if (!stack_empty(S)) {
+        int x = pop(S);
+        if (x == 0) {
+           if (!queue_empty(Q)) {
+             string tok1 = deq(Q);
+             if (!queue_empty(Q)) {
+               string tok2 = deq(Q);
+               if (!queue_empty(Q)) {
+                 string tok3 = deq(Q);
+               } else {error("not enough tokens for operation");}
+             } else {error("not enough tokens for operation");}
+           }else {error("queue is empty");}
+        }
+      } else {error("stack is empty");}
+
+    } else if (string_equal(tok, "pick")) {
+      if (!stack_empty(S)) {
+        int n = pop(S);
+        if (n <= 0) {
+          error("only strictly positive integers");
+        } else {
+          int nth = pick(S, n);
+          push(S, nth);
+        }
+      } else {error("stack is empty");}
+    
+    } else if (string_equal(tok, "skip")) {
+      if (!stack_empty(S)) {
+        int n = pop(S);
+        if (n < 0) {
+          error("negative values are invalid");
+        } else {
+          while (n > 0) {
+            if (!queue_empty(Q)) {
+              string token = deq(Q);
+              n--;
+            } else {
+              error("unexpected end of input");
+            }
+          }
+        }
+      } else {error("stack is empty");}
+    
+    } else if (string_equal(tok, ":")) {
+      if (!queue_empty(Q)) {
+        string name_token = deq(Q);
+        add_def(ST, Q, name_token);
+      } else {error("unexpected end of input");}
+    
+    } else if (dict_lookup(ST->dictionary, tok) != NULL) {
+      queue_t stackq = queue_new();
+      while (!queue_empty(Q)) {
+        enq(stackq, deq(Q));
+      }
+      qpush(ST->return_stack, stackq);
+      queue_t defin = queue_read_only_copy(dict_lookup(ST->dictionary, tok));
+      while (!queue_empty(defin)) {
+        enq(Q, deq(defin));
+      }
+
+    } else {
+    /* Not defined as an operation name, should be an int */
+      int* p = parse_int(tok, 10);
+      if (p == NULL) { /* not an int */
+      /* call error(msg) which prints msg and aborts */
+        error(string_join("undefined token ", tok));
+      }
+      push(S, *p);
+    }
+
+    if (queue_empty(Q) && !qstack_empty(ST->return_stack)) {
+      queue_t temp = qpop(ST->return_stack);
+      while (queue_empty(temp) && !qstack_empty(ST->return_stack)) {
+        temp = qpop(ST->return_stack);
+      }
+      while (!queue_empty(temp)) {
+        enq(Q, deq(temp));
+      }
+    }
+    
+  }
+
+  /* When you return "true", don't pop anything off the stack! When we
+   * grade your function, we'll check that the stack contains the
+   * integers we expect. */
+  return true;
+}
