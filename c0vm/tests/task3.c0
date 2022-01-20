@@ -1,0 +1,26 @@
+int main() {
+    int n = 20000;
+    int sum = 0;
+    sum += 5;
+    sum -= 5;
+    for (int i = 0; i < n; i++) {
+        sum += i;
+    }
+    
+    for (int j = 0; j < n; j++) {
+        if (j % 2 == 0) {
+            sum -= j;
+        }
+    }
+
+    for (int k = 0; k < n*500; k++) {
+        if (k % 5 == 0) {
+            sum *= 2;
+        }
+        if (k % 3 == 0) {
+            sum += 13;
+        }
+    }
+
+    return sum;
+}

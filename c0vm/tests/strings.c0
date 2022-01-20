@@ -1,0 +1,18 @@
+#use <string>
+#use <conio>
+#use <parse>
+
+string test(int i) {
+    print("hello\n");
+    string str1 = "hello";
+    string str2 = "thereasdasdasdasd";
+    printint(string_length(str1));
+    println("");
+    string str3 = string_join(str1, str2);
+    return str3;
+}
+
+int main() {
+    println(test(1));
+    return 0;
+}

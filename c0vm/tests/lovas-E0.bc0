@@ -1,0 +1,3797 @@
+C0 C0 FF EE       # magic number
+00 13             # version 9, arch = 1 (64 bits)
+
+00 00             # int pool count
+# int pool
+
+1C 9D             # string pool total size
+# string pool
+2F 61 66 73 2F 61 6E 64 72 65 77 2F 63 6F 75 72 73 65 2F 31 35 2F 31 32 32 2F 6C 69 62 2F 73 74 72 69 6E 67 2E 68 30 3A 31 39 2E 36 2D 31 39 2E 35 30 3A 20 40 72 65 71 75 69 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 0A 00  # "/afs/andrew/course/15/122/lib/string.h0:19.6-19.50: @requires annotation failed\n"
+3A 20 63 61 6C 6C 65 72 20 6C 6F 63 61 74 69 6F 6E 00  # ": caller location"
+2F 61 66 73 2F 61 6E 64 72 65 77 2F 63 6F 75 72 73 65 2F 31 35 2F 31 32 32 2F 6C 69 62 2F 73 74 72 69 6E 67 2E 68 30 3A 32 33 2E 36 2D 32 34 2E 35 35 3A 20 40 65 6E 73 75 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 00  # "/afs/andrew/course/15/122/lib/string.h0:23.6-24.55: @ensures annotation failed"
+2F 61 66 73 2F 61 6E 64 72 65 77 2F 63 6F 75 72 73 65 2F 31 35 2F 31 32 32 2F 6C 69 62 2F 73 74 72 69 6E 67 2E 68 30 3A 33 31 2E 36 2D 33 31 2E 36 39 3A 20 40 72 65 71 75 69 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 0A 00  # "/afs/andrew/course/15/122/lib/string.h0:31.6-31.69: @requires annotation failed\n"
+3A 20 63 61 6C 6C 65 72 20 6C 6F 63 61 74 69 6F 6E 00  # ": caller location"
+2F 61 66 73 2F 61 6E 64 72 65 77 2F 63 6F 75 72 73 65 2F 31 35 2F 31 32 32 2F 6C 69 62 2F 73 74 72 69 6E 67 2E 68 30 3A 33 32 2E 36 2D 33 32 2E 35 32 3A 20 40 65 6E 73 75 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 00  # "/afs/andrew/course/15/122/lib/string.h0:32.6-32.52: @ensures annotation failed"
+2F 61 66 73 2F 61 6E 64 72 65 77 2F 63 6F 75 72 73 65 2F 31 35 2F 31 32 32 2F 6C 69 62 2F 73 74 72 69 6E 67 2E 68 30 3A 33 37 2E 36 2D 33 37 2E 34 34 3A 20 40 65 6E 73 75 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 00  # "/afs/andrew/course/15/122/lib/string.h0:37.6-37.44: @ensures annotation failed"
+2F 61 66 73 2F 61 6E 64 72 65 77 2F 63 6F 75 72 73 65 2F 31 35 2F 31 32 32 2F 6C 69 62 2F 73 74 72 69 6E 67 2E 68 30 3A 34 33 2E 36 2D 34 33 2E 32 35 3A 20 40 72 65 71 75 69 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 0A 00  # "/afs/andrew/course/15/122/lib/string.h0:43.6-43.25: @requires annotation failed\n"
+3A 20 63 61 6C 6C 65 72 20 6C 6F 63 61 74 69 6F 6E 00  # ": caller location"
+2F 61 66 73 2F 61 6E 64 72 65 77 2F 63 6F 75 72 73 65 2F 31 35 2F 31 32 32 2F 6C 69 62 2F 73 74 72 69 6E 67 2E 68 30 3A 34 34 2E 36 2D 34 34 2E 34 32 3A 20 40 65 6E 73 75 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 00  # "/afs/andrew/course/15/122/lib/string.h0:44.6-44.42: @ensures annotation failed"
+2F 61 66 73 2F 61 6E 64 72 65 77 2F 63 6F 75 72 73 65 2F 31 35 2F 31 32 32 2F 6C 69 62 2F 73 74 72 69 6E 67 2E 68 30 3A 34 35 2E 31 34 2D 34 35 2E 33 39 00  # "/afs/andrew/course/15/122/lib/string.h0:45.14-45.39"
+2F 61 66 73 2F 61 6E 64 72 65 77 2F 63 6F 75 72 73 65 2F 31 35 2F 31 32 32 2F 6C 69 62 2F 73 74 72 69 6E 67 2E 68 30 3A 34 35 2E 36 2D 34 35 2E 34 35 3A 20 40 65 6E 73 75 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 00  # "/afs/andrew/course/15/122/lib/string.h0:45.6-45.45: @ensures annotation failed"
+2F 61 66 73 2F 61 6E 64 72 65 77 2F 63 6F 75 72 73 65 2F 31 35 2F 31 32 32 2F 6C 69 62 2F 73 74 72 69 6E 67 2E 68 30 3A 35 32 2E 36 2D 35 32 2E 34 31 3A 20 40 72 65 71 75 69 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 0A 00  # "/afs/andrew/course/15/122/lib/string.h0:52.6-52.41: @requires annotation failed\n"
+3A 20 63 61 6C 6C 65 72 20 6C 6F 63 61 74 69 6F 6E 00  # ": caller location"
+2F 61 66 73 2F 61 6E 64 72 65 77 2F 63 6F 75 72 73 65 2F 31 35 2F 31 32 32 2F 6C 69 62 2F 73 74 72 69 6E 67 2E 68 30 3A 35 36 2E 36 2D 35 36 2E 35 35 3A 20 40 65 6E 73 75 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 00  # "/afs/andrew/course/15/122/lib/string.h0:56.6-56.55: @ensures annotation failed"
+2F 61 66 73 2F 61 6E 64 72 65 77 2F 63 6F 75 72 73 65 2F 31 35 2F 31 32 32 2F 6C 69 62 2F 73 74 72 69 6E 67 2E 68 30 3A 35 37 2E 31 34 2D 35 37 2E 36 32 00  # "/afs/andrew/course/15/122/lib/string.h0:57.14-57.62"
+2F 61 66 73 2F 61 6E 64 72 65 77 2F 63 6F 75 72 73 65 2F 31 35 2F 31 32 32 2F 6C 69 62 2F 73 74 72 69 6E 67 2E 68 30 3A 35 37 2E 36 2D 35 37 2E 36 33 3A 20 40 65 6E 73 75 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 00  # "/afs/andrew/course/15/122/lib/string.h0:57.6-57.63: @ensures annotation failed"
+2F 61 66 73 2F 61 6E 64 72 65 77 2F 63 6F 75 72 73 65 2F 31 35 2F 31 32 32 2F 6C 69 62 2F 73 74 72 69 6E 67 2E 68 30 3A 36 32 2E 31 35 2D 36 32 2E 34 37 00  # "/afs/andrew/course/15/122/lib/string.h0:62.15-62.47"
+2F 61 66 73 2F 61 6E 64 72 65 77 2F 63 6F 75 72 73 65 2F 31 35 2F 31 32 32 2F 6C 69 62 2F 73 74 72 69 6E 67 2E 68 30 3A 36 32 2E 36 2D 36 32 2E 34 38 3A 20 40 72 65 71 75 69 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 0A 00  # "/afs/andrew/course/15/122/lib/string.h0:62.6-62.48: @requires annotation failed\n"
+3A 20 63 61 6C 6C 65 72 20 6C 6F 63 61 74 69 6F 6E 00  # ": caller location"
+2F 61 66 73 2F 61 6E 64 72 65 77 2F 63 6F 75 72 73 65 2F 31 35 2F 31 32 32 2F 6C 69 62 2F 73 74 72 69 6E 67 2E 68 30 3A 36 33 2E 36 2D 36 33 2E 35 35 3A 20 40 65 6E 73 75 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 00  # "/afs/andrew/course/15/122/lib/string.h0:63.6-63.55: @ensures annotation failed"
+2F 61 66 73 2F 61 6E 64 72 65 77 2F 63 6F 75 72 73 65 2F 31 35 2F 31 32 32 2F 6C 69 62 2F 73 74 72 69 6E 67 2E 68 30 3A 36 37 2E 36 2D 36 37 2E 34 35 3A 20 40 65 6E 73 75 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 00  # "/afs/andrew/course/15/122/lib/string.h0:67.6-67.45: @ensures annotation failed"
+2F 61 66 73 2F 61 6E 64 72 65 77 2F 63 6F 75 72 73 65 2F 31 35 2F 31 32 32 2F 6C 69 62 2F 73 74 72 69 6E 67 2E 68 30 3A 36 39 2E 36 2D 36 39 2E 33 34 3A 20 40 72 65 71 75 69 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 0A 00  # "/afs/andrew/course/15/122/lib/string.h0:69.6-69.34: @requires annotation failed\n"
+3A 20 63 61 6C 6C 65 72 20 6C 6F 63 61 74 69 6F 6E 00  # ": caller location"
+67 61 70 62 75 66 2E 63 30 3A 34 35 2E 36 2D 34 35 2E 33 33 3A 20 40 61 73 73 65 72 74 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 00  # "gapbuf.c0:45.6-45.33: @assert annotation failed"
+67 61 70 62 75 66 2E 63 30 3A 35 33 2E 31 30 2D 35 33 2E 35 35 00  # "gapbuf.c0:53.10-53.55"
+67 61 70 62 75 66 2E 63 30 3A 35 38 2E 31 33 2D 35 38 2E 32 35 00  # "gapbuf.c0:58.13-58.25"
+67 61 70 62 75 66 2E 63 30 3A 35 38 2E 34 2D 35 38 2E 32 36 3A 20 40 72 65 71 75 69 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 0A 00  # "gapbuf.c0:58.4-58.26: @requires annotation failed\n"
+3A 20 63 61 6C 6C 65 72 20 6C 6F 63 61 74 69 6F 6E 00  # ": caller location"
+67 61 70 62 75 66 2E 63 30 3A 36 35 2E 31 33 2D 36 35 2E 32 35 00  # "gapbuf.c0:65.13-65.25"
+67 61 70 62 75 66 2E 63 30 3A 36 35 2E 34 2D 36 35 2E 32 36 3A 20 40 72 65 71 75 69 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 0A 00  # "gapbuf.c0:65.4-65.26: @requires annotation failed\n"
+3A 20 63 61 6C 6C 65 72 20 6C 6F 63 61 74 69 6F 6E 00  # ": caller location"
+67 61 70 62 75 66 2E 63 30 3A 37 32 2E 31 33 2D 37 32 2E 32 35 00  # "gapbuf.c0:72.13-72.25"
+67 61 70 62 75 66 2E 63 30 3A 37 32 2E 34 2D 37 32 2E 32 36 3A 20 40 72 65 71 75 69 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 0A 00  # "gapbuf.c0:72.4-72.26: @requires annotation failed\n"
+3A 20 63 61 6C 6C 65 72 20 6C 6F 63 61 74 69 6F 6E 00  # ": caller location"
+67 61 70 62 75 66 2E 63 30 3A 37 39 2E 31 33 2D 37 39 2E 32 35 00  # "gapbuf.c0:79.13-79.25"
+67 61 70 62 75 66 2E 63 30 3A 37 39 2E 34 2D 37 39 2E 32 36 3A 20 40 72 65 71 75 69 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 0A 00  # "gapbuf.c0:79.4-79.26: @requires annotation failed\n"
+3A 20 63 61 6C 6C 65 72 20 6C 6F 63 61 74 69 6F 6E 00  # ": caller location"
+67 61 70 62 75 66 2E 63 30 3A 38 36 2E 34 2D 38 36 2E 32 33 3A 20 40 72 65 71 75 69 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 0A 00  # "gapbuf.c0:86.4-86.23: @requires annotation failed\n"
+3A 20 63 61 6C 6C 65 72 20 6C 6F 63 61 74 69 6F 6E 00  # ": caller location"
+67 61 70 62 75 66 2E 63 30 3A 38 37 2E 31 32 2D 38 37 2E 33 30 00  # "gapbuf.c0:87.12-87.30"
+67 61 70 62 75 66 2E 63 30 3A 38 37 2E 33 34 2D 38 37 2E 35 35 00  # "gapbuf.c0:87.34-87.55"
+67 61 70 62 75 66 2E 63 30 3A 38 37 2E 34 2D 38 37 2E 35 36 3A 20 40 65 6E 73 75 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 00  # "gapbuf.c0:87.4-87.56: @ensures annotation failed"
+67 61 70 62 75 66 2E 63 30 3A 31 30 32 2E 31 33 2D 31 30 32 2E 32 35 00  # "gapbuf.c0:102.13-102.25"
+67 61 70 62 75 66 2E 63 30 3A 31 30 32 2E 33 30 2D 31 30 32 2E 34 38 00  # "gapbuf.c0:102.30-102.48"
+67 61 70 62 75 66 2E 63 30 3A 31 30 32 2E 34 2D 31 30 32 2E 34 39 3A 20 40 72 65 71 75 69 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 0A 00  # "gapbuf.c0:102.4-102.49: @requires annotation failed\n"
+3A 20 63 61 6C 6C 65 72 20 6C 6F 63 61 74 69 6F 6E 00  # ": caller location"
+67 61 70 62 75 66 2E 63 30 3A 31 30 33 2E 31 32 2D 31 30 33 2E 32 34 00  # "gapbuf.c0:103.12-103.24"
+67 61 70 62 75 66 2E 63 30 3A 31 30 33 2E 34 2D 31 30 33 2E 32 35 3A 20 40 65 6E 73 75 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 00  # "gapbuf.c0:103.4-103.25: @ensures annotation failed"
+67 61 70 62 75 66 2E 63 30 3A 31 31 37 2E 31 33 2D 31 31 37 2E 32 35 00  # "gapbuf.c0:117.13-117.25"
+67 61 70 62 75 66 2E 63 30 3A 31 31 37 2E 33 30 2D 31 31 37 2E 34 37 00  # "gapbuf.c0:117.30-117.47"
+67 61 70 62 75 66 2E 63 30 3A 31 31 37 2E 34 2D 31 31 37 2E 34 38 3A 20 40 72 65 71 75 69 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 0A 00  # "gapbuf.c0:117.4-117.48: @requires annotation failed\n"
+3A 20 63 61 6C 6C 65 72 20 6C 6F 63 61 74 69 6F 6E 00  # ": caller location"
+67 61 70 62 75 66 2E 63 30 3A 31 31 38 2E 31 32 2D 31 31 38 2E 32 34 00  # "gapbuf.c0:118.12-118.24"
+67 61 70 62 75 66 2E 63 30 3A 31 31 38 2E 34 2D 31 31 38 2E 32 35 3A 20 40 65 6E 73 75 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 00  # "gapbuf.c0:118.4-118.25: @ensures annotation failed"
+67 61 70 62 75 66 2E 63 30 3A 31 33 32 2E 31 33 2D 31 33 32 2E 32 35 00  # "gapbuf.c0:132.13-132.25"
+67 61 70 62 75 66 2E 63 30 3A 31 33 32 2E 33 30 2D 31 33 32 2E 34 34 00  # "gapbuf.c0:132.30-132.44"
+67 61 70 62 75 66 2E 63 30 3A 31 33 32 2E 34 2D 31 33 32 2E 34 35 3A 20 40 72 65 71 75 69 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 0A 00  # "gapbuf.c0:132.4-132.45: @requires annotation failed\n"
+3A 20 63 61 6C 6C 65 72 20 6C 6F 63 61 74 69 6F 6E 00  # ": caller location"
+67 61 70 62 75 66 2E 63 30 3A 31 33 33 2E 31 32 2D 31 33 33 2E 32 34 00  # "gapbuf.c0:133.12-133.24"
+67 61 70 62 75 66 2E 63 30 3A 31 33 33 2E 34 2D 31 33 33 2E 32 35 3A 20 40 65 6E 73 75 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 00  # "gapbuf.c0:133.4-133.25: @ensures annotation failed"
+67 61 70 62 75 66 2E 63 30 3A 31 34 31 2E 31 33 2D 31 34 31 2E 32 35 00  # "gapbuf.c0:141.13-141.25"
+67 61 70 62 75 66 2E 63 30 3A 31 34 31 2E 33 30 2D 31 34 31 2E 34 35 00  # "gapbuf.c0:141.30-141.45"
+67 61 70 62 75 66 2E 63 30 3A 31 34 31 2E 35 30 2D 31 34 31 2E 36 37 00  # "gapbuf.c0:141.50-141.67"
+67 61 70 62 75 66 2E 63 30 3A 31 34 31 2E 34 2D 31 34 31 2E 36 38 3A 20 40 72 65 71 75 69 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 0A 00  # "gapbuf.c0:141.4-141.68: @requires annotation failed\n"
+3A 20 63 61 6C 6C 65 72 20 6C 6F 63 61 74 69 6F 6E 00  # ": caller location"
+67 61 70 62 75 66 2E 63 30 3A 31 34 32 2E 31 32 2D 31 34 32 2E 32 34 00  # "gapbuf.c0:142.12-142.24"
+67 61 70 62 75 66 2E 63 30 3A 31 34 32 2E 34 2D 31 34 32 2E 32 35 3A 20 40 65 6E 73 75 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 00  # "gapbuf.c0:142.4-142.25: @ensures annotation failed"
+2F 61 66 73 2F 61 6E 64 72 65 77 2F 63 6F 75 72 73 65 2F 31 35 2F 31 32 32 2F 6C 69 62 2F 63 6F 6E 69 6F 2E 68 30 3A 31 34 2E 36 2D 31 34 2E 32 32 3A 20 40 72 65 71 75 69 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 0A 00  # "/afs/andrew/course/15/122/lib/conio.h0:14.6-14.22: @requires annotation failed\n"
+3A 20 63 61 6C 6C 65 72 20 6C 6F 63 61 74 69 6F 6E 00  # ": caller location"
+64 6C 6C 5F 70 74 2E 63 30 3A 38 31 2E 31 30 2D 38 31 2E 34 33 00  # "dll_pt.c0:81.10-81.43"
+64 6C 6C 5F 70 74 2E 63 30 3A 38 31 2E 34 37 2D 38 31 2E 36 37 00  # "dll_pt.c0:81.47-81.67"
+64 6C 6C 5F 70 74 2E 63 30 3A 38 36 2E 31 33 2D 38 36 2E 32 35 00  # "dll_pt.c0:86.13-86.25"
+64 6C 6C 5F 70 74 2E 63 30 3A 38 36 2E 34 2D 38 36 2E 32 36 3A 20 40 72 65 71 75 69 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 0A 00  # "dll_pt.c0:86.4-86.26: @requires annotation failed\n"
+3A 20 63 61 6C 6C 65 72 20 6C 6F 63 61 74 69 6F 6E 00  # ": caller location"
+64 6C 6C 5F 70 74 2E 63 30 3A 39 33 2E 31 33 2D 39 33 2E 32 35 00  # "dll_pt.c0:93.13-93.25"
+64 6C 6C 5F 70 74 2E 63 30 3A 39 33 2E 34 2D 39 33 2E 32 36 3A 20 40 72 65 71 75 69 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 0A 00  # "dll_pt.c0:93.4-93.26: @requires annotation failed\n"
+3A 20 63 61 6C 6C 65 72 20 6C 6F 63 61 74 69 6F 6E 00  # ": caller location"
+64 6C 6C 5F 70 74 2E 63 30 3A 31 30 30 2E 31 33 2D 31 30 30 2E 32 35 00  # "dll_pt.c0:100.13-100.25"
+64 6C 6C 5F 70 74 2E 63 30 3A 31 30 30 2E 33 30 2D 31 30 30 2E 34 38 00  # "dll_pt.c0:100.30-100.48"
+64 6C 6C 5F 70 74 2E 63 30 3A 31 30 30 2E 34 2D 31 30 30 2E 34 39 3A 20 40 72 65 71 75 69 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 0A 00  # "dll_pt.c0:100.4-100.49: @requires annotation failed\n"
+3A 20 63 61 6C 6C 65 72 20 6C 6F 63 61 74 69 6F 6E 00  # ": caller location"
+64 6C 6C 5F 70 74 2E 63 30 3A 31 30 31 2E 31 32 2D 31 30 31 2E 32 34 00  # "dll_pt.c0:101.12-101.24"
+64 6C 6C 5F 70 74 2E 63 30 3A 31 30 31 2E 34 2D 31 30 31 2E 32 35 3A 20 40 65 6E 73 75 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 00  # "dll_pt.c0:101.4-101.25: @ensures annotation failed"
+64 6C 6C 5F 70 74 2E 63 30 3A 31 30 38 2E 31 33 2D 31 30 38 2E 32 35 00  # "dll_pt.c0:108.13-108.25"
+64 6C 6C 5F 70 74 2E 63 30 3A 31 30 38 2E 33 30 2D 31 30 38 2E 34 37 00  # "dll_pt.c0:108.30-108.47"
+64 6C 6C 5F 70 74 2E 63 30 3A 31 30 38 2E 34 2D 31 30 38 2E 34 38 3A 20 40 72 65 71 75 69 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 0A 00  # "dll_pt.c0:108.4-108.48: @requires annotation failed\n"
+3A 20 63 61 6C 6C 65 72 20 6C 6F 63 61 74 69 6F 6E 00  # ": caller location"
+64 6C 6C 5F 70 74 2E 63 30 3A 31 30 39 2E 31 32 2D 31 30 39 2E 32 34 00  # "dll_pt.c0:109.12-109.24"
+64 6C 6C 5F 70 74 2E 63 30 3A 31 30 39 2E 34 2D 31 30 39 2E 32 35 3A 20 40 65 6E 73 75 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 00  # "dll_pt.c0:109.4-109.25: @ensures annotation failed"
+64 6C 6C 5F 70 74 2E 63 30 3A 31 32 34 2E 31 33 2D 31 32 34 2E 32 35 00  # "dll_pt.c0:124.13-124.25"
+64 6C 6C 5F 70 74 2E 63 30 3A 31 32 34 2E 34 2D 31 32 34 2E 32 36 3A 20 40 72 65 71 75 69 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 0A 00  # "dll_pt.c0:124.4-124.26: @requires annotation failed\n"
+3A 20 63 61 6C 6C 65 72 20 6C 6F 63 61 74 69 6F 6E 00  # ": caller location"
+64 6C 6C 5F 70 74 2E 63 30 3A 31 32 35 2E 31 35 2D 31 32 35 2E 33 32 00  # "dll_pt.c0:125.15-125.32"
+64 6C 6C 5F 70 74 2E 63 30 3A 31 32 35 2E 33 36 2D 31 32 35 2E 35 34 00  # "dll_pt.c0:125.36-125.54"
+64 6C 6C 5F 70 74 2E 63 30 3A 31 32 35 2E 34 2D 31 32 35 2E 35 36 3A 20 40 72 65 71 75 69 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 0A 00  # "dll_pt.c0:125.4-125.56: @requires annotation failed\n"
+3A 20 63 61 6C 6C 65 72 20 6C 6F 63 61 74 69 6F 6E 00  # ": caller location"
+64 6C 6C 5F 70 74 2E 63 30 3A 31 32 38 2E 37 2D 31 32 38 2E 32 35 00  # "dll_pt.c0:128.7-128.25"
+64 6C 6C 5F 70 74 2E 63 30 3A 31 32 39 2E 35 2D 31 32 39 2E 31 34 00  # "dll_pt.c0:129.5-129.14"
+64 6C 6C 5F 70 74 2E 63 30 3A 31 33 35 2E 35 2D 31 33 35 2E 31 34 00  # "dll_pt.c0:135.5-135.14"
+64 6C 6C 5F 70 74 2E 63 30 3A 31 32 36 2E 31 32 2D 31 32 36 2E 32 34 00  # "dll_pt.c0:126.12-126.24"
+64 6C 6C 5F 70 74 2E 63 30 3A 31 32 36 2E 34 2D 31 32 36 2E 32 35 3A 20 40 65 6E 73 75 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 00  # "dll_pt.c0:126.4-126.25: @ensures annotation failed"
+74 62 75 66 2E 63 30 3A 33 32 2E 31 31 2D 33 32 2E 33 32 00  # "tbuf.c0:32.11-32.32"
+74 62 75 66 2E 63 30 3A 34 35 2E 31 30 2D 34 35 2E 33 34 00  # "tbuf.c0:45.10-45.34"
+74 62 75 66 2E 63 30 3A 34 38 2E 31 30 2D 34 38 2E 33 33 00  # "tbuf.c0:48.10-48.33"
+74 62 75 66 2E 63 30 3A 35 38 2E 38 2D 35 38 2E 32 30 00  # "tbuf.c0:58.8-58.20"
+74 62 75 66 2E 63 30 3A 36 37 2E 31 30 2D 36 37 2E 32 38 00  # "tbuf.c0:67.10-67.28"
+74 62 75 66 2E 63 30 3A 37 31 2E 31 30 2D 37 31 2E 33 35 00  # "tbuf.c0:71.10-71.35"
+74 62 75 66 2E 63 30 3A 37 31 2E 33 39 2D 37 31 2E 36 33 00  # "tbuf.c0:71.39-71.63"
+74 62 75 66 2E 63 30 3A 38 38 2E 32 32 2D 38 38 2E 33 36 00  # "tbuf.c0:88.22-88.36"
+74 62 75 66 2E 63 30 3A 37 36 2E 31 32 2D 37 36 2E 32 38 00  # "tbuf.c0:76.12-76.28"
+74 62 75 66 2E 63 30 3A 37 36 2E 34 2D 37 36 2E 32 39 3A 20 40 65 6E 73 75 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 00  # "tbuf.c0:76.4-76.29: @ensures annotation failed"
+74 62 75 66 2E 63 30 3A 39 39 2E 31 33 2D 39 39 2E 32 33 00  # "tbuf.c0:99.13-99.23"
+74 62 75 66 2E 63 30 3A 39 39 2E 32 37 2D 39 39 2E 35 34 00  # "tbuf.c0:99.27-99.54"
+74 62 75 66 2E 63 30 3A 39 39 2E 34 2D 39 39 2E 35 35 3A 20 40 72 65 71 75 69 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 0A 00  # "tbuf.c0:99.4-99.55: @requires annotation failed\n"
+3A 20 63 61 6C 6C 65 72 20 6C 6F 63 61 74 69 6F 6E 00  # ": caller location"
+74 62 75 66 2E 63 30 3A 32 30 34 2E 37 2D 32 30 34 2E 33 31 00  # "tbuf.c0:204.7-204.31"
+74 62 75 66 2E 63 30 3A 32 30 37 2E 31 32 2D 32 30 37 2E 33 37 00  # "tbuf.c0:207.12-207.37"
+74 62 75 66 2E 63 30 3A 31 30 30 2E 31 32 2D 31 30 30 2E 32 32 00  # "tbuf.c0:100.12-100.22"
+74 62 75 66 2E 63 30 3A 31 30 30 2E 32 37 2D 31 30 30 2E 35 34 00  # "tbuf.c0:100.27-100.54"
+74 62 75 66 2E 63 30 3A 31 30 30 2E 34 2D 31 30 30 2E 35 35 3A 20 40 65 6E 73 75 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 00  # "tbuf.c0:100.4-100.55: @ensures annotation failed"
+74 62 75 66 2E 63 30 3A 32 31 34 2E 31 33 2D 32 31 34 2E 32 33 00  # "tbuf.c0:214.13-214.23"
+74 62 75 66 2E 63 30 3A 32 31 34 2E 34 2D 32 31 34 2E 32 34 3A 20 40 72 65 71 75 69 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 0A 00  # "tbuf.c0:214.4-214.24: @requires annotation failed\n"
+3A 20 63 61 6C 6C 65 72 20 6C 6F 63 61 74 69 6F 6E 00  # ": caller location"
+74 62 75 66 2E 63 30 3A 32 32 30 2E 37 2D 32 32 30 2E 33 33 00  # "tbuf.c0:220.7-220.33"
+74 62 75 66 2E 63 30 3A 32 32 30 2E 33 38 2D 32 32 30 2E 35 36 00  # "tbuf.c0:220.38-220.56"
+74 62 75 66 2E 63 30 3A 32 32 31 2E 35 2D 32 32 31 2E 32 32 00  # "tbuf.c0:221.5-221.22"
+74 62 75 66 2E 63 30 3A 32 32 34 2E 35 2D 32 32 34 2E 32 34 00  # "tbuf.c0:224.5-224.24"
+74 62 75 66 2E 63 30 3A 32 32 37 2E 38 2D 32 32 37 2E 33 34 00  # "tbuf.c0:227.8-227.34"
+74 62 75 66 2E 63 30 3A 32 32 38 2E 35 2D 32 32 38 2E 33 30 00  # "tbuf.c0:228.5-228.30"
+74 62 75 66 2E 63 30 3A 32 31 35 2E 31 32 2D 32 31 35 2E 32 32 00  # "tbuf.c0:215.12-215.22"
+74 62 75 66 2E 63 30 3A 32 31 35 2E 34 2D 32 31 35 2E 32 33 3A 20 40 65 6E 73 75 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 00  # "tbuf.c0:215.4-215.23: @ensures annotation failed"
+74 62 75 66 2E 63 30 3A 32 33 34 2E 31 33 2D 32 33 34 2E 32 33 00  # "tbuf.c0:234.13-234.23"
+74 62 75 66 2E 63 30 3A 32 33 34 2E 34 2D 32 33 34 2E 32 34 3A 20 40 72 65 71 75 69 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 0A 00  # "tbuf.c0:234.4-234.24: @requires annotation failed\n"
+3A 20 63 61 6C 6C 65 72 20 6C 6F 63 61 74 69 6F 6E 00  # ": caller location"
+74 62 75 66 2E 63 30 3A 32 34 30 2E 37 2D 32 34 30 2E 33 32 00  # "tbuf.c0:240.7-240.32"
+74 62 75 66 2E 63 30 3A 32 34 30 2E 33 37 2D 32 34 30 2E 35 34 00  # "tbuf.c0:240.37-240.54"
+74 62 75 66 2E 63 30 3A 32 34 31 2E 35 2D 32 34 31 2E 32 33 00  # "tbuf.c0:241.5-241.23"
+74 62 75 66 2E 63 30 3A 32 34 34 2E 35 2D 32 34 34 2E 32 35 00  # "tbuf.c0:244.5-244.25"
+74 62 75 66 2E 63 30 3A 32 34 37 2E 38 2D 32 34 37 2E 33 33 00  # "tbuf.c0:247.8-247.33"
+74 62 75 66 2E 63 30 3A 32 34 38 2E 35 2D 32 34 38 2E 33 31 00  # "tbuf.c0:248.5-248.31"
+74 62 75 66 2E 63 30 3A 32 33 35 2E 31 32 2D 32 33 35 2E 32 32 00  # "tbuf.c0:235.12-235.22"
+74 62 75 66 2E 63 30 3A 32 33 35 2E 34 2D 32 33 35 2E 32 33 3A 20 40 65 6E 73 75 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 00  # "tbuf.c0:235.4-235.23: @ensures annotation failed"
+74 62 75 66 2E 63 30 3A 32 35 34 2E 31 33 2D 32 35 34 2E 32 33 00  # "tbuf.c0:254.13-254.23"
+74 62 75 66 2E 63 30 3A 32 35 34 2E 34 2D 32 35 34 2E 32 34 3A 20 40 72 65 71 75 69 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 0A 00  # "tbuf.c0:254.4-254.24: @requires annotation failed\n"
+3A 20 63 61 6C 6C 65 72 20 6C 6F 63 61 74 69 6F 6E 00  # ": caller location"
+74 62 75 66 2E 63 30 3A 32 36 30 2E 37 2D 32 36 30 2E 32 39 00  # "tbuf.c0:260.7-260.29"
+74 62 75 66 2E 63 30 3A 32 36 31 2E 35 2D 32 36 31 2E 32 31 00  # "tbuf.c0:261.5-261.21"
+74 62 75 66 2E 63 30 3A 32 36 35 2E 33 2D 32 36 35 2E 32 37 00  # "tbuf.c0:265.3-265.27"
+74 62 75 66 2E 63 30 3A 32 35 35 2E 31 32 2D 32 35 35 2E 32 32 00  # "tbuf.c0:255.12-255.22"
+74 62 75 66 2E 63 30 3A 32 35 35 2E 34 2D 32 35 35 2E 32 33 3A 20 40 65 6E 73 75 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 00  # "tbuf.c0:255.4-255.23: @ensures annotation failed"
+74 62 75 66 2E 63 30 3A 32 37 30 2E 31 33 2D 32 37 30 2E 32 33 00  # "tbuf.c0:270.13-270.23"
+74 62 75 66 2E 63 30 3A 32 37 30 2E 34 2D 32 37 30 2E 32 34 3A 20 40 72 65 71 75 69 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 0A 00  # "tbuf.c0:270.4-270.24: @requires annotation failed\n"
+3A 20 63 61 6C 6C 65 72 20 6C 6F 63 61 74 69 6F 6E 00  # ": caller location"
+74 62 75 66 2E 63 30 3A 32 37 36 2E 38 2D 32 37 36 2E 33 31 00  # "tbuf.c0:276.8-276.31"
+74 62 75 66 2E 63 30 3A 32 37 37 2E 35 2D 32 37 37 2E 32 37 00  # "tbuf.c0:277.5-277.27"
+74 62 75 66 2E 63 30 3A 32 38 31 2E 39 2D 32 38 31 2E 32 36 00  # "tbuf.c0:281.9-281.26"
+74 62 75 66 2E 63 30 3A 32 38 31 2E 33 32 2D 32 38 31 2E 34 39 00  # "tbuf.c0:281.32-281.49"
+74 62 75 66 2E 63 30 3A 32 38 31 2E 35 33 2D 32 38 31 2E 37 31 00  # "tbuf.c0:281.53-281.71"
+74 62 75 66 2E 63 30 3A 32 38 32 2E 37 2D 32 38 32 2E 32 33 00  # "tbuf.c0:282.7-282.23"
+74 62 75 66 2E 63 30 3A 32 38 37 2E 31 32 2D 32 38 37 2E 33 35 00  # "tbuf.c0:287.12-287.35"
+74 62 75 66 2E 63 30 3A 32 38 37 2E 34 30 2D 32 38 37 2E 35 37 00  # "tbuf.c0:287.40-287.57"
+74 62 75 66 2E 63 30 3A 32 38 39 2E 35 2D 32 38 39 2E 32 33 00  # "tbuf.c0:289.5-289.23"
+74 62 75 66 2E 63 30 3A 32 39 30 2E 35 2D 32 39 30 2E 33 34 00  # "tbuf.c0:290.5-290.34"
+74 62 75 66 2E 63 30 3A 32 39 34 2E 39 2D 32 39 34 2E 32 39 00  # "tbuf.c0:294.9-294.29"
+74 62 75 66 2E 63 30 3A 32 39 34 2E 33 35 2D 32 39 34 2E 35 32 00  # "tbuf.c0:294.35-294.52"
+74 62 75 66 2E 63 30 3A 32 39 34 2E 35 36 2D 32 39 34 2E 37 34 00  # "tbuf.c0:294.56-294.74"
+74 62 75 66 2E 63 30 3A 32 39 35 2E 37 2D 32 39 35 2E 32 33 00  # "tbuf.c0:295.7-295.23"
+74 62 75 66 2E 63 30 3A 32 37 31 2E 31 32 2D 32 37 31 2E 32 32 00  # "tbuf.c0:271.12-271.22"
+74 62 75 66 2E 63 30 3A 32 37 31 2E 34 2D 32 37 31 2E 32 33 3A 20 40 65 6E 73 75 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 00  # "tbuf.c0:271.4-271.23: @ensures annotation failed"
+6C 6F 76 61 73 2D 45 30 2E 63 30 3A 33 33 2E 33 38 2D 33 33 2E 35 31 00  # "lovas-E0.c0:33.38-33.51"
+6C 6F 76 61 73 2D 45 30 2E 63 30 3A 33 34 2E 32 35 2D 33 34 2E 33 39 00  # "lovas-E0.c0:34.25-34.39"
+6C 6F 76 61 73 2D 45 30 2E 63 30 3A 33 36 2E 33 38 2D 33 36 2E 34 39 00  # "lovas-E0.c0:36.38-36.49"
+6C 6F 76 61 73 2D 45 30 2E 63 30 3A 34 30 2E 32 31 2D 34 30 2E 33 32 00  # "lovas-E0.c0:40.21-40.32"
+6C 6F 76 61 73 2D 45 30 2E 63 30 3A 32 39 2E 34 2D 32 39 2E 34 35 3A 20 40 65 6E 73 75 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 00  # "lovas-E0.c0:29.4-29.45: @ensures annotation failed"
+6C 6F 76 61 73 2D 45 30 2E 63 30 3A 34 35 2E 31 33 2D 34 35 2E 32 35 00  # "lovas-E0.c0:45.13-45.25"
+6C 6F 76 61 73 2D 45 30 2E 63 30 3A 34 35 2E 34 2D 34 35 2E 32 36 3A 20 40 72 65 71 75 69 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 0A 00  # "lovas-E0.c0:45.4-45.26: @requires annotation failed\n"
+3A 20 63 61 6C 6C 65 72 20 6C 6F 63 61 74 69 6F 6E 00  # ": caller location"
+6C 6F 76 61 73 2D 45 30 2E 63 30 3A 34 38 2E 34 34 2D 34 38 2E 37 38 00  # "lovas-E0.c0:48.44-48.78"
+6C 6F 76 61 73 2D 45 30 2E 63 30 3A 35 30 2E 37 2D 35 30 2E 34 32 00  # "lovas-E0.c0:50.7-50.42"
+6C 6F 76 61 73 2D 45 30 2E 63 30 3A 34 36 2E 31 32 2D 34 36 2E 32 34 00  # "lovas-E0.c0:46.12-46.24"
+6C 6F 76 61 73 2D 45 30 2E 63 30 3A 34 36 2E 34 2D 34 36 2E 32 35 3A 20 40 65 6E 73 75 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 00  # "lovas-E0.c0:46.4-46.25: @ensures annotation failed"
+6C 6F 76 61 73 2D 45 30 2E 63 30 3A 35 34 2E 31 33 2D 35 34 2E 32 33 00  # "lovas-E0.c0:54.13-54.23"
+6C 6F 76 61 73 2D 45 30 2E 63 30 3A 35 34 2E 34 2D 35 34 2E 32 34 3A 20 40 72 65 71 75 69 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 0A 00  # "lovas-E0.c0:54.4-54.24: @requires annotation failed\n"
+3A 20 63 61 6C 6C 65 72 20 6C 6F 63 61 74 69 6F 6E 00  # ": caller location"
+6C 6F 76 61 73 2D 45 30 2E 63 30 3A 36 35 2E 39 2D 36 35 2E 34 31 00  # "lovas-E0.c0:65.9-65.41"
+6C 6F 76 61 73 2D 45 30 2E 63 30 3A 36 39 2E 31 37 2D 36 39 2E 34 33 00  # "lovas-E0.c0:69.17-69.43"
+6C 6F 76 61 73 2D 45 30 2E 63 30 3A 35 35 2E 31 32 2D 35 35 2E 32 32 00  # "lovas-E0.c0:55.12-55.22"
+6C 6F 76 61 73 2D 45 30 2E 63 30 3A 35 35 2E 34 2D 35 35 2E 32 33 3A 20 40 65 6E 73 75 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 00  # "lovas-E0.c0:55.4-55.23: @ensures annotation failed"
+6C 6F 76 61 73 2D 45 30 2E 63 30 3A 37 37 2E 33 34 2D 37 37 2E 34 37 00  # "lovas-E0.c0:77.34-77.47"
+45 30 2C 20 74 68 65 20 6D 69 6E 69 6D 61 6C 69 73 74 20 65 64 69 74 6F 72 20 2D 2D 20 5E 58 20 74 6F 20 65 78 69 74 2C 20 5E 4C 20 74 6F 20 72 65 66 72 65 73 68 00  # "E0, the minimalist editor -- ^X to exit, ^L to refresh"
+6C 6F 76 61 73 2D 45 30 2E 63 30 3A 38 37 2E 33 34 2D 38 37 2E 34 37 00  # "lovas-E0.c0:87.34-87.47"
+6C 6F 76 61 73 2D 45 30 2E 63 30 3A 39 36 2E 32 31 2D 39 36 2E 33 34 00  # "lovas-E0.c0:96.21-96.34"
+6C 6F 76 61 73 2D 45 30 2E 63 30 3A 31 30 30 2E 32 31 2D 31 30 30 2E 33 34 00  # "lovas-E0.c0:100.21-100.34"
+6C 6F 76 61 73 2D 45 30 2E 63 30 3A 31 30 33 2E 32 31 2D 31 30 33 2E 33 32 00  # "lovas-E0.c0:103.21-103.32"
+6C 6F 76 61 73 2D 45 30 2E 63 30 3A 31 30 38 2E 31 33 2D 31 30 38 2E 32 35 00  # "lovas-E0.c0:108.13-108.25"
+6C 6F 76 61 73 2D 45 30 2E 63 30 3A 31 30 38 2E 34 2D 31 30 38 2E 32 36 3A 20 40 72 65 71 75 69 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 0A 00  # "lovas-E0.c0:108.4-108.26: @requires annotation failed\n"
+3A 20 63 61 6C 6C 65 72 20 6C 6F 63 61 74 69 6F 6E 00  # ": caller location"
+6C 6F 76 61 73 2D 45 30 2E 63 30 3A 31 31 31 2E 34 34 2D 31 31 31 2E 37 33 00  # "lovas-E0.c0:111.44-111.73"
+6C 6F 76 61 73 2D 45 30 2E 63 30 3A 31 31 33 2E 31 37 2D 31 31 33 2E 33 30 00  # "lovas-E0.c0:113.17-113.30"
+6C 6F 76 61 73 2D 45 30 2E 63 30 3A 31 31 34 2E 36 35 2D 31 31 34 2E 37 38 00  # "lovas-E0.c0:114.65-114.78"
+6C 6F 76 61 73 2D 45 30 2E 63 30 3A 31 31 35 2E 31 37 2D 31 31 35 2E 33 30 00  # "lovas-E0.c0:115.17-115.30"
+6C 6F 76 61 73 2D 45 30 2E 63 30 3A 31 31 37 2E 34 39 2D 31 31 37 2E 37 38 00  # "lovas-E0.c0:117.49-117.78"
+6C 6F 76 61 73 2D 45 30 2E 63 30 3A 31 30 39 2E 31 32 2D 31 30 39 2E 32 34 00  # "lovas-E0.c0:109.12-109.24"
+6C 6F 76 61 73 2D 45 30 2E 63 30 3A 31 30 39 2E 34 2D 31 30 39 2E 32 35 3A 20 40 65 6E 73 75 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 00  # "lovas-E0.c0:109.4-109.25: @ensures annotation failed"
+6C 6F 76 61 73 2D 45 30 2E 63 30 3A 31 32 31 2E 31 33 2D 31 32 31 2E 32 33 00  # "lovas-E0.c0:121.13-121.23"
+6C 6F 76 61 73 2D 45 30 2E 63 30 3A 31 32 31 2E 34 2D 31 32 31 2E 32 34 3A 20 40 72 65 71 75 69 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 0A 00  # "lovas-E0.c0:121.4-121.24: @requires annotation failed\n"
+3A 20 63 61 6C 6C 65 72 20 6C 6F 63 61 74 69 6F 6E 00  # ": caller location"
+20 2A 2A 00  # " **"
+3C 2E 2E 00  # "<.."
+20 3C 2D 3E 20 00  # " <-> "
+6C 6F 76 61 73 2D 45 30 2E 63 30 3A 31 34 33 2E 39 2D 31 34 33 2E 33 35 00  # "lovas-E0.c0:143.9-143.35"
+20 3C 2D 3E 20 00  # " <-> "
+2A 2A 20 00  # "** "
+2E 2E 3E 00  # "..>"
+6C 6F 76 61 73 2D 45 30 2E 63 30 3A 31 32 32 2E 31 32 2D 31 32 32 2E 32 32 00  # "lovas-E0.c0:122.12-122.22"
+6C 6F 76 61 73 2D 45 30 2E 63 30 3A 31 32 32 2E 34 2D 31 32 32 2E 32 33 3A 20 40 65 6E 73 75 72 65 73 20 61 6E 6E 6F 74 61 74 69 6F 6E 20 66 61 69 6C 65 64 00  # "lovas-E0.c0:122.4-122.23: @ensures annotation failed"
+28 6E 6F 6E 65 29 00  # "(none)"
+6C 6F 76 61 73 2D 45 30 2E 63 30 3A 31 38 37 2E 31 35 2D 31 38 37 2E 32 35 00  # "lovas-E0.c0:187.15-187.25"
+6C 6F 76 61 73 2D 45 30 2E 63 30 3A 31 38 39 2E 35 2D 31 38 39 2E 32 36 00  # "lovas-E0.c0:189.5-189.26"
+6C 6F 76 61 73 2D 45 30 2E 63 30 3A 31 39 30 2E 35 2D 31 39 30 2E 32 36 00  # "lovas-E0.c0:190.5-190.26"
+6C 6F 76 61 73 2D 45 30 2E 63 30 3A 31 39 34 2E 39 2D 31 39 34 2E 33 30 00  # "lovas-E0.c0:194.9-194.30"
+6C 6F 76 61 73 2D 45 30 2E 63 30 3A 31 39 35 2E 39 2D 31 39 35 2E 33 32 00  # "lovas-E0.c0:195.9-195.32"
+6C 6F 76 61 73 2D 45 30 2E 63 30 3A 31 39 39 2E 33 38 2D 31 39 39 2E 35 39 00  # "lovas-E0.c0:199.38-199.59"
+6C 6F 76 61 73 2D 45 30 2E 63 30 3A 32 30 30 2E 33 38 2D 32 30 30 2E 35 39 00  # "lovas-E0.c0:200.38-200.59"
+6C 6F 76 61 73 2D 45 30 2E 63 30 3A 32 30 32 2E 34 34 2D 32 30 32 2E 35 38 00  # "lovas-E0.c0:202.44-202.58"
+6C 6F 76 61 73 2D 45 30 2E 63 30 3A 32 30 33 2E 34 30 2D 32 30 33 2E 35 36 00  # "lovas-E0.c0:203.40-203.56"
+6C 6F 76 61 73 2D 45 30 2E 63 30 3A 32 30 34 2E 34 30 2D 32 30 34 2E 35 35 00  # "lovas-E0.c0:204.40-204.55"
+6C 6F 76 61 73 2D 45 30 2E 63 30 3A 32 30 35 2E 34 30 2D 32 30 35 2E 36 30 00  # "lovas-E0.c0:205.40-205.60"
+6C 6F 76 61 73 2D 45 30 2E 63 30 3A 32 30 36 2E 35 35 2D 32 30 36 2E 36 36 00  # "lovas-E0.c0:206.55-206.66"
+6C 6F 76 61 73 2D 45 30 2E 63 30 3A 32 30 36 2E 34 30 2D 32 30 36 2E 36 37 00  # "lovas-E0.c0:206.40-206.67"
+74 68 61 6E 6B 73 20 66 6F 72 20 66 6C 79 69 6E 67 20 45 20 21 08 08 00  # "thanks for flying E !\b\b"
+
+00 31             # function count
+# function_pool
+
+#<main>
+00 00             # number of arguments = 0
+00 0F             # number of local variables = 15
+01 B6             # code length = 438 bytes
+14 1B 30 # aldc 6960       # s[6960] = "(none)"
+36 00    # vstore 0        # _caller = "(none)";
+B7 00 1E # invokenative 30 # c_initscr()
+36 02    # vstore 2        # mainwin = c_initscr();
+B7 00 1F # invokenative 31 # c_cbreak()
+57       # pop             # (ignore result)
+B7 00 20 # invokenative 32 # c_noecho()
+57       # pop             # (ignore result)
+15 02    # vload 2         # mainwin
+10 01    # bipush 1        # true
+B7 00 21 # invokenative 33 # c_keypad(mainwin, true)
+57       # pop             # (ignore result)
+10 00    # bipush 0        # 0
+B7 00 22 # invokenative 34 # c_curs_set(0)
+36 03    # vstore 3        # vis = c_curs_set(0);
+15 02    # vload 2         # mainwin
+B7 00 13 # invokenative 19 # cc_getmaxx(mainwin)
+36 04    # vstore 4        # ncols = cc_getmaxx(mainwin);
+15 02    # vload 2         # mainwin
+B7 00 23 # invokenative 35 # cc_getmaxy(mainwin)
+36 05    # vstore 5        # nlines = cc_getmaxy(mainwin);
+15 02    # vload 2         # mainwin
+B7 00 12 # invokenative 18 # cc_getbegx(mainwin)
+36 06    # vstore 6        # begx = cc_getbegx(mainwin);
+15 02    # vload 2         # mainwin
+B7 00 24 # invokenative 36 # cc_getbegy(mainwin)
+36 07    # vstore 7        # begy = cc_getbegy(mainwin);
+15 02    # vload 2         # mainwin
+15 05    # vload 5         # nlines
+10 03    # bipush 3        # 3
+64       # isub            # (nlines - 3)
+15 04    # vload 4         # ncols
+15 07    # vload 7         # begy
+10 01    # bipush 1        # 1
+60       # iadd            # (begy + 1)
+15 06    # vload 6         # begx
+B7 00 25 # invokenative 37 # c_subwin(mainwin, (nlines - 3), ncols, (begy + 1), begx)
+36 08    # vstore 8        # canvas = c_subwin(mainwin, (nlines - 3), ncols, (begy + 1), begx);
+15 02    # vload 2         # mainwin
+10 01    # bipush 1        # 1
+15 04    # vload 4         # ncols
+15 07    # vload 7         # begy
+15 06    # vload 6         # begx
+B7 00 25 # invokenative 37 # c_subwin(mainwin, 1, ncols, begy, begx)
+36 09    # vstore 9        # topbar = c_subwin(mainwin, 1, ncols, begy, begx);
+15 02    # vload 2         # mainwin
+10 01    # bipush 1        # 1
+15 04    # vload 4         # ncols
+15 05    # vload 5         # nlines
+10 02    # bipush 2        # 2
+64       # isub            # (nlines - 2)
+15 06    # vload 6         # begx
+B7 00 25 # invokenative 37 # c_subwin(mainwin, 1, ncols, (nlines - 2), begx)
+36 0A    # vstore 10       # botbar = c_subwin(mainwin, 1, ncols, (nlines - 2), begx);
+15 02    # vload 2         # mainwin
+10 01    # bipush 1        # 1
+15 04    # vload 4         # ncols
+15 05    # vload 5         # nlines
+10 01    # bipush 1        # 1
+64       # isub            # (nlines - 1)
+15 06    # vload 6         # begx
+B7 00 25 # invokenative 37 # c_subwin(mainwin, 1, ncols, (nlines - 1), begx)
+36 0B    # vstore 11       # minibuf = c_subwin(mainwin, 1, ncols, (nlines - 1), begx);
+14 1B 37 # aldc 6967       # s[6967] = "lovas-E0.c0:187.15-187.25"
+B8 00 21 # invokestatic 33 # tbuf_new("lovas-E0.c0:187.15-187.25")
+36 0C    # vstore 12       # B = tbuf_new("lovas-E0.c0:187.15-187.25");
+15 09    # vload 9         # topbar
+14 1B 51 # aldc 6993       # s[6993] = "lovas-E0.c0:189.5-189.26"
+B8 00 2C # invokestatic 44 # render_topbar(topbar, "lovas-E0.c0:189.5-189.26")
+57       # pop             # (ignore result)
+15 0A    # vload 10        # botbar
+14 1B 6A # aldc 7018       # s[7018] = "lovas-E0.c0:190.5-190.26"
+B8 00 2D # invokestatic 45 # render_botbar(botbar, "lovas-E0.c0:190.5-190.26")
+57       # pop             # (ignore result)
+10 01    # bipush 1        # true
+36 0D    # vstore 13       # go = true;
+# <389:loop>
+A7 00 03 # goto +3         # goto <390:body>
+# <390:body>
+15 0D    # vload 13        # go
+10 01    # bipush 1        # true
+9F 00 06 # if_cmpeq +6     # if (go == true) goto <392:then>
+A7 00 EB # goto +235       # goto <393:else>
+# <392:then>
+15 0C    # vload 12        # B
+15 08    # vload 8         # canvas
+14 1B 83 # aldc 7043       # s[7043] = "lovas-E0.c0:194.9-194.30"
+B8 00 2B # invokestatic 43 # render_buf(B, canvas, "lovas-E0.c0:194.9-194.30")
+57       # pop             # (ignore result)
+15 0C    # vload 12        # B
+15 0B    # vload 11        # minibuf
+14 1B 9C # aldc 7068       # s[7068] = "lovas-E0.c0:195.9-195.32"
+B8 00 30 # invokestatic 48 # vrender_buf(B, minibuf, "lovas-E0.c0:195.9-195.32")
+57       # pop             # (ignore result)
+B7 00 26 # invokenative 38 # c_getch()
+36 0E    # vstore 14       # c = c_getch();
+15 0E    # vload 14        # c
+10 18    # bipush 24       # 24
+9F 00 06 # if_cmpeq +6     # if (c == 24) goto <395:then>
+A7 00 0A # goto +10        # goto <396:else>
+# <395:then>
+10 00    # bipush 0        # false
+36 0D    # vstore 13       # go = false;
+A7 00 BC # goto +188       # goto <397:endif>
+# <396:else>
+15 0E    # vload 14        # c
+10 0C    # bipush 12       # 12
+9F 00 06 # if_cmpeq +6     # if (c == 12) goto <398:then>
+A7 00 24 # goto +36        # goto <399:else>
+# <398:then>
+15 02    # vload 2         # mainwin
+B7 00 1B # invokenative 27 # c_wclear(mainwin)
+57       # pop             # (ignore result)
+15 09    # vload 9         # topbar
+14 1B B5 # aldc 7093       # s[7093] = "lovas-E0.c0:199.38-199.59"
+B8 00 2C # invokestatic 44 # render_topbar(topbar, "lovas-E0.c0:199.38-199.59")
+57       # pop             # (ignore result)
+15 0A    # vload 10        # botbar
+14 1B CF # aldc 7119       # s[7119] = "lovas-E0.c0:200.38-200.59"
+B8 00 2D # invokestatic 45 # render_botbar(botbar, "lovas-E0.c0:200.38-200.59")
+57       # pop             # (ignore result)
+15 02    # vload 2         # mainwin
+B7 00 11 # invokenative 17 # c_wrefresh(mainwin)
+57       # pop             # (ignore result)
+A7 00 91 # goto +145       # goto <400:endif>
+# <399:else>
+15 0E    # vload 14        # c
+B7 00 27 # invokenative 39 # cc_key_is_backspace(c)
+10 01    # bipush 1        # true
+9F 00 06 # if_cmpeq +6     # if (cc_key_is_backspace(c) == true) goto <401:then>
+A7 00 0F # goto +15        # goto <402:else>
+# <401:then>
+15 0C    # vload 12        # B
+14 1B E9 # aldc 7145       # s[7145] = "lovas-E0.c0:202.44-202.58"
+B8 00 26 # invokestatic 38 # tbuf_delete(B, "lovas-E0.c0:202.44-202.58")
+57       # pop             # (ignore result)
+A7 00 78 # goto +120       # goto <403:endif>
+# <402:else>
+15 0E    # vload 14        # c
+B7 00 28 # invokenative 40 # cc_key_is_left(c)
+10 01    # bipush 1        # true
+9F 00 06 # if_cmpeq +6     # if (cc_key_is_left(c) == true) goto <404:then>
+A7 00 0F # goto +15        # goto <405:else>
+# <404:then>
+15 0C    # vload 12        # B
+14 1C 03 # aldc 7171       # s[7171] = "lovas-E0.c0:203.40-203.56"
+B8 00 24 # invokestatic 36 # tbuf_backward(B, "lovas-E0.c0:203.40-203.56")
+57       # pop             # (ignore result)
+A7 00 5F # goto +95        # goto <406:endif>
+# <405:else>
+15 0E    # vload 14        # c
+B7 00 29 # invokenative 41 # cc_key_is_right(c)
+10 01    # bipush 1        # true
+9F 00 06 # if_cmpeq +6     # if (cc_key_is_right(c) == true) goto <407:then>
+A7 00 0F # goto +15        # goto <408:else>
+# <407:then>
+15 0C    # vload 12        # B
+14 1C 1D # aldc 7197       # s[7197] = "lovas-E0.c0:204.40-204.55"
+B8 00 23 # invokestatic 35 # tbuf_forward(B, "lovas-E0.c0:204.40-204.55")
+57       # pop             # (ignore result)
+A7 00 46 # goto +70        # goto <409:endif>
+# <408:else>
+15 0E    # vload 14        # c
+B7 00 2A # invokenative 42 # cc_key_is_enter(c)
+10 01    # bipush 1        # true
+9F 00 06 # if_cmpeq +6     # if (cc_key_is_enter(c) == true) goto <410:then>
+A7 00 11 # goto +17        # goto <411:else>
+# <410:then>
+15 0C    # vload 12        # B
+10 0A    # bipush 10       # '\n'
+14 1C 37 # aldc 7223       # s[7223] = "lovas-E0.c0:205.40-205.60"
+B8 00 25 # invokestatic 37 # tbuf_insert(B, '\n', "lovas-E0.c0:205.40-205.60")
+57       # pop             # (ignore result)
+A7 00 2B # goto +43        # goto <412:endif>
+# <411:else>
+10 00    # bipush 0        # 0
+15 0E    # vload 14        # c
+A4 00 06 # if_icmple +6    # if (0 <= c) goto <416:and>
+A7 00 21 # goto +33        # goto <414:else>
+# <416:and>
+15 0E    # vload 14        # c
+10 7F    # bipush 127      # 127
+A4 00 06 # if_icmple +6    # if (c <= 127) goto <413:then>
+A7 00 17 # goto +23        # goto <414:else>
+# <413:then>
+15 0C    # vload 12        # B
+15 0E    # vload 14        # c
+14 1C 51 # aldc 7249       # s[7249] = "lovas-E0.c0:206.55-206.66"
+B8 00 0A # invokestatic 10 # char_chr__1(c, "lovas-E0.c0:206.55-206.66")
+14 1C 6B # aldc 7275       # s[7275] = "lovas-E0.c0:206.40-206.67"
+B8 00 25 # invokestatic 37 # tbuf_insert(B, char_chr__1(c, "lovas-E0.c0:206.55-206.66"), "lovas-E0.c0:206.40-206.67")
+57       # pop             # (ignore result)
+A7 00 03 # goto +3         # goto <415:endif>
+# <414:else>
+# <415:endif>
+# <412:endif>
+# <409:endif>
+# <406:endif>
+# <403:endif>
+# <400:endif>
+# <397:endif>
+A7 00 06 # goto +6         # goto <394:endif>
+# <393:else>
+A7 00 06 # goto +6         # break
+# <394:endif>
+A7 FF 08 # goto -248       # goto <389:loop>
+# <391:exit>
+15 03    # vload 3         # vis
+B7 00 22 # invokenative 34 # c_curs_set(vis)
+57       # pop             # (ignore result)
+B7 00 2B # invokenative 43 # c_endwin()
+57       # pop             # (ignore result)
+14 1C 85 # aldc 7301       # s[7301] = "thanks for flying E !\b\b"
+B7 00 2C # invokenative 44 # print("thanks for flying E !\b\b")
+57       # pop             # (ignore result)
+10 00    # bipush 0        # 0
+36 01    # vstore 1        # _result = 0;
+15 01    # vload 1         # _result
+B0       # return          # 
+
+
+#<string_charat__1>
+00 03             # number of arguments = 3
+00 04             # number of local variables = 4
+00 3E             # code length = 62 bytes
+10 00    # bipush 0        # 0
+15 01    # vload 1         # idx
+A4 00 06 # if_icmple +6    # if (0 <= idx) goto <00:cond_true>
+A7 00 1A # goto +26        # goto <01:cond_false>
+# <00:cond_true>
+15 01    # vload 1         # idx
+15 00    # vload 0         # s
+B7 00 00 # invokenative 0  # string_length(s)
+A1 00 06 # if_icmplt +6    # if (idx < string_length(s)) goto <03:cond_true>
+A7 00 08 # goto +8         # goto <04:cond_false>
+# <03:cond_true>
+10 01    # bipush 1        # true
+A7 00 05 # goto +5         # goto <05:cond_end>
+# <04:cond_false>
+10 00    # bipush 0        # false
+# <05:cond_end>
+A7 00 05 # goto +5         # goto <02:cond_end>
+# <01:cond_false>
+10 00    # bipush 0        # false
+# <02:cond_end>
+14 00 00 # aldc 0          # s[0] = "/afs/andrew/course/15/122/lib/string.h0:19.6-19.50: @requires annotation failed\n"
+15 02    # vload 2         # _caller
+14 00 51 # aldc 81         # s[81] = ": caller location"
+B7 00 01 # invokenative 1  # string_join(_caller, ": caller location")
+B7 00 01 # invokenative 1  # string_join("/afs/andrew/course/15/122/lib/string.h0:19.6-19.50: @requires annotation failed\n", string_join(_caller, ": caller location"))
+CF       # assert          # assert((0 <= idx) && (idx < string_length(s))) [failure message on stack]
+15 00    # vload 0         # s
+15 01    # vload 1         # idx
+B7 00 02 # invokenative 2  # string_charat(s, idx)
+36 03    # vstore 3        # _result = string_charat(s, idx);
+15 03    # vload 3         # _result
+B0       # return          # 
+
+
+#<string_join__1>
+00 03             # number of arguments = 3
+00 04             # number of local variables = 4
+00 2D             # code length = 45 bytes
+15 00    # vload 0         # a
+15 01    # vload 1         # b
+B7 00 01 # invokenative 1  # string_join(a, b)
+36 03    # vstore 3        # _result = string_join(a, b);
+15 03    # vload 3         # _result
+B7 00 00 # invokenative 0  # string_length(_result)
+15 00    # vload 0         # a
+B7 00 00 # invokenative 0  # string_length(a)
+15 01    # vload 1         # b
+B7 00 00 # invokenative 0  # string_length(b)
+60       # iadd            # (string_length(a) + string_length(b))
+9F 00 06 # if_cmpeq +6     # if (string_length(_result) == (string_length(a) + string_length(b))) goto <06:cond_true>
+A7 00 08 # goto +8         # goto <07:cond_false>
+# <06:cond_true>
+10 01    # bipush 1        # true
+A7 00 05 # goto +5         # goto <08:cond_end>
+# <07:cond_false>
+10 00    # bipush 0        # false
+# <08:cond_end>
+14 00 63 # aldc 99         # s[99] = "/afs/andrew/course/15/122/lib/string.h0:23.6-24.55: @ensures annotation failed"
+CF       # assert          # assert(string_length(_result) == (string_length(a) + string_length(b))) [failure message on stack]
+15 03    # vload 3         # _result
+B0       # return          # 
+
+
+#<string_sub__1>
+00 04             # number of arguments = 4
+00 05             # number of local variables = 5
+00 65             # code length = 101 bytes
+10 00    # bipush 0        # 0
+15 01    # vload 1         # start
+A4 00 06 # if_icmple +6    # if (0 <= start) goto <12:and>
+A7 00 24 # goto +36        # goto <10:cond_false>
+# <12:and>
+15 01    # vload 1         # start
+15 02    # vload 2         # end
+A4 00 06 # if_icmple +6    # if (start <= end) goto <09:cond_true>
+A7 00 1A # goto +26        # goto <10:cond_false>
+# <09:cond_true>
+15 02    # vload 2         # end
+15 00    # vload 0         # a
+B7 00 00 # invokenative 0  # string_length(a)
+A4 00 06 # if_icmple +6    # if (end <= string_length(a)) goto <13:cond_true>
+A7 00 08 # goto +8         # goto <14:cond_false>
+# <13:cond_true>
+10 01    # bipush 1        # true
+A7 00 05 # goto +5         # goto <15:cond_end>
+# <14:cond_false>
+10 00    # bipush 0        # false
+# <15:cond_end>
+A7 00 05 # goto +5         # goto <11:cond_end>
+# <10:cond_false>
+10 00    # bipush 0        # false
+# <11:cond_end>
+14 00 B2 # aldc 178        # s[178] = "/afs/andrew/course/15/122/lib/string.h0:31.6-31.69: @requires annotation failed\n"
+15 03    # vload 3         # _caller
+14 01 03 # aldc 259        # s[259] = ": caller location"
+B7 00 01 # invokenative 1  # string_join(_caller, ": caller location")
+B7 00 01 # invokenative 1  # string_join("/afs/andrew/course/15/122/lib/string.h0:31.6-31.69: @requires annotation failed\n", string_join(_caller, ": caller location"))
+CF       # assert          # assert(((0 <= start) && (start <= end)) && (end <= string_length(a))) [failure message on stack]
+15 00    # vload 0         # a
+15 01    # vload 1         # start
+15 02    # vload 2         # end
+B7 00 03 # invokenative 3  # string_sub(a, start, end)
+36 04    # vstore 4        # _result = string_sub(a, start, end);
+15 04    # vload 4         # _result
+B7 00 00 # invokenative 0  # string_length(_result)
+15 02    # vload 2         # end
+15 01    # vload 1         # start
+64       # isub            # (end - start)
+9F 00 06 # if_cmpeq +6     # if (string_length(_result) == (end - start)) goto <16:cond_true>
+A7 00 08 # goto +8         # goto <17:cond_false>
+# <16:cond_true>
+10 01    # bipush 1        # true
+A7 00 05 # goto +5         # goto <18:cond_end>
+# <17:cond_false>
+10 00    # bipush 0        # false
+# <18:cond_end>
+14 01 15 # aldc 277        # s[277] = "/afs/andrew/course/15/122/lib/string.h0:32.6-32.52: @ensures annotation failed"
+CF       # assert          # assert(string_length(_result) == (end - start)) [failure message on stack]
+15 04    # vload 4         # _result
+B0       # return          # 
+
+
+#<string_compare__1>
+00 03             # number of arguments = 3
+00 05             # number of local variables = 5
+00 30             # code length = 48 bytes
+15 00    # vload 0         # a
+15 01    # vload 1         # b
+B7 00 04 # invokenative 4  # string_compare(a, b)
+36 03    # vstore 3        # _result = string_compare(a, b);
+10 FF    # bipush -1       # -1
+15 03    # vload 3         # _result
+A4 00 06 # if_icmple +6    # if (-(1) <= _result) goto <19:cond_true>
+A7 00 17 # goto +23        # goto <20:cond_false>
+# <19:cond_true>
+15 03    # vload 3         # _result
+10 01    # bipush 1        # 1
+A4 00 06 # if_icmple +6    # if (_result <= 1) goto <22:cond_true>
+A7 00 08 # goto +8         # goto <23:cond_false>
+# <22:cond_true>
+10 01    # bipush 1        # true
+A7 00 05 # goto +5         # goto <24:cond_end>
+# <23:cond_false>
+10 00    # bipush 0        # false
+# <24:cond_end>
+A7 00 05 # goto +5         # goto <21:cond_end>
+# <20:cond_false>
+10 00    # bipush 0        # false
+# <21:cond_end>
+14 01 64 # aldc 356        # s[356] = "/afs/andrew/course/15/122/lib/string.h0:37.6-37.44: @ensures annotation failed"
+CF       # assert          # assert((-(1) <= _result) && (_result <= 1)) [failure message on stack]
+15 03    # vload 3         # _result
+B0       # return          # 
+
+
+#<string_fromchar__1>
+00 02             # number of arguments = 2
+00 05             # number of local variables = 5
+00 5F             # code length = 95 bytes
+15 00    # vload 0         # c
+10 00    # bipush 0        # '\000'
+A0 00 06 # if_cmpne +6     # if (c != '\0') goto <25:cond_true>
+A7 00 08 # goto +8         # goto <26:cond_false>
+# <25:cond_true>
+10 01    # bipush 1        # true
+A7 00 05 # goto +5         # goto <27:cond_end>
+# <26:cond_false>
+10 00    # bipush 0        # false
+# <27:cond_end>
+14 01 B3 # aldc 435        # s[435] = "/afs/andrew/course/15/122/lib/string.h0:43.6-43.25: @requires annotation failed\n"
+15 01    # vload 1         # _caller
+14 02 04 # aldc 516        # s[516] = ": caller location"
+B7 00 01 # invokenative 1  # string_join(_caller, ": caller location")
+B7 00 01 # invokenative 1  # string_join("/afs/andrew/course/15/122/lib/string.h0:43.6-43.25: @requires annotation failed\n", string_join(_caller, ": caller location"))
+CF       # assert          # assert(c != '\0') [failure message on stack]
+15 00    # vload 0         # c
+B7 00 05 # invokenative 5  # string_fromchar(c)
+36 02    # vstore 2        # _result = string_fromchar(c);
+15 02    # vload 2         # _result
+B7 00 00 # invokenative 0  # string_length(_result)
+10 01    # bipush 1        # 1
+9F 00 06 # if_cmpeq +6     # if (string_length(_result) == 1) goto <28:cond_true>
+A7 00 08 # goto +8         # goto <29:cond_false>
+# <28:cond_true>
+10 01    # bipush 1        # true
+A7 00 05 # goto +5         # goto <30:cond_end>
+# <29:cond_false>
+10 00    # bipush 0        # false
+# <30:cond_end>
+14 02 16 # aldc 534        # s[534] = "/afs/andrew/course/15/122/lib/string.h0:44.6-44.42: @ensures annotation failed"
+CF       # assert          # assert(string_length(_result) == 1) [failure message on stack]
+15 02    # vload 2         # _result
+10 00    # bipush 0        # 0
+14 02 65 # aldc 613        # s[613] = "/afs/andrew/course/15/122/lib/string.h0:45.14-45.39"
+B8 00 01 # invokestatic 1  # string_charat__1(_result, 0, "/afs/andrew/course/15/122/lib/string.h0:45.14-45.39")
+15 00    # vload 0         # c
+9F 00 06 # if_cmpeq +6     # if (string_charat__1(_result, 0, "/afs/andrew/course/15/122/lib/string.h0:45.14-45.39") == c) goto <31:cond_true>
+A7 00 08 # goto +8         # goto <32:cond_false>
+# <31:cond_true>
+10 01    # bipush 1        # true
+A7 00 05 # goto +5         # goto <33:cond_end>
+# <32:cond_false>
+10 00    # bipush 0        # false
+# <33:cond_end>
+14 02 99 # aldc 665        # s[665] = "/afs/andrew/course/15/122/lib/string.h0:45.6-45.45: @ensures annotation failed"
+CF       # assert          # assert(string_charat__1(_result, 0, "/afs/andrew/course/15/122/lib/string.h0:45.14-45.39") == c) [failure message on stack]
+15 02    # vload 2         # _result
+B0       # return          # 
+
+
+#<string_terminated__1>
+00 03             # number of arguments = 3
+00 05             # number of local variables = 5
+00 3C             # code length = 60 bytes
+10 00    # bipush 0        # 0
+15 01    # vload 1         # n
+A4 00 06 # if_icmple +6    # if (0 <= n) goto <34:cond_true>
+A7 00 18 # goto +24        # goto <35:cond_false>
+# <34:cond_true>
+15 01    # vload 1         # n
+15 00    # vload 0         # A
+BE       # arraylength     # \length(A)
+A4 00 06 # if_icmple +6    # if (n <= \length(A)) goto <37:cond_true>
+A7 00 08 # goto +8         # goto <38:cond_false>
+# <37:cond_true>
+10 01    # bipush 1        # true
+A7 00 05 # goto +5         # goto <39:cond_end>
+# <38:cond_false>
+10 00    # bipush 0        # false
+# <39:cond_end>
+A7 00 05 # goto +5         # goto <36:cond_end>
+# <35:cond_false>
+10 00    # bipush 0        # false
+# <36:cond_end>
+14 02 E8 # aldc 744        # s[744] = "/afs/andrew/course/15/122/lib/string.h0:52.6-52.41: @requires annotation failed\n"
+15 02    # vload 2         # _caller
+14 03 39 # aldc 825        # s[825] = ": caller location"
+B7 00 01 # invokenative 1  # string_join(_caller, ": caller location")
+B7 00 01 # invokenative 1  # string_join("/afs/andrew/course/15/122/lib/string.h0:52.6-52.41: @requires annotation failed\n", string_join(_caller, ": caller location"))
+CF       # assert          # assert((0 <= n) && (n <= \length(A))) [failure message on stack]
+15 00    # vload 0         # A
+15 01    # vload 1         # n
+B7 00 06 # invokenative 6  # string_terminated(A, n)
+36 03    # vstore 3        # _result = string_terminated(A, n);
+15 03    # vload 3         # _result
+B0       # return          # 
+
+
+#<string_to_chararray__1>
+00 02             # number of arguments = 2
+00 05             # number of local variables = 5
+00 3A             # code length = 58 bytes
+15 00    # vload 0         # s
+B7 00 07 # invokenative 7  # string_to_chararray(s)
+36 02    # vstore 2        # _result = string_to_chararray(s);
+15 02    # vload 2         # _result
+BE       # arraylength     # \length(_result)
+15 00    # vload 0         # s
+B7 00 00 # invokenative 0  # string_length(s)
+10 01    # bipush 1        # 1
+60       # iadd            # (string_length(s) + 1)
+A2 00 06 # if_icmpge +6    # if (\length(_result) >= (string_length(s) + 1)) goto <40:cond_true>
+A7 00 08 # goto +8         # goto <41:cond_false>
+# <40:cond_true>
+10 01    # bipush 1        # true
+A7 00 05 # goto +5         # goto <42:cond_end>
+# <41:cond_false>
+10 00    # bipush 0        # false
+# <42:cond_end>
+14 03 4B # aldc 843        # s[843] = "/afs/andrew/course/15/122/lib/string.h0:56.6-56.55: @ensures annotation failed"
+CF       # assert          # assert(\length(_result) >= (string_length(s) + 1)) [failure message on stack]
+15 02    # vload 2         # _result
+15 00    # vload 0         # s
+B7 00 00 # invokenative 0  # string_length(s)
+10 01    # bipush 1        # 1
+60       # iadd            # (string_length(s) + 1)
+14 03 9A # aldc 922        # s[922] = "/afs/andrew/course/15/122/lib/string.h0:57.14-57.62"
+B8 00 06 # invokestatic 6  # string_terminated__1(_result, (string_length(s) + 1), "/afs/andrew/course/15/122/lib/string.h0:57.14-57.62")
+14 03 CE # aldc 974        # s[974] = "/afs/andrew/course/15/122/lib/string.h0:57.6-57.63: @ensures annotation failed"
+CF       # assert          # assertstring_terminated__1(_result, (string_length(s) + 1), "/afs/andrew/course/15/122/lib/string.h0:57.14-57.62") [failure message on stack]
+15 02    # vload 2         # _result
+B0       # return          # 
+
+
+#<string_from_chararray__1>
+00 02             # number of arguments = 2
+00 05             # number of local variables = 5
+00 40             # code length = 64 bytes
+15 00    # vload 0         # A
+15 00    # vload 0         # A
+BE       # arraylength     # \length(A)
+14 04 1D # aldc 1053       # s[1053] = "/afs/andrew/course/15/122/lib/string.h0:62.15-62.47"
+B8 00 06 # invokestatic 6  # string_terminated__1(A, \length(A), "/afs/andrew/course/15/122/lib/string.h0:62.15-62.47")
+14 04 51 # aldc 1105       # s[1105] = "/afs/andrew/course/15/122/lib/string.h0:62.6-62.48: @requires annotation failed\n"
+15 01    # vload 1         # _caller
+14 04 A2 # aldc 1186       # s[1186] = ": caller location"
+B7 00 01 # invokenative 1  # string_join(_caller, ": caller location")
+B7 00 01 # invokenative 1  # string_join("/afs/andrew/course/15/122/lib/string.h0:62.6-62.48: @requires annotation failed\n", string_join(_caller, ": caller location"))
+CF       # assert          # assertstring_terminated__1(A, \length(A), "/afs/andrew/course/15/122/lib/string.h0:62.15-62.47") [failure message on stack]
+15 00    # vload 0         # A
+B7 00 08 # invokenative 8  # string_from_chararray(A)
+36 02    # vstore 2        # _result = string_from_chararray(A);
+15 02    # vload 2         # _result
+B7 00 00 # invokenative 0  # string_length(_result)
+10 01    # bipush 1        # 1
+60       # iadd            # (string_length(_result) + 1)
+15 00    # vload 0         # A
+BE       # arraylength     # \length(A)
+A4 00 06 # if_icmple +6    # if ((string_length(_result) + 1) <= \length(A)) goto <43:cond_true>
+A7 00 08 # goto +8         # goto <44:cond_false>
+# <43:cond_true>
+10 01    # bipush 1        # true
+A7 00 05 # goto +5         # goto <45:cond_end>
+# <44:cond_false>
+10 00    # bipush 0        # false
+# <45:cond_end>
+14 04 B4 # aldc 1204       # s[1204] = "/afs/andrew/course/15/122/lib/string.h0:63.6-63.55: @ensures annotation failed"
+CF       # assert          # assert((string_length(_result) + 1) <= \length(A)) [failure message on stack]
+15 02    # vload 2         # _result
+B0       # return          # 
+
+
+#<char_ord__1>
+00 02             # number of arguments = 2
+00 05             # number of local variables = 5
+00 2E             # code length = 46 bytes
+15 00    # vload 0         # c
+B7 00 09 # invokenative 9  # char_ord(c)
+36 02    # vstore 2        # _result = char_ord(c);
+10 00    # bipush 0        # 0
+15 02    # vload 2         # _result
+A4 00 06 # if_icmple +6    # if (0 <= _result) goto <46:cond_true>
+A7 00 17 # goto +23        # goto <47:cond_false>
+# <46:cond_true>
+15 02    # vload 2         # _result
+10 7F    # bipush 127      # 127
+A4 00 06 # if_icmple +6    # if (_result <= 127) goto <49:cond_true>
+A7 00 08 # goto +8         # goto <50:cond_false>
+# <49:cond_true>
+10 01    # bipush 1        # true
+A7 00 05 # goto +5         # goto <51:cond_end>
+# <50:cond_false>
+10 00    # bipush 0        # false
+# <51:cond_end>
+A7 00 05 # goto +5         # goto <48:cond_end>
+# <47:cond_false>
+10 00    # bipush 0        # false
+# <48:cond_end>
+14 05 03 # aldc 1283       # s[1283] = "/afs/andrew/course/15/122/lib/string.h0:67.6-67.45: @ensures annotation failed"
+CF       # assert          # assert((0 <= _result) && (_result <= 127)) [failure message on stack]
+15 02    # vload 2         # _result
+B0       # return          # 
+
+
+#<char_chr__1>
+00 02             # number of arguments = 2
+00 05             # number of local variables = 5
+00 39             # code length = 57 bytes
+10 00    # bipush 0        # 0
+15 00    # vload 0         # n
+A4 00 06 # if_icmple +6    # if (0 <= n) goto <52:cond_true>
+A7 00 17 # goto +23        # goto <53:cond_false>
+# <52:cond_true>
+15 00    # vload 0         # n
+10 7F    # bipush 127      # 127
+A4 00 06 # if_icmple +6    # if (n <= 127) goto <55:cond_true>
+A7 00 08 # goto +8         # goto <56:cond_false>
+# <55:cond_true>
+10 01    # bipush 1        # true
+A7 00 05 # goto +5         # goto <57:cond_end>
+# <56:cond_false>
+10 00    # bipush 0        # false
+# <57:cond_end>
+A7 00 05 # goto +5         # goto <54:cond_end>
+# <53:cond_false>
+10 00    # bipush 0        # false
+# <54:cond_end>
+14 05 52 # aldc 1362       # s[1362] = "/afs/andrew/course/15/122/lib/string.h0:69.6-69.34: @requires annotation failed\n"
+15 01    # vload 1         # _caller
+14 05 A3 # aldc 1443       # s[1443] = ": caller location"
+B7 00 01 # invokenative 1  # string_join(_caller, ": caller location")
+B7 00 01 # invokenative 1  # string_join("/afs/andrew/course/15/122/lib/string.h0:69.6-69.34: @requires annotation failed\n", string_join(_caller, ": caller location"))
+CF       # assert          # assert((0 <= n) && (n <= 127)) [failure message on stack]
+15 00    # vload 0         # n
+B7 00 0A # invokenative 10 # char_chr(n)
+36 02    # vstore 2        # _result = char_chr(n);
+15 02    # vload 2         # _result
+B0       # return          # 
+
+
+#<is_gapbuf>
+00 02             # number of arguments = 2
+00 05             # number of local variables = 5
+00 5D             # code length = 93 bytes
+15 00    # vload 0         # G
+01       # aconst_null     # NULL
+A0 00 06 # if_cmpne +6     # if (G != NULL) goto <67:and>
+A7 00 50 # goto +80        # goto <62:cond_false>
+# <67:and>
+10 00    # bipush 0        # 0
+15 00    # vload 0         # G
+62 00    # aaddf 0         # &G->limit
+2E       # imload          # G->limit
+A1 00 06 # if_icmplt +6    # if (0 < G->limit) goto <66:and>
+A7 00 43 # goto +67        # goto <62:cond_false>
+# <66:and>
+10 00    # bipush 0        # 0
+15 00    # vload 0         # G
+62 10    # aaddf 16        # &G->gap_start
+2E       # imload          # G->gap_start
+A4 00 06 # if_icmple +6    # if (0 <= G->gap_start) goto <65:and>
+A7 00 36 # goto +54        # goto <62:cond_false>
+# <65:and>
+15 00    # vload 0         # G
+62 10    # aaddf 16        # &G->gap_start
+2E       # imload          # G->gap_start
+15 00    # vload 0         # G
+62 14    # aaddf 20        # &G->gap_end
+2E       # imload          # G->gap_end
+A4 00 06 # if_icmple +6    # if (G->gap_start <= G->gap_end) goto <64:and>
+A7 00 26 # goto +38        # goto <62:cond_false>
+# <64:and>
+15 00    # vload 0         # G
+62 14    # aaddf 20        # &G->gap_end
+2E       # imload          # G->gap_end
+15 00    # vload 0         # G
+62 00    # aaddf 0         # &G->limit
+2E       # imload          # G->limit
+A4 00 06 # if_icmple +6    # if (G->gap_end <= G->limit) goto <61:cond_true>
+A7 00 16 # goto +22        # goto <62:cond_false>
+# <61:cond_true>
+15 00    # vload 0         # G
+62 08    # aaddf 8         # &G->buffer
+2F       # amload          # G->buffer
+15 00    # vload 0         # G
+62 00    # aaddf 0         # &G->limit
+2E       # imload          # G->limit
+14 05 E5 # aldc 1509       # s[1509] = "gapbuf.c0:53.10-53.55"
+B8 00 15 # invokestatic 21 # is_array_expected_length(G->buffer, G->limit, "gapbuf.c0:53.10-53.55")
+A7 00 05 # goto +5         # goto <63:cond_end>
+# <62:cond_false>
+10 00    # bipush 0        # false
+# <63:cond_end>
+36 02    # vstore 2        # _result = ((((((G != NULL) && (0 < G->limit)) && (0 <= G->gap_start)) && (G->gap_start <= G->gap_end)) && (G->gap_end <= G->limit)) && is_array_expected_length(G->buffer, G->limit, "gapbuf.c0:53.10-53.55"));
+15 02    # vload 2         # _result
+B0       # return          # 
+
+
+#<gapbuf_empty>
+00 02             # number of arguments = 2
+00 05             # number of local variables = 5
+00 45             # code length = 69 bytes
+15 00    # vload 0         # G
+14 05 FB # aldc 1531       # s[1531] = "gapbuf.c0:58.13-58.25"
+B8 00 0B # invokestatic 11 # is_gapbuf(G, "gapbuf.c0:58.13-58.25")
+14 06 11 # aldc 1553       # s[1553] = "gapbuf.c0:58.4-58.26: @requires annotation failed\n"
+15 01    # vload 1         # _caller
+14 06 44 # aldc 1604       # s[1604] = ": caller location"
+B7 00 01 # invokenative 1  # string_join(_caller, ": caller location")
+B7 00 01 # invokenative 1  # string_join("gapbuf.c0:58.4-58.26: @requires annotation failed\n", string_join(_caller, ": caller location"))
+CF       # assert          # assertis_gapbuf(G, "gapbuf.c0:58.13-58.25") [failure message on stack]
+15 00    # vload 0         # G
+62 10    # aaddf 16        # &G->gap_start
+2E       # imload          # G->gap_start
+10 00    # bipush 0        # 0
+9F 00 06 # if_cmpeq +6     # if (G->gap_start == 0) goto <68:cond_true>
+A7 00 1D # goto +29        # goto <69:cond_false>
+# <68:cond_true>
+15 00    # vload 0         # G
+62 14    # aaddf 20        # &G->gap_end
+2E       # imload          # G->gap_end
+15 00    # vload 0         # G
+62 00    # aaddf 0         # &G->limit
+2E       # imload          # G->limit
+9F 00 06 # if_cmpeq +6     # if (G->gap_end == G->limit) goto <71:cond_true>
+A7 00 08 # goto +8         # goto <72:cond_false>
+# <71:cond_true>
+10 01    # bipush 1        # true
+A7 00 05 # goto +5         # goto <73:cond_end>
+# <72:cond_false>
+10 00    # bipush 0        # false
+# <73:cond_end>
+A7 00 05 # goto +5         # goto <70:cond_end>
+# <69:cond_false>
+10 00    # bipush 0        # false
+# <70:cond_end>
+36 02    # vstore 2        # _result = ((G->gap_start == 0) && (G->gap_end == G->limit));
+15 02    # vload 2         # _result
+B0       # return          # 
+
+
+#<gapbuf_full>
+00 02             # number of arguments = 2
+00 05             # number of local variables = 5
+00 33             # code length = 51 bytes
+15 00    # vload 0         # G
+14 06 56 # aldc 1622       # s[1622] = "gapbuf.c0:65.13-65.25"
+B8 00 0B # invokestatic 11 # is_gapbuf(G, "gapbuf.c0:65.13-65.25")
+14 06 6C # aldc 1644       # s[1644] = "gapbuf.c0:65.4-65.26: @requires annotation failed\n"
+15 01    # vload 1         # _caller
+14 06 9F # aldc 1695       # s[1695] = ": caller location"
+B7 00 01 # invokenative 1  # string_join(_caller, ": caller location")
+B7 00 01 # invokenative 1  # string_join("gapbuf.c0:65.4-65.26: @requires annotation failed\n", string_join(_caller, ": caller location"))
+CF       # assert          # assertis_gapbuf(G, "gapbuf.c0:65.13-65.25") [failure message on stack]
+15 00    # vload 0         # G
+62 10    # aaddf 16        # &G->gap_start
+2E       # imload          # G->gap_start
+15 00    # vload 0         # G
+62 14    # aaddf 20        # &G->gap_end
+2E       # imload          # G->gap_end
+9F 00 06 # if_cmpeq +6     # if (G->gap_start == G->gap_end) goto <74:cond_true>
+A7 00 08 # goto +8         # goto <75:cond_false>
+# <74:cond_true>
+10 01    # bipush 1        # true
+A7 00 05 # goto +5         # goto <76:cond_end>
+# <75:cond_false>
+10 00    # bipush 0        # false
+# <76:cond_end>
+36 02    # vstore 2        # _result = (G->gap_start == G->gap_end);
+15 02    # vload 2         # _result
+B0       # return          # 
+
+
+#<gapbuf_at_left>
+00 02             # number of arguments = 2
+00 05             # number of local variables = 5
+00 30             # code length = 48 bytes
+15 00    # vload 0         # G
+14 06 B1 # aldc 1713       # s[1713] = "gapbuf.c0:72.13-72.25"
+B8 00 0B # invokestatic 11 # is_gapbuf(G, "gapbuf.c0:72.13-72.25")
+14 06 C7 # aldc 1735       # s[1735] = "gapbuf.c0:72.4-72.26: @requires annotation failed\n"
+15 01    # vload 1         # _caller
+14 06 FA # aldc 1786       # s[1786] = ": caller location"
+B7 00 01 # invokenative 1  # string_join(_caller, ": caller location")
+B7 00 01 # invokenative 1  # string_join("gapbuf.c0:72.4-72.26: @requires annotation failed\n", string_join(_caller, ": caller location"))
+CF       # assert          # assertis_gapbuf(G, "gapbuf.c0:72.13-72.25") [failure message on stack]
+15 00    # vload 0         # G
+62 10    # aaddf 16        # &G->gap_start
+2E       # imload          # G->gap_start
+10 00    # bipush 0        # 0
+9F 00 06 # if_cmpeq +6     # if (G->gap_start == 0) goto <77:cond_true>
+A7 00 08 # goto +8         # goto <78:cond_false>
+# <77:cond_true>
+10 01    # bipush 1        # true
+A7 00 05 # goto +5         # goto <79:cond_end>
+# <78:cond_false>
+10 00    # bipush 0        # false
+# <79:cond_end>
+36 02    # vstore 2        # _result = (G->gap_start == 0);
+15 02    # vload 2         # _result
+B0       # return          # 
+
+
+#<gapbuf_at_right>
+00 02             # number of arguments = 2
+00 05             # number of local variables = 5
+00 33             # code length = 51 bytes
+15 00    # vload 0         # G
+14 07 0C # aldc 1804       # s[1804] = "gapbuf.c0:79.13-79.25"
+B8 00 0B # invokestatic 11 # is_gapbuf(G, "gapbuf.c0:79.13-79.25")
+14 07 22 # aldc 1826       # s[1826] = "gapbuf.c0:79.4-79.26: @requires annotation failed\n"
+15 01    # vload 1         # _caller
+14 07 55 # aldc 1877       # s[1877] = ": caller location"
+B7 00 01 # invokenative 1  # string_join(_caller, ": caller location")
+B7 00 01 # invokenative 1  # string_join("gapbuf.c0:79.4-79.26: @requires annotation failed\n", string_join(_caller, ": caller location"))
+CF       # assert          # assertis_gapbuf(G, "gapbuf.c0:79.13-79.25") [failure message on stack]
+15 00    # vload 0         # G
+62 14    # aaddf 20        # &G->gap_end
+2E       # imload          # G->gap_end
+15 00    # vload 0         # G
+62 00    # aaddf 0         # &G->limit
+2E       # imload          # G->limit
+9F 00 06 # if_cmpeq +6     # if (G->gap_end == G->limit) goto <80:cond_true>
+A7 00 08 # goto +8         # goto <81:cond_false>
+# <80:cond_true>
+10 01    # bipush 1        # true
+A7 00 05 # goto +5         # goto <82:cond_end>
+# <81:cond_false>
+10 00    # bipush 0        # false
+# <82:cond_end>
+36 02    # vstore 2        # _result = (G->gap_end == G->limit);
+15 02    # vload 2         # _result
+B0       # return          # 
+
+
+#<gapbuf_new>
+00 02             # number of arguments = 2
+00 05             # number of local variables = 5
+00 6E             # code length = 110 bytes
+10 00    # bipush 0        # 0
+15 00    # vload 0         # limit
+A1 00 06 # if_icmplt +6    # if (0 < limit) goto <83:cond_true>
+A7 00 08 # goto +8         # goto <84:cond_false>
+# <83:cond_true>
+10 01    # bipush 1        # true
+A7 00 05 # goto +5         # goto <85:cond_end>
+# <84:cond_false>
+10 00    # bipush 0        # false
+# <85:cond_end>
+14 07 67 # aldc 1895       # s[1895] = "gapbuf.c0:86.4-86.23: @requires annotation failed\n"
+15 01    # vload 1         # _caller
+14 07 9A # aldc 1946       # s[1946] = ": caller location"
+B7 00 01 # invokenative 1  # string_join(_caller, ": caller location")
+B7 00 01 # invokenative 1  # string_join("gapbuf.c0:86.4-86.23: @requires annotation failed\n", string_join(_caller, ": caller location"))
+CF       # assert          # assert(0 < limit) [failure message on stack]
+BB 18    # new 24          # alloc(gapbuf)
+36 03    # vstore 3        # new = alloc(gapbuf);
+15 03    # vload 3         # new
+62 00    # aaddf 0         # &new->limit
+15 00    # vload 0         # limit
+4E       # imstore         # new->limit = limit;
+15 00    # vload 0         # limit
+BC 01    # newarray 1      # alloc_array(char, limit)
+36 04    # vstore 4        # buf = alloc_array(char, limit);
+15 03    # vload 3         # new
+62 08    # aaddf 8         # &new->buffer
+15 04    # vload 4         # buf
+4F       # amstore         # new->buffer = buf;
+15 03    # vload 3         # new
+62 10    # aaddf 16        # &new->gap_start
+10 00    # bipush 0        # 0
+4E       # imstore         # new->gap_start = 0;
+15 03    # vload 3         # new
+62 14    # aaddf 20        # &new->gap_end
+15 00    # vload 0         # limit
+4E       # imstore         # new->gap_end = limit;
+15 03    # vload 3         # new
+36 02    # vstore 2        # _result = new;
+15 02    # vload 2         # _result
+14 07 AC # aldc 1964       # s[1964] = "gapbuf.c0:87.12-87.30"
+B8 00 0B # invokestatic 11 # is_gapbuf(_result, "gapbuf.c0:87.12-87.30")
+10 01    # bipush 1        # true
+9F 00 06 # if_cmpeq +6     # if (is_gapbuf(_result, "gapbuf.c0:87.12-87.30") == true) goto <86:cond_true>
+A7 00 0E # goto +14        # goto <87:cond_false>
+# <86:cond_true>
+15 02    # vload 2         # _result
+14 07 C2 # aldc 1986       # s[1986] = "gapbuf.c0:87.34-87.55"
+B8 00 0C # invokestatic 12 # gapbuf_empty(_result, "gapbuf.c0:87.34-87.55")
+A7 00 05 # goto +5         # goto <88:cond_end>
+# <87:cond_false>
+10 00    # bipush 0        # false
+# <88:cond_end>
+14 07 D8 # aldc 2008       # s[2008] = "gapbuf.c0:87.4-87.56: @ensures annotation failed"
+CF       # assert          # assert(is_gapbuf(_result, "gapbuf.c0:87.12-87.30") && gapbuf_empty(_result, "gapbuf.c0:87.34-87.55")) [failure message on stack]
+15 02    # vload 2         # _result
+B0       # return          # 
+
+
+#<gapbuf_forward>
+00 02             # number of arguments = 2
+00 05             # number of local variables = 5
+00 72             # code length = 114 bytes
+15 00    # vload 0         # G
+14 08 09 # aldc 2057       # s[2057] = "gapbuf.c0:102.13-102.25"
+B8 00 0B # invokestatic 11 # is_gapbuf(G, "gapbuf.c0:102.13-102.25")
+10 01    # bipush 1        # true
+9F 00 06 # if_cmpeq +6     # if (is_gapbuf(G, "gapbuf.c0:102.13-102.25") == true) goto <89:cond_true>
+A7 00 11 # goto +17        # goto <90:cond_false>
+# <89:cond_true>
+15 00    # vload 0         # G
+14 08 21 # aldc 2081       # s[2081] = "gapbuf.c0:102.30-102.48"
+B8 00 0F # invokestatic 15 # gapbuf_at_right(G, "gapbuf.c0:102.30-102.48")
+10 01    # bipush 1        # 
+82       # ixor            # !(gapbuf_at_right(G, "gapbuf.c0:102.30-102.48"))
+A7 00 05 # goto +5         # goto <91:cond_end>
+# <90:cond_false>
+10 00    # bipush 0        # false
+# <91:cond_end>
+14 08 39 # aldc 2105       # s[2105] = "gapbuf.c0:102.4-102.49: @requires annotation failed\n"
+15 01    # vload 1         # _caller
+14 08 6E # aldc 2158       # s[2158] = ": caller location"
+B7 00 01 # invokenative 1  # string_join(_caller, ": caller location")
+B7 00 01 # invokenative 1  # string_join("gapbuf.c0:102.4-102.49: @requires annotation failed\n", string_join(_caller, ": caller location"))
+CF       # assert          # assert(is_gapbuf(G, "gapbuf.c0:102.13-102.25") && !(gapbuf_at_right(G, "gapbuf.c0:102.30-102.48"))) [failure message on stack]
+15 00    # vload 0         # G
+62 10    # aaddf 16        # &G->gap_start
+2E       # imload          # G->gap_start
+36 02    # vstore 2        # start = G->gap_start;
+15 00    # vload 0         # G
+62 14    # aaddf 20        # &G->gap_end
+2E       # imload          # G->gap_end
+36 03    # vstore 3        # end = G->gap_end;
+15 00    # vload 0         # G
+62 08    # aaddf 8         # &G->buffer
+2F       # amload          # G->buffer
+15 02    # vload 2         # start
+63       # aadds           # &G->buffer[start]
+15 00    # vload 0         # G
+62 08    # aaddf 8         # &G->buffer
+2F       # amload          # G->buffer
+15 03    # vload 3         # end
+63       # aadds           # &G->buffer[end]
+34       # cmload          # G->buffer[end]
+55       # cmstore         # G->buffer[start] = G->buffer[end];
+15 00    # vload 0         # G
+62 10    # aaddf 16        # &G->gap_start
+59       # dup             # (save &G->gap_start)
+2E       # imload          # G->gap_start
+10 01    # bipush 1        # 1
+60       # iadd            # 
+4E       # imstore         # G->gap_start += 1;
+15 00    # vload 0         # G
+62 14    # aaddf 20        # &G->gap_end
+59       # dup             # (save &G->gap_end)
+2E       # imload          # G->gap_end
+10 01    # bipush 1        # 1
+60       # iadd            # 
+4E       # imstore         # G->gap_end += 1;
+15 00    # vload 0         # G
+14 08 80 # aldc 2176       # s[2176] = "gapbuf.c0:103.12-103.24"
+B8 00 0B # invokestatic 11 # is_gapbuf(G, "gapbuf.c0:103.12-103.24")
+14 08 98 # aldc 2200       # s[2200] = "gapbuf.c0:103.4-103.25: @ensures annotation failed"
+CF       # assert          # assertis_gapbuf(G, "gapbuf.c0:103.12-103.24") [failure message on stack]
+10 00    # bipush 0        # dummy return value
+B0       # return          # 
+
+
+#<gapbuf_backward>
+00 02             # number of arguments = 2
+00 05             # number of local variables = 5
+00 78             # code length = 120 bytes
+15 00    # vload 0         # G
+14 08 CB # aldc 2251       # s[2251] = "gapbuf.c0:117.13-117.25"
+B8 00 0B # invokestatic 11 # is_gapbuf(G, "gapbuf.c0:117.13-117.25")
+10 01    # bipush 1        # true
+9F 00 06 # if_cmpeq +6     # if (is_gapbuf(G, "gapbuf.c0:117.13-117.25") == true) goto <92:cond_true>
+A7 00 11 # goto +17        # goto <93:cond_false>
+# <92:cond_true>
+15 00    # vload 0         # G
+14 08 E3 # aldc 2275       # s[2275] = "gapbuf.c0:117.30-117.47"
+B8 00 0E # invokestatic 14 # gapbuf_at_left(G, "gapbuf.c0:117.30-117.47")
+10 01    # bipush 1        # 
+82       # ixor            # !(gapbuf_at_left(G, "gapbuf.c0:117.30-117.47"))
+A7 00 05 # goto +5         # goto <94:cond_end>
+# <93:cond_false>
+10 00    # bipush 0        # false
+# <94:cond_end>
+14 08 FB # aldc 2299       # s[2299] = "gapbuf.c0:117.4-117.48: @requires annotation failed\n"
+15 01    # vload 1         # _caller
+14 09 30 # aldc 2352       # s[2352] = ": caller location"
+B7 00 01 # invokenative 1  # string_join(_caller, ": caller location")
+B7 00 01 # invokenative 1  # string_join("gapbuf.c0:117.4-117.48: @requires annotation failed\n", string_join(_caller, ": caller location"))
+CF       # assert          # assert(is_gapbuf(G, "gapbuf.c0:117.13-117.25") && !(gapbuf_at_left(G, "gapbuf.c0:117.30-117.47"))) [failure message on stack]
+15 00    # vload 0         # G
+62 10    # aaddf 16        # &G->gap_start
+2E       # imload          # G->gap_start
+10 01    # bipush 1        # 1
+64       # isub            # (G->gap_start - 1)
+36 02    # vstore 2        # start = (G->gap_start - 1);
+15 00    # vload 0         # G
+62 14    # aaddf 20        # &G->gap_end
+2E       # imload          # G->gap_end
+10 01    # bipush 1        # 1
+64       # isub            # (G->gap_end - 1)
+36 03    # vstore 3        # end = (G->gap_end - 1);
+15 00    # vload 0         # G
+62 08    # aaddf 8         # &G->buffer
+2F       # amload          # G->buffer
+15 03    # vload 3         # end
+63       # aadds           # &G->buffer[end]
+15 00    # vload 0         # G
+62 08    # aaddf 8         # &G->buffer
+2F       # amload          # G->buffer
+15 02    # vload 2         # start
+63       # aadds           # &G->buffer[start]
+34       # cmload          # G->buffer[start]
+55       # cmstore         # G->buffer[end] = G->buffer[start];
+15 00    # vload 0         # G
+62 10    # aaddf 16        # &G->gap_start
+59       # dup             # (save &G->gap_start)
+2E       # imload          # G->gap_start
+10 01    # bipush 1        # 1
+64       # isub            # 
+4E       # imstore         # G->gap_start -= 1;
+15 00    # vload 0         # G
+62 14    # aaddf 20        # &G->gap_end
+59       # dup             # (save &G->gap_end)
+2E       # imload          # G->gap_end
+10 01    # bipush 1        # 1
+64       # isub            # 
+4E       # imstore         # G->gap_end -= 1;
+15 00    # vload 0         # G
+14 09 42 # aldc 2370       # s[2370] = "gapbuf.c0:118.12-118.24"
+B8 00 0B # invokestatic 11 # is_gapbuf(G, "gapbuf.c0:118.12-118.24")
+14 09 5A # aldc 2394       # s[2394] = "gapbuf.c0:118.4-118.25: @ensures annotation failed"
+CF       # assert          # assertis_gapbuf(G, "gapbuf.c0:118.12-118.24") [failure message on stack]
+10 00    # bipush 0        # dummy return value
+B0       # return          # 
+
+
+#<gapbuf_insert>
+00 03             # number of arguments = 3
+00 05             # number of local variables = 5
+00 56             # code length = 86 bytes
+15 00    # vload 0         # G
+14 09 8D # aldc 2445       # s[2445] = "gapbuf.c0:132.13-132.25"
+B8 00 0B # invokestatic 11 # is_gapbuf(G, "gapbuf.c0:132.13-132.25")
+10 01    # bipush 1        # true
+9F 00 06 # if_cmpeq +6     # if (is_gapbuf(G, "gapbuf.c0:132.13-132.25") == true) goto <95:cond_true>
+A7 00 11 # goto +17        # goto <96:cond_false>
+# <95:cond_true>
+15 00    # vload 0         # G
+14 09 A5 # aldc 2469       # s[2469] = "gapbuf.c0:132.30-132.44"
+B8 00 0D # invokestatic 13 # gapbuf_full(G, "gapbuf.c0:132.30-132.44")
+10 01    # bipush 1        # 
+82       # ixor            # !(gapbuf_full(G, "gapbuf.c0:132.30-132.44"))
+A7 00 05 # goto +5         # goto <97:cond_end>
+# <96:cond_false>
+10 00    # bipush 0        # false
+# <97:cond_end>
+14 09 BD # aldc 2493       # s[2493] = "gapbuf.c0:132.4-132.45: @requires annotation failed\n"
+15 02    # vload 2         # _caller
+14 09 F2 # aldc 2546       # s[2546] = ": caller location"
+B7 00 01 # invokenative 1  # string_join(_caller, ": caller location")
+B7 00 01 # invokenative 1  # string_join("gapbuf.c0:132.4-132.45: @requires annotation failed\n", string_join(_caller, ": caller location"))
+CF       # assert          # assert(is_gapbuf(G, "gapbuf.c0:132.13-132.25") && !(gapbuf_full(G, "gapbuf.c0:132.30-132.44"))) [failure message on stack]
+15 00    # vload 0         # G
+62 08    # aaddf 8         # &G->buffer
+2F       # amload          # G->buffer
+15 00    # vload 0         # G
+62 10    # aaddf 16        # &G->gap_start
+2E       # imload          # G->gap_start
+63       # aadds           # &G->buffer[G->gap_start]
+15 01    # vload 1         # c
+55       # cmstore         # G->buffer[G->gap_start] = c;
+15 00    # vload 0         # G
+62 10    # aaddf 16        # &G->gap_start
+59       # dup             # (save &G->gap_start)
+2E       # imload          # G->gap_start
+10 01    # bipush 1        # 1
+60       # iadd            # 
+4E       # imstore         # G->gap_start += 1;
+15 00    # vload 0         # G
+14 0A 04 # aldc 2564       # s[2564] = "gapbuf.c0:133.12-133.24"
+B8 00 0B # invokestatic 11 # is_gapbuf(G, "gapbuf.c0:133.12-133.24")
+14 0A 1C # aldc 2588       # s[2588] = "gapbuf.c0:133.4-133.25: @ensures annotation failed"
+CF       # assert          # assertis_gapbuf(G, "gapbuf.c0:133.12-133.24") [failure message on stack]
+10 00    # bipush 0        # dummy return value
+B0       # return          # 
+
+
+#<gapbuf_delete>
+00 02             # number of arguments = 2
+00 05             # number of local variables = 5
+00 58             # code length = 88 bytes
+15 00    # vload 0         # G
+14 0A 4F # aldc 2639       # s[2639] = "gapbuf.c0:141.13-141.25"
+B8 00 0B # invokestatic 11 # is_gapbuf(G, "gapbuf.c0:141.13-141.25")
+10 01    # bipush 1        # true
+9F 00 06 # if_cmpeq +6     # if (is_gapbuf(G, "gapbuf.c0:141.13-141.25") == true) goto <101:and>
+A7 00 21 # goto +33        # goto <99:cond_false>
+# <101:and>
+15 00    # vload 0         # G
+14 0A 67 # aldc 2663       # s[2663] = "gapbuf.c0:141.30-141.45"
+B8 00 0C # invokestatic 12 # gapbuf_empty(G, "gapbuf.c0:141.30-141.45")
+10 01    # bipush 1        # true
+9F 00 14 # if_cmpeq +20    # if (gapbuf_empty(G, "gapbuf.c0:141.30-141.45") == true) goto <99:cond_false>
+A7 00 03 # goto +3         # goto <98:cond_true>
+# <98:cond_true>
+15 00    # vload 0         # G
+14 0A 7F # aldc 2687       # s[2687] = "gapbuf.c0:141.50-141.67"
+B8 00 0E # invokestatic 14 # gapbuf_at_left(G, "gapbuf.c0:141.50-141.67")
+10 01    # bipush 1        # 
+82       # ixor            # !(gapbuf_at_left(G, "gapbuf.c0:141.50-141.67"))
+A7 00 05 # goto +5         # goto <100:cond_end>
+# <99:cond_false>
+10 00    # bipush 0        # false
+# <100:cond_end>
+14 0A 97 # aldc 2711       # s[2711] = "gapbuf.c0:141.4-141.68: @requires annotation failed\n"
+15 01    # vload 1         # _caller
+14 0A CC # aldc 2764       # s[2764] = ": caller location"
+B7 00 01 # invokenative 1  # string_join(_caller, ": caller location")
+B7 00 01 # invokenative 1  # string_join("gapbuf.c0:141.4-141.68: @requires annotation failed\n", string_join(_caller, ": caller location"))
+CF       # assert          # assert((is_gapbuf(G, "gapbuf.c0:141.13-141.25") && !(gapbuf_empty(G, "gapbuf.c0:141.30-141.45"))) && !(gapbuf_at_left(G, "gapbuf.c0:141.50-141.67"))) [failure message on stack]
+15 00    # vload 0         # G
+62 10    # aaddf 16        # &G->gap_start
+59       # dup             # (save &G->gap_start)
+2E       # imload          # G->gap_start
+10 01    # bipush 1        # 1
+64       # isub            # 
+4E       # imstore         # G->gap_start -= 1;
+15 00    # vload 0         # G
+14 0A DE # aldc 2782       # s[2782] = "gapbuf.c0:142.12-142.24"
+B8 00 0B # invokestatic 11 # is_gapbuf(G, "gapbuf.c0:142.12-142.24")
+14 0A F6 # aldc 2806       # s[2806] = "gapbuf.c0:142.4-142.25: @ensures annotation failed"
+CF       # assert          # assertis_gapbuf(G, "gapbuf.c0:142.12-142.24") [failure message on stack]
+10 00    # bipush 0        # dummy return value
+B0       # return          # 
+
+
+#<is_array_expected_length>
+00 03             # number of arguments = 3
+00 05             # number of local variables = 5
+00 1D             # code length = 29 bytes
+15 00    # vload 0         # A
+BE       # arraylength     # \length(A)
+15 01    # vload 1         # limit
+9F 00 06 # if_cmpeq +6     # if (\length(A) == limit) goto <58:cond_true>
+A7 00 08 # goto +8         # goto <59:cond_false>
+# <58:cond_true>
+10 01    # bipush 1        # true
+A7 00 05 # goto +5         # goto <60:cond_end>
+# <59:cond_false>
+10 00    # bipush 0        # false
+# <60:cond_end>
+14 05 B5 # aldc 1461       # s[1461] = "gapbuf.c0:45.6-45.33: @assert annotation failed"
+CF       # assert          # assert(\length(A) == limit) [failure message on stack]
+10 01    # bipush 1        # true
+36 03    # vstore 3        # _result = true;
+15 03    # vload 3         # _result
+B0       # return          # 
+
+
+#<readline__1>
+00 01             # number of arguments = 1
+00 05             # number of local variables = 5
+00 1D             # code length = 29 bytes
+B7 00 0B # invokenative 11 # eof()
+10 01    # bipush 1        # 
+82       # ixor            # !(eof())
+14 0B 29 # aldc 2857       # s[2857] = "/afs/andrew/course/15/122/lib/conio.h0:14.6-14.22: @requires annotation failed\n"
+15 00    # vload 0         # _caller
+14 0B 79 # aldc 2937       # s[2937] = ": caller location"
+B7 00 01 # invokenative 1  # string_join(_caller, ": caller location")
+B7 00 01 # invokenative 1  # string_join("/afs/andrew/course/15/122/lib/conio.h0:14.6-14.22: @requires annotation failed\n", string_join(_caller, ": caller location"))
+CF       # assert          # assert!(eof()) [failure message on stack]
+B7 00 0C # invokenative 12 # readline()
+36 01    # vstore 1        # _result = readline();
+15 01    # vload 1         # _result
+B0       # return          # 
+
+
+#<is_dll_pt>
+00 02             # number of arguments = 2
+00 07             # number of local variables = 7
+00 6E             # code length = 110 bytes
+15 00    # vload 0         # B
+01       # aconst_null     # NULL
+9F 00 06 # if_cmpeq +6     # if (B == NULL) goto <124:then>
+A7 00 0D # goto +13        # goto <125:else>
+# <124:then>
+10 00    # bipush 0        # false
+36 02    # vstore 2        # _result = false;
+15 02    # vload 2         # _result
+B0       # return          # 
+A7 00 03 # goto +3         # goto <126:endif>
+# <125:else>
+# <126:endif>
+15 00    # vload 0         # B
+62 00    # aaddf 0         # &B->start
+2F       # amload          # B->start
+36 03    # vstore 3        # start = B->start;
+15 00    # vload 0         # B
+62 08    # aaddf 8         # &B->point
+2F       # amload          # B->point
+36 04    # vstore 4        # point = B->point;
+15 00    # vload 0         # B
+62 10    # aaddf 16        # &B->end
+2F       # amload          # B->end
+36 05    # vstore 5        # end = B->end;
+15 04    # vload 4         # point
+15 03    # vload 3         # start
+9F 00 10 # if_cmpeq +16    # if (point == start) goto <127:then>
+A7 00 03 # goto +3         # goto <130:or>
+# <130:or>
+15 04    # vload 4         # point
+15 05    # vload 5         # end
+9F 00 06 # if_cmpeq +6     # if (point == end) goto <127:then>
+A7 00 0D # goto +13        # goto <128:else>
+# <127:then>
+10 00    # bipush 0        # false
+36 02    # vstore 2        # _result = false;
+15 02    # vload 2         # _result
+B0       # return          # 
+A7 00 03 # goto +3         # goto <129:endif>
+# <128:else>
+# <129:endif>
+15 03    # vload 3         # start
+15 04    # vload 4         # point
+15 05    # vload 5         # end
+14 0B 8B # aldc 2955       # s[2955] = "dll_pt.c0:81.10-81.43"
+B8 00 1D # invokestatic 29 # is_dll_segment(start, point, end, "dll_pt.c0:81.10-81.43")
+10 01    # bipush 1        # true
+9F 00 06 # if_cmpeq +6     # if (is_dll_segment(start, point, end, "dll_pt.c0:81.10-81.43") == true) goto <131:cond_true>
+A7 00 10 # goto +16        # goto <132:cond_false>
+# <131:cond_true>
+15 03    # vload 3         # start
+15 05    # vload 5         # end
+14 0B A1 # aldc 2977       # s[2977] = "dll_pt.c0:81.47-81.67"
+B8 00 1E # invokestatic 30 # is_match(start, end, "dll_pt.c0:81.47-81.67")
+A7 00 05 # goto +5         # goto <133:cond_end>
+# <132:cond_false>
+10 00    # bipush 0        # false
+# <133:cond_end>
+36 02    # vstore 2        # _result = (is_dll_segment(start, point, end, "dll_pt.c0:81.10-81.43") && is_match(start, end, "dll_pt.c0:81.47-81.67"));
+15 02    # vload 2         # _result
+B0       # return          # 
+
+
+#<dll_pt_at_left>
+00 02             # number of arguments = 2
+00 07             # number of local variables = 7
+00 36             # code length = 54 bytes
+15 00    # vload 0         # B
+14 0B B7 # aldc 2999       # s[2999] = "dll_pt.c0:86.13-86.25"
+B8 00 17 # invokestatic 23 # is_dll_pt(B, "dll_pt.c0:86.13-86.25")
+14 0B CD # aldc 3021       # s[3021] = "dll_pt.c0:86.4-86.26: @requires annotation failed\n"
+15 01    # vload 1         # _caller
+14 0C 00 # aldc 3072       # s[3072] = ": caller location"
+B7 00 01 # invokenative 1  # string_join(_caller, ": caller location")
+B7 00 01 # invokenative 1  # string_join("dll_pt.c0:86.4-86.26: @requires annotation failed\n", string_join(_caller, ": caller location"))
+CF       # assert          # assertis_dll_pt(B, "dll_pt.c0:86.13-86.25") [failure message on stack]
+15 00    # vload 0         # B
+62 00    # aaddf 0         # &B->start
+2F       # amload          # B->start
+62 08    # aaddf 8         # &B->start->next
+2F       # amload          # B->start->next
+15 00    # vload 0         # B
+62 08    # aaddf 8         # &B->point
+2F       # amload          # B->point
+9F 00 06 # if_cmpeq +6     # if (B->start->next == B->point) goto <134:cond_true>
+A7 00 08 # goto +8         # goto <135:cond_false>
+# <134:cond_true>
+10 01    # bipush 1        # true
+A7 00 05 # goto +5         # goto <136:cond_end>
+# <135:cond_false>
+10 00    # bipush 0        # false
+# <136:cond_end>
+36 02    # vstore 2        # _result = (B->start->next == B->point);
+15 02    # vload 2         # _result
+B0       # return          # 
+
+
+#<dll_pt_at_right>
+00 02             # number of arguments = 2
+00 07             # number of local variables = 7
+00 36             # code length = 54 bytes
+15 00    # vload 0         # B
+14 0C 12 # aldc 3090       # s[3090] = "dll_pt.c0:93.13-93.25"
+B8 00 17 # invokestatic 23 # is_dll_pt(B, "dll_pt.c0:93.13-93.25")
+14 0C 28 # aldc 3112       # s[3112] = "dll_pt.c0:93.4-93.26: @requires annotation failed\n"
+15 01    # vload 1         # _caller
+14 0C 5B # aldc 3163       # s[3163] = ": caller location"
+B7 00 01 # invokenative 1  # string_join(_caller, ": caller location")
+B7 00 01 # invokenative 1  # string_join("dll_pt.c0:93.4-93.26: @requires annotation failed\n", string_join(_caller, ": caller location"))
+CF       # assert          # assertis_dll_pt(B, "dll_pt.c0:93.13-93.25") [failure message on stack]
+15 00    # vload 0         # B
+62 10    # aaddf 16        # &B->end
+2F       # amload          # B->end
+62 10    # aaddf 16        # &B->end->prev
+2F       # amload          # B->end->prev
+15 00    # vload 0         # B
+62 08    # aaddf 8         # &B->point
+2F       # amload          # B->point
+9F 00 06 # if_cmpeq +6     # if (B->end->prev == B->point) goto <137:cond_true>
+A7 00 08 # goto +8         # goto <138:cond_false>
+# <137:cond_true>
+10 01    # bipush 1        # true
+A7 00 05 # goto +5         # goto <139:cond_end>
+# <138:cond_false>
+10 00    # bipush 0        # false
+# <139:cond_end>
+36 02    # vstore 2        # _result = (B->end->prev == B->point);
+15 02    # vload 2         # _result
+B0       # return          # 
+
+
+#<dll_pt_forward>
+00 02             # number of arguments = 2
+00 07             # number of local variables = 7
+00 4B             # code length = 75 bytes
+15 00    # vload 0         # B
+14 0C 6D # aldc 3181       # s[3181] = "dll_pt.c0:100.13-100.25"
+B8 00 17 # invokestatic 23 # is_dll_pt(B, "dll_pt.c0:100.13-100.25")
+10 01    # bipush 1        # true
+9F 00 06 # if_cmpeq +6     # if (is_dll_pt(B, "dll_pt.c0:100.13-100.25") == true) goto <140:cond_true>
+A7 00 11 # goto +17        # goto <141:cond_false>
+# <140:cond_true>
+15 00    # vload 0         # B
+14 0C 85 # aldc 3205       # s[3205] = "dll_pt.c0:100.30-100.48"
+B8 00 19 # invokestatic 25 # dll_pt_at_right(B, "dll_pt.c0:100.30-100.48")
+10 01    # bipush 1        # 
+82       # ixor            # !(dll_pt_at_right(B, "dll_pt.c0:100.30-100.48"))
+A7 00 05 # goto +5         # goto <142:cond_end>
+# <141:cond_false>
+10 00    # bipush 0        # false
+# <142:cond_end>
+14 0C 9D # aldc 3229       # s[3229] = "dll_pt.c0:100.4-100.49: @requires annotation failed\n"
+15 01    # vload 1         # _caller
+14 0C D2 # aldc 3282       # s[3282] = ": caller location"
+B7 00 01 # invokenative 1  # string_join(_caller, ": caller location")
+B7 00 01 # invokenative 1  # string_join("dll_pt.c0:100.4-100.49: @requires annotation failed\n", string_join(_caller, ": caller location"))
+CF       # assert          # assert(is_dll_pt(B, "dll_pt.c0:100.13-100.25") && !(dll_pt_at_right(B, "dll_pt.c0:100.30-100.48"))) [failure message on stack]
+15 00    # vload 0         # B
+62 08    # aaddf 8         # &B->point
+15 00    # vload 0         # B
+62 08    # aaddf 8         # &B->point
+2F       # amload          # B->point
+62 08    # aaddf 8         # &B->point->next
+2F       # amload          # B->point->next
+4F       # amstore         # B->point = B->point->next;
+15 00    # vload 0         # B
+14 0C E4 # aldc 3300       # s[3300] = "dll_pt.c0:101.12-101.24"
+B8 00 17 # invokestatic 23 # is_dll_pt(B, "dll_pt.c0:101.12-101.24")
+14 0C FC # aldc 3324       # s[3324] = "dll_pt.c0:101.4-101.25: @ensures annotation failed"
+CF       # assert          # assertis_dll_pt(B, "dll_pt.c0:101.12-101.24") [failure message on stack]
+10 00    # bipush 0        # dummy return value
+B0       # return          # 
+
+
+#<dll_pt_backward>
+00 02             # number of arguments = 2
+00 07             # number of local variables = 7
+00 4B             # code length = 75 bytes
+15 00    # vload 0         # B
+14 0D 2F # aldc 3375       # s[3375] = "dll_pt.c0:108.13-108.25"
+B8 00 17 # invokestatic 23 # is_dll_pt(B, "dll_pt.c0:108.13-108.25")
+10 01    # bipush 1        # true
+9F 00 06 # if_cmpeq +6     # if (is_dll_pt(B, "dll_pt.c0:108.13-108.25") == true) goto <143:cond_true>
+A7 00 11 # goto +17        # goto <144:cond_false>
+# <143:cond_true>
+15 00    # vload 0         # B
+14 0D 47 # aldc 3399       # s[3399] = "dll_pt.c0:108.30-108.47"
+B8 00 18 # invokestatic 24 # dll_pt_at_left(B, "dll_pt.c0:108.30-108.47")
+10 01    # bipush 1        # 
+82       # ixor            # !(dll_pt_at_left(B, "dll_pt.c0:108.30-108.47"))
+A7 00 05 # goto +5         # goto <145:cond_end>
+# <144:cond_false>
+10 00    # bipush 0        # false
+# <145:cond_end>
+14 0D 5F # aldc 3423       # s[3423] = "dll_pt.c0:108.4-108.48: @requires annotation failed\n"
+15 01    # vload 1         # _caller
+14 0D 94 # aldc 3476       # s[3476] = ": caller location"
+B7 00 01 # invokenative 1  # string_join(_caller, ": caller location")
+B7 00 01 # invokenative 1  # string_join("dll_pt.c0:108.4-108.48: @requires annotation failed\n", string_join(_caller, ": caller location"))
+CF       # assert          # assert(is_dll_pt(B, "dll_pt.c0:108.13-108.25") && !(dll_pt_at_left(B, "dll_pt.c0:108.30-108.47"))) [failure message on stack]
+15 00    # vload 0         # B
+62 08    # aaddf 8         # &B->point
+15 00    # vload 0         # B
+62 08    # aaddf 8         # &B->point
+2F       # amload          # B->point
+62 10    # aaddf 16        # &B->point->prev
+2F       # amload          # B->point->prev
+4F       # amstore         # B->point = B->point->prev;
+15 00    # vload 0         # B
+14 0D A6 # aldc 3494       # s[3494] = "dll_pt.c0:109.12-109.24"
+B8 00 17 # invokestatic 23 # is_dll_pt(B, "dll_pt.c0:109.12-109.24")
+14 0D BE # aldc 3518       # s[3518] = "dll_pt.c0:109.4-109.25: @ensures annotation failed"
+CF       # assert          # assertis_dll_pt(B, "dll_pt.c0:109.12-109.24") [failure message on stack]
+10 00    # bipush 0        # dummy return value
+B0       # return          # 
+
+
+#<dll_pt_delete>
+00 02             # number of arguments = 2
+00 07             # number of local variables = 7
+00 94             # code length = 148 bytes
+15 00    # vload 0         # B
+14 0D F1 # aldc 3569       # s[3569] = "dll_pt.c0:124.13-124.25"
+B8 00 17 # invokestatic 23 # is_dll_pt(B, "dll_pt.c0:124.13-124.25")
+14 0E 09 # aldc 3593       # s[3593] = "dll_pt.c0:124.4-124.26: @requires annotation failed\n"
+15 01    # vload 1         # _caller
+14 0E 3E # aldc 3646       # s[3646] = ": caller location"
+B7 00 01 # invokenative 1  # string_join(_caller, ": caller location")
+B7 00 01 # invokenative 1  # string_join("dll_pt.c0:124.4-124.26: @requires annotation failed\n", string_join(_caller, ": caller location"))
+CF       # assert          # assertis_dll_pt(B, "dll_pt.c0:124.13-124.25") [failure message on stack]
+15 00    # vload 0         # B
+14 0E 50 # aldc 3664       # s[3664] = "dll_pt.c0:125.15-125.32"
+B8 00 18 # invokestatic 24 # dll_pt_at_left(B, "dll_pt.c0:125.15-125.32")
+10 01    # bipush 1        # true
+9F 00 06 # if_cmpeq +6     # if (dll_pt_at_left(B, "dll_pt.c0:125.15-125.32") == true) goto <146:cond_true>
+A7 00 0E # goto +14        # goto <147:cond_false>
+# <146:cond_true>
+15 00    # vload 0         # B
+14 0E 68 # aldc 3688       # s[3688] = "dll_pt.c0:125.36-125.54"
+B8 00 19 # invokestatic 25 # dll_pt_at_right(B, "dll_pt.c0:125.36-125.54")
+A7 00 05 # goto +5         # goto <148:cond_end>
+# <147:cond_false>
+10 00    # bipush 0        # false
+# <148:cond_end>
+10 01    # bipush 1        # 
+82       # ixor            # !((dll_pt_at_left(B, "dll_pt.c0:125.15-125.32") && dll_pt_at_right(B, "dll_pt.c0:125.36-125.54")))
+14 0E 80 # aldc 3712       # s[3712] = "dll_pt.c0:125.4-125.56: @requires annotation failed\n"
+15 01    # vload 1         # _caller
+14 0E B5 # aldc 3765       # s[3765] = ": caller location"
+B7 00 01 # invokenative 1  # string_join(_caller, ": caller location")
+B7 00 01 # invokenative 1  # string_join("dll_pt.c0:125.4-125.56: @requires annotation failed\n", string_join(_caller, ": caller location"))
+CF       # assert          # assert!((dll_pt_at_left(B, "dll_pt.c0:125.15-125.32") && dll_pt_at_right(B, "dll_pt.c0:125.36-125.54"))) [failure message on stack]
+15 00    # vload 0         # B
+14 0E C7 # aldc 3783       # s[3783] = "dll_pt.c0:128.7-128.25"
+B8 00 19 # invokestatic 25 # dll_pt_at_right(B, "dll_pt.c0:128.7-128.25")
+10 01    # bipush 1        # true
+9F 00 06 # if_cmpeq +6     # if (dll_pt_at_right(B, "dll_pt.c0:128.7-128.25") == true) goto <149:then>
+A7 00 1C # goto +28        # goto <150:else>
+# <149:then>
+15 00    # vload 0         # B
+14 0E DE # aldc 3806       # s[3806] = "dll_pt.c0:129.5-129.14"
+B8 00 1F # invokestatic 31 # delete(B, "dll_pt.c0:129.5-129.14")
+57       # pop             # (ignore result)
+15 00    # vload 0         # B
+62 08    # aaddf 8         # &B->point
+15 00    # vload 0         # B
+62 08    # aaddf 8         # &B->point
+2F       # amload          # B->point
+62 10    # aaddf 16        # &B->point->prev
+2F       # amload          # B->point->prev
+4F       # amstore         # B->point = B->point->prev;
+A7 00 19 # goto +25        # goto <151:endif>
+# <150:else>
+15 00    # vload 0         # B
+14 0E F5 # aldc 3829       # s[3829] = "dll_pt.c0:135.5-135.14"
+B8 00 1F # invokestatic 31 # delete(B, "dll_pt.c0:135.5-135.14")
+57       # pop             # (ignore result)
+15 00    # vload 0         # B
+62 08    # aaddf 8         # &B->point
+15 00    # vload 0         # B
+62 08    # aaddf 8         # &B->point
+2F       # amload          # B->point
+62 08    # aaddf 8         # &B->point->next
+2F       # amload          # B->point->next
+4F       # amstore         # B->point = B->point->next;
+# <151:endif>
+15 00    # vload 0         # B
+14 0F 0C # aldc 3852       # s[3852] = "dll_pt.c0:126.12-126.24"
+B8 00 17 # invokestatic 23 # is_dll_pt(B, "dll_pt.c0:126.12-126.24")
+14 0F 24 # aldc 3876       # s[3876] = "dll_pt.c0:126.4-126.25: @ensures annotation failed"
+CF       # assert          # assertis_dll_pt(B, "dll_pt.c0:126.12-126.24") [failure message on stack]
+10 00    # bipush 0        # dummy return value
+B0       # return          # 
+
+
+#<is_dll_segment>
+00 04             # number of arguments = 4
+00 07             # number of local variables = 7
+00 5A             # code length = 90 bytes
+10 00    # bipush 0        # false
+36 05    # vstore 5        # pass_point = false;
+15 00    # vload 0         # start
+36 06    # vstore 6        # p = start;
+# <102:loop>
+A7 00 03 # goto +3         # goto <103:body>
+# <103:body>
+15 06    # vload 6         # p
+01       # aconst_null     # NULL
+A0 00 06 # if_cmpne +6     # if (p != NULL) goto <105:then>
+A7 00 3C # goto +60        # goto <106:else>
+# <105:then>
+15 06    # vload 6         # p
+15 01    # vload 1         # point
+9F 00 06 # if_cmpeq +6     # if (p == point) goto <108:then>
+A7 00 0A # goto +10        # goto <109:else>
+# <108:then>
+10 01    # bipush 1        # true
+36 05    # vstore 5        # pass_point = true;
+A7 00 03 # goto +3         # goto <110:endif>
+# <109:else>
+# <110:endif>
+15 06    # vload 6         # p
+15 02    # vload 2         # end
+9F 00 06 # if_cmpeq +6     # if (p == end) goto <114:and>
+A7 00 17 # goto +23        # goto <112:else>
+# <114:and>
+15 05    # vload 5         # pass_point
+10 01    # bipush 1        # true
+9F 00 06 # if_cmpeq +6     # if (pass_point == true) goto <111:then>
+A7 00 0D # goto +13        # goto <112:else>
+# <111:then>
+10 01    # bipush 1        # true
+36 04    # vstore 4        # _result = true;
+15 04    # vload 4         # _result
+B0       # return          # 
+A7 00 03 # goto +3         # goto <113:endif>
+# <112:else>
+# <113:endif>
+15 06    # vload 6         # p
+62 08    # aaddf 8         # &p->next
+2F       # amload          # p->next
+36 06    # vstore 6        # p = p->next;
+A7 00 06 # goto +6         # goto <107:endif>
+# <106:else>
+A7 00 06 # goto +6         # break
+# <107:endif>
+A7 FF B8 # goto -72        # goto <102:loop>
+# <104:exit>
+10 00    # bipush 0        # false
+36 04    # vstore 4        # _result = false;
+15 04    # vload 4         # _result
+B0       # return          # 
+
+
+#<is_match>
+00 03             # number of arguments = 3
+00 07             # number of local variables = 7
+00 43             # code length = 67 bytes
+15 00    # vload 0         # start
+36 04    # vstore 4        # p = start;
+# <115:loop>
+A7 00 03 # goto +3         # goto <116:body>
+# <116:body>
+15 04    # vload 4         # p
+15 01    # vload 1         # end
+A0 00 06 # if_cmpne +6     # if (p != end) goto <118:then>
+A7 00 28 # goto +40        # goto <119:else>
+# <118:then>
+15 04    # vload 4         # p
+36 05    # vstore 5        # old = p;
+15 04    # vload 4         # p
+62 08    # aaddf 8         # &p->next
+2F       # amload          # p->next
+36 04    # vstore 4        # p = p->next;
+15 04    # vload 4         # p
+62 10    # aaddf 16        # &p->prev
+2F       # amload          # p->prev
+15 05    # vload 5         # old
+A0 00 06 # if_cmpne +6     # if (p->prev != old) goto <121:then>
+A7 00 0D # goto +13        # goto <122:else>
+# <121:then>
+10 00    # bipush 0        # false
+36 03    # vstore 3        # _result = false;
+15 03    # vload 3         # _result
+B0       # return          # 
+A7 00 03 # goto +3         # goto <123:endif>
+# <122:else>
+# <123:endif>
+A7 00 06 # goto +6         # goto <120:endif>
+# <119:else>
+A7 00 06 # goto +6         # break
+# <120:endif>
+A7 FF CB # goto -53        # goto <115:loop>
+# <117:exit>
+10 01    # bipush 1        # true
+36 03    # vstore 3        # _result = true;
+15 03    # vload 3         # _result
+B0       # return          # 
+
+
+#<delete>
+00 02             # number of arguments = 2
+00 07             # number of local variables = 7
+00 29             # code length = 41 bytes
+15 00    # vload 0         # B
+62 08    # aaddf 8         # &B->point
+2F       # amload          # B->point
+62 10    # aaddf 16        # &B->point->prev
+2F       # amload          # B->point->prev
+62 08    # aaddf 8         # &B->point->prev->next
+15 00    # vload 0         # B
+62 08    # aaddf 8         # &B->point
+2F       # amload          # B->point
+62 08    # aaddf 8         # &B->point->next
+2F       # amload          # B->point->next
+4F       # amstore         # B->point->prev->next = B->point->next;
+15 00    # vload 0         # B
+62 08    # aaddf 8         # &B->point
+2F       # amload          # B->point
+62 08    # aaddf 8         # &B->point->next
+2F       # amload          # B->point->next
+62 10    # aaddf 16        # &B->point->next->prev
+15 00    # vload 0         # B
+62 08    # aaddf 8         # &B->point
+2F       # amload          # B->point
+62 10    # aaddf 16        # &B->point->prev
+2F       # amload          # B->point->prev
+4F       # amstore         # B->point->next->prev = B->point->prev;
+10 00    # bipush 0        # dummy return value
+B0       # return          # 
+
+
+#<is_tbuf>
+00 02             # number of arguments = 2
+00 07             # number of local variables = 7
+00 A8             # code length = 168 bytes
+15 00    # vload 0         # B
+14 0F 93 # aldc 3987       # s[3987] = "tbuf.c0:58.8-58.20"
+B8 00 17 # invokestatic 23 # is_dll_pt(B, "tbuf.c0:58.8-58.20")
+10 01    # bipush 1        # true
+9F 00 10 # if_cmpeq +16    # if (is_dll_pt(B, "tbuf.c0:58.8-58.20") == true) goto <183:else>
+A7 00 03 # goto +3         # goto <182:then>
+# <182:then>
+10 00    # bipush 0        # false
+36 02    # vstore 2        # _result = false;
+15 02    # vload 2         # _result
+B0       # return          # 
+A7 00 03 # goto +3         # goto <184:endif>
+# <183:else>
+# <184:endif>
+15 00    # vload 0         # B
+62 00    # aaddf 0         # &B->start
+2F       # amload          # B->start
+36 03    # vstore 3        # start = B->start;
+15 00    # vload 0         # B
+62 08    # aaddf 8         # &B->point
+2F       # amload          # B->point
+36 04    # vstore 4        # point = B->point;
+15 00    # vload 0         # B
+62 10    # aaddf 16        # &B->end
+2F       # amload          # B->end
+36 05    # vstore 5        # end = B->end;
+15 03    # vload 3         # start
+62 08    # aaddf 8         # &start->next
+2F       # amload          # start->next
+36 06    # vstore 6        # p = start->next;
+# <185:loop>
+A7 00 03 # goto +3         # goto <186:body>
+# <186:body>
+15 06    # vload 6         # p
+15 05    # vload 5         # end
+A0 00 06 # if_cmpne +6     # if (p != end) goto <188:then>
+A7 00 3A # goto +58        # goto <189:else>
+# <188:then>
+15 06    # vload 6         # p
+62 00    # aaddf 0         # &p->data
+2F       # amload          # p->data
+14 0F A6 # aldc 4006       # s[4006] = "tbuf.c0:67.10-67.28"
+B8 00 0B # invokestatic 11 # is_gapbuf(p->data, "tbuf.c0:67.10-67.28")
+10 01    # bipush 1        # true
+9F 00 06 # if_cmpeq +6     # if (is_gapbuf(p->data, "tbuf.c0:67.10-67.28") == true) goto <194:or>
+A7 00 13 # goto +19        # goto <191:then>
+# <194:or>
+15 06    # vload 6         # p
+62 00    # aaddf 0         # &p->data
+2F       # amload          # p->data
+62 00    # aaddf 0         # &p->data->limit
+2E       # imload          # p->data->limit
+10 10    # bipush 16       # 16
+A0 00 06 # if_cmpne +6     # if (p->data->limit != 16) goto <191:then>
+A7 00 0D # goto +13        # goto <192:else>
+# <191:then>
+10 00    # bipush 0        # false
+36 02    # vstore 2        # _result = false;
+15 02    # vload 2         # _result
+B0       # return          # 
+A7 00 03 # goto +3         # goto <193:endif>
+# <192:else>
+# <193:endif>
+15 06    # vload 6         # p
+62 08    # aaddf 8         # &p->next
+2F       # amload          # p->next
+36 06    # vstore 6        # p = p->next;
+A7 00 06 # goto +6         # goto <190:endif>
+# <189:else>
+A7 00 06 # goto +6         # break
+# <190:endif>
+A7 FF B9 # goto -71        # goto <185:loop>
+# <187:exit>
+15 03    # vload 3         # start
+15 05    # vload 5         # end
+14 0F BA # aldc 4026       # s[4026] = "tbuf.c0:71.10-71.35"
+B8 00 27 # invokestatic 39 # valid_buffers(start, end, "tbuf.c0:71.10-71.35")
+10 01    # bipush 1        # true
+9F 00 06 # if_cmpeq +6     # if (valid_buffers(start, end, "tbuf.c0:71.10-71.35") == true) goto <195:cond_true>
+A7 00 12 # goto +18        # goto <196:cond_false>
+# <195:cond_true>
+15 03    # vload 3         # start
+15 04    # vload 4         # point
+15 05    # vload 5         # end
+14 0F CE # aldc 4046       # s[4046] = "tbuf.c0:71.39-71.63"
+B8 00 28 # invokestatic 40 # align(start, point, end, "tbuf.c0:71.39-71.63")
+A7 00 05 # goto +5         # goto <197:cond_end>
+# <196:cond_false>
+10 00    # bipush 0        # false
+# <197:cond_end>
+36 02    # vstore 2        # _result = (valid_buffers(start, end, "tbuf.c0:71.10-71.35") && align(start, point, end, "tbuf.c0:71.39-71.63"));
+15 02    # vload 2         # _result
+B0       # return          # 
+
+
+#<tbuf_new>
+00 01             # number of arguments = 1
+00 07             # number of local variables = 7
+00 74             # code length = 116 bytes
+BB 18    # new 24          # alloc(tbuf)
+36 02    # vstore 2        # new = alloc(tbuf);
+15 02    # vload 2         # new
+62 00    # aaddf 0         # &new->start
+BB 18    # new 24          # alloc(dll)
+4F       # amstore         # new->start = alloc(dll);
+15 02    # vload 2         # new
+62 00    # aaddf 0         # &new->start
+2F       # amload          # new->start
+36 03    # vstore 3        # node = new->start;
+15 03    # vload 3         # node
+62 08    # aaddf 8         # &node->next
+BB 18    # new 24          # alloc(dll)
+4F       # amstore         # node->next = alloc(dll);
+15 03    # vload 3         # node
+62 08    # aaddf 8         # &node->next
+2F       # amload          # node->next
+62 10    # aaddf 16        # &node->next->prev
+15 03    # vload 3         # node
+4F       # amstore         # node->next->prev = node;
+15 03    # vload 3         # node
+62 08    # aaddf 8         # &node->next
+2F       # amload          # node->next
+62 00    # aaddf 0         # &node->next->data
+10 10    # bipush 16       # 16
+14 0F E2 # aldc 4066       # s[4066] = "tbuf.c0:88.22-88.36"
+B8 00 10 # invokestatic 16 # gapbuf_new(16, "tbuf.c0:88.22-88.36")
+4F       # amstore         # node->next->data = gapbuf_new(16, "tbuf.c0:88.22-88.36");
+15 03    # vload 3         # node
+62 08    # aaddf 8         # &node->next
+2F       # amload          # node->next
+62 08    # aaddf 8         # &node->next->next
+BB 18    # new 24          # alloc(dll)
+4F       # amstore         # node->next->next = alloc(dll);
+15 02    # vload 2         # new
+62 10    # aaddf 16        # &new->end
+15 03    # vload 3         # node
+62 08    # aaddf 8         # &node->next
+2F       # amload          # node->next
+62 08    # aaddf 8         # &node->next->next
+2F       # amload          # node->next->next
+4F       # amstore         # new->end = node->next->next;
+15 02    # vload 2         # new
+62 10    # aaddf 16        # &new->end
+2F       # amload          # new->end
+62 10    # aaddf 16        # &new->end->prev
+15 03    # vload 3         # node
+62 08    # aaddf 8         # &node->next
+2F       # amload          # node->next
+4F       # amstore         # new->end->prev = node->next;
+15 02    # vload 2         # new
+62 08    # aaddf 8         # &new->point
+15 03    # vload 3         # node
+62 08    # aaddf 8         # &node->next
+2F       # amload          # node->next
+4F       # amstore         # new->point = node->next;
+15 02    # vload 2         # new
+36 01    # vstore 1        # _result = new;
+15 01    # vload 1         # _result
+14 0F F6 # aldc 4086       # s[4086] = "tbuf.c0:76.12-76.28"
+B8 00 20 # invokestatic 32 # is_tbuf(_result, "tbuf.c0:76.12-76.28")
+14 10 0A # aldc 4106       # s[4106] = "tbuf.c0:76.4-76.29: @ensures annotation failed"
+CF       # assert          # assertis_tbuf(_result, "tbuf.c0:76.12-76.28") [failure message on stack]
+15 01    # vload 1         # _result
+B0       # return          # 
+
+
+#<tbuf_split_pt>
+00 02             # number of arguments = 2
+00 0E             # number of local variables = 14
+02 E6             # code length = 742 bytes
+15 00    # vload 0         # B
+14 10 39 # aldc 4153       # s[4153] = "tbuf.c0:99.13-99.23"
+B8 00 20 # invokestatic 32 # is_tbuf(B, "tbuf.c0:99.13-99.23")
+10 01    # bipush 1        # true
+9F 00 06 # if_cmpeq +6     # if (is_tbuf(B, "tbuf.c0:99.13-99.23") == true) goto <198:cond_true>
+A7 00 14 # goto +20        # goto <199:cond_false>
+# <198:cond_true>
+15 00    # vload 0         # B
+62 08    # aaddf 8         # &B->point
+2F       # amload          # B->point
+62 00    # aaddf 0         # &B->point->data
+2F       # amload          # B->point->data
+14 10 4D # aldc 4173       # s[4173] = "tbuf.c0:99.27-99.54"
+B8 00 0D # invokestatic 13 # gapbuf_full(B->point->data, "tbuf.c0:99.27-99.54")
+A7 00 05 # goto +5         # goto <200:cond_end>
+# <199:cond_false>
+10 00    # bipush 0        # false
+# <200:cond_end>
+14 10 61 # aldc 4193       # s[4193] = "tbuf.c0:99.4-99.55: @requires annotation failed\n"
+15 01    # vload 1         # _caller
+14 10 92 # aldc 4242       # s[4242] = ": caller location"
+B7 00 01 # invokenative 1  # string_join(_caller, ": caller location")
+B7 00 01 # invokenative 1  # string_join("tbuf.c0:99.4-99.55: @requires annotation failed\n", string_join(_caller, ": caller location"))
+CF       # assert          # assert(is_tbuf(B, "tbuf.c0:99.13-99.23") && gapbuf_full(B->point->data, "tbuf.c0:99.27-99.54")) [failure message on stack]
+15 00    # vload 0         # B
+62 08    # aaddf 8         # &B->point
+2F       # amload          # B->point
+62 00    # aaddf 0         # &B->point->data
+2F       # amload          # B->point->data
+62 08    # aaddf 8         # &B->point->data->buffer
+2F       # amload          # B->point->data->buffer
+36 02    # vstore 2        # old = B->point->data->buffer;
+10 00    # bipush 0        # 0
+36 03    # vstore 3        # index = 0;
+15 00    # vload 0         # B
+62 08    # aaddf 8         # &B->point
+2F       # amload          # B->point
+62 00    # aaddf 0         # &B->point->data
+2F       # amload          # B->point->data
+62 10    # aaddf 16        # &B->point->data->gap_start
+2E       # imload          # B->point->data->gap_start
+36 04    # vstore 4        # gap_index = B->point->data->gap_start;
+BB 18    # new 24          # alloc(gapbuf)
+36 05    # vstore 5        # gapbuf_1 = alloc(gapbuf);
+BB 18    # new 24          # alloc(gapbuf)
+36 06    # vstore 6        # gapbuf_2 = alloc(gapbuf);
+10 10    # bipush 16       # 16
+BC 01    # newarray 1      # alloc_array(char, 16)
+36 07    # vstore 7        # split_1 = alloc_array(char, 16);
+10 10    # bipush 16       # 16
+BC 01    # newarray 1      # alloc_array(char, 16)
+36 08    # vstore 8        # split_2 = alloc_array(char, 16);
+10 00    # bipush 0        # 0
+36 09    # vstore 9        # count = 0;
+10 00    # bipush 0        # 0
+15 04    # vload 4         # gap_index
+A4 00 06 # if_icmple +6    # if (0 <= gap_index) goto <204:and>
+A7 00 CC # goto +204       # goto <202:else>
+# <204:and>
+15 04    # vload 4         # gap_index
+10 08    # bipush 8        # 8
+A1 00 06 # if_icmplt +6    # if (gap_index < 8) goto <201:then>
+A7 00 C2 # goto +194       # goto <202:else>
+# <201:then>
+15 04    # vload 4         # gap_index
+36 0A    # vstore 10       # gap_start_1 = gap_index;
+# <205:loop>
+A7 00 03 # goto +3         # goto <206:body>
+# <206:body>
+15 09    # vload 9         # count
+15 04    # vload 4         # gap_index
+A1 00 06 # if_icmplt +6    # if (count < gap_index) goto <208:then>
+A7 00 20 # goto +32        # goto <209:else>
+# <208:then>
+15 07    # vload 7         # split_1
+15 09    # vload 9         # count
+63       # aadds           # &split_1[count]
+15 02    # vload 2         # old
+15 03    # vload 3         # index
+63       # aadds           # &old[index]
+34       # cmload          # old[index]
+55       # cmstore         # split_1[count] = old[index];
+15 09    # vload 9         # count
+10 01    # bipush 1        # 1
+60       # iadd            # 
+36 09    # vstore 9        # count += 1;
+15 03    # vload 3         # index
+10 01    # bipush 1        # 1
+60       # iadd            # 
+36 03    # vstore 3        # index += 1;
+A7 00 06 # goto +6         # goto <210:endif>
+# <209:else>
+A7 00 06 # goto +6         # break
+# <210:endif>
+A7 FF D3 # goto -45        # goto <205:loop>
+# <207:exit>
+15 09    # vload 9         # count
+10 08    # bipush 8        # 8
+60       # iadd            # 
+36 09    # vstore 9        # count += 8;
+15 09    # vload 9         # count
+36 0B    # vstore 11       # gap_end_1 = count;
+# <211:loop>
+A7 00 03 # goto +3         # goto <212:body>
+# <212:body>
+15 09    # vload 9         # count
+10 10    # bipush 16       # 16
+A1 00 06 # if_icmplt +6    # if (count < 16) goto <214:then>
+A7 00 20 # goto +32        # goto <215:else>
+# <214:then>
+15 07    # vload 7         # split_1
+15 09    # vload 9         # count
+63       # aadds           # &split_1[count]
+15 02    # vload 2         # old
+15 03    # vload 3         # index
+63       # aadds           # &old[index]
+34       # cmload          # old[index]
+55       # cmstore         # split_1[count] = old[index];
+15 09    # vload 9         # count
+10 01    # bipush 1        # 1
+60       # iadd            # 
+36 09    # vstore 9        # count += 1;
+15 03    # vload 3         # index
+10 01    # bipush 1        # 1
+60       # iadd            # 
+36 03    # vstore 3        # index += 1;
+A7 00 06 # goto +6         # goto <216:endif>
+# <215:else>
+A7 00 06 # goto +6         # break
+# <216:endif>
+A7 FF D3 # goto -45        # goto <211:loop>
+# <213:exit>
+# <217:loop>
+A7 00 03 # goto +3         # goto <218:body>
+# <218:body>
+15 03    # vload 3         # index
+10 10    # bipush 16       # 16
+A1 00 06 # if_icmplt +6    # if (index < 16) goto <220:then>
+A7 00 19 # goto +25        # goto <221:else>
+# <220:then>
+15 08    # vload 8         # split_2
+15 03    # vload 3         # index
+63       # aadds           # &split_2[index]
+15 02    # vload 2         # old
+15 03    # vload 3         # index
+63       # aadds           # &old[index]
+34       # cmload          # old[index]
+55       # cmstore         # split_2[index] = old[index];
+15 03    # vload 3         # index
+10 01    # bipush 1        # 1
+60       # iadd            # 
+36 03    # vstore 3        # index += 1;
+A7 00 06 # goto +6         # goto <222:endif>
+# <221:else>
+A7 00 06 # goto +6         # break
+# <222:endif>
+A7 FF DA # goto -38        # goto <217:loop>
+# <219:exit>
+10 00    # bipush 0        # 0
+36 0C    # vstore 12       # gap_start_2 = 0;
+10 08    # bipush 8        # 8
+36 0D    # vstore 13       # gap_end_2 = 8;
+15 05    # vload 5         # gapbuf_1
+62 10    # aaddf 16        # &gapbuf_1->gap_start
+15 0A    # vload 10        # gap_start_1
+4E       # imstore         # gapbuf_1->gap_start = gap_start_1;
+15 05    # vload 5         # gapbuf_1
+62 14    # aaddf 20        # &gapbuf_1->gap_end
+15 0B    # vload 11        # gap_end_1
+4E       # imstore         # gapbuf_1->gap_end = gap_end_1;
+15 06    # vload 6         # gapbuf_2
+62 10    # aaddf 16        # &gapbuf_2->gap_start
+15 0C    # vload 12        # gap_start_2
+4E       # imstore         # gapbuf_2->gap_start = gap_start_2;
+15 06    # vload 6         # gapbuf_2
+62 14    # aaddf 20        # &gapbuf_2->gap_end
+15 0D    # vload 13        # gap_end_2
+4E       # imstore         # gapbuf_2->gap_end = gap_end_2;
+A7 00 D9 # goto +217       # goto <203:endif>
+# <202:else>
+10 08    # bipush 8        # 8
+15 04    # vload 4         # gap_index
+A4 00 06 # if_icmple +6    # if (8 <= gap_index) goto <226:and>
+A7 00 CF # goto +207       # goto <224:else>
+# <226:and>
+15 04    # vload 4         # gap_index
+10 10    # bipush 16       # 16
+A4 00 06 # if_icmple +6    # if (gap_index <= 16) goto <223:then>
+A7 00 C5 # goto +197       # goto <224:else>
+# <223:then>
+# <227:loop>
+A7 00 03 # goto +3         # goto <228:body>
+# <228:body>
+15 03    # vload 3         # index
+10 08    # bipush 8        # 8
+A1 00 06 # if_icmplt +6    # if (index < 8) goto <230:then>
+A7 00 19 # goto +25        # goto <231:else>
+# <230:then>
+15 07    # vload 7         # split_1
+15 03    # vload 3         # index
+63       # aadds           # &split_1[index]
+15 02    # vload 2         # old
+15 03    # vload 3         # index
+63       # aadds           # &old[index]
+34       # cmload          # old[index]
+55       # cmstore         # split_1[index] = old[index];
+15 03    # vload 3         # index
+10 01    # bipush 1        # 1
+60       # iadd            # 
+36 03    # vstore 3        # index += 1;
+A7 00 06 # goto +6         # goto <232:endif>
+# <231:else>
+A7 00 06 # goto +6         # break
+# <232:endif>
+A7 FF DA # goto -38        # goto <227:loop>
+# <229:exit>
+10 08    # bipush 8        # 8
+36 0A    # vstore 10       # gap_start_1 = 8;
+10 10    # bipush 16       # 16
+36 0B    # vstore 11       # gap_end_1 = 16;
+# <233:loop>
+A7 00 03 # goto +3         # goto <234:body>
+# <234:body>
+15 03    # vload 3         # index
+15 04    # vload 4         # gap_index
+A1 00 06 # if_icmplt +6    # if (index < gap_index) goto <236:then>
+A7 00 20 # goto +32        # goto <237:else>
+# <236:then>
+15 08    # vload 8         # split_2
+15 09    # vload 9         # count
+63       # aadds           # &split_2[count]
+15 02    # vload 2         # old
+15 03    # vload 3         # index
+63       # aadds           # &old[index]
+34       # cmload          # old[index]
+55       # cmstore         # split_2[count] = old[index];
+15 09    # vload 9         # count
+10 01    # bipush 1        # 1
+60       # iadd            # 
+36 09    # vstore 9        # count += 1;
+15 03    # vload 3         # index
+10 01    # bipush 1        # 1
+60       # iadd            # 
+36 03    # vstore 3        # index += 1;
+A7 00 06 # goto +6         # goto <238:endif>
+# <237:else>
+A7 00 06 # goto +6         # break
+# <238:endif>
+A7 FF D3 # goto -45        # goto <233:loop>
+# <235:exit>
+15 04    # vload 4         # gap_index
+10 08    # bipush 8        # 8
+64       # isub            # (gap_index - 8)
+36 0C    # vstore 12       # gap_start_2 = (gap_index - 8);
+15 04    # vload 4         # gap_index
+36 0D    # vstore 13       # gap_end_2 = gap_index;
+15 09    # vload 9         # count
+10 08    # bipush 8        # 8
+60       # iadd            # 
+36 09    # vstore 9        # count += 8;
+# <239:loop>
+A7 00 03 # goto +3         # goto <240:body>
+# <240:body>
+15 03    # vload 3         # index
+10 10    # bipush 16       # 16
+A1 00 06 # if_icmplt +6    # if (index < 16) goto <242:then>
+A7 00 20 # goto +32        # goto <243:else>
+# <242:then>
+15 08    # vload 8         # split_2
+15 09    # vload 9         # count
+63       # aadds           # &split_2[count]
+15 02    # vload 2         # old
+15 03    # vload 3         # index
+63       # aadds           # &old[index]
+34       # cmload          # old[index]
+55       # cmstore         # split_2[count] = old[index];
+15 09    # vload 9         # count
+10 01    # bipush 1        # 1
+60       # iadd            # 
+36 09    # vstore 9        # count += 1;
+15 03    # vload 3         # index
+10 01    # bipush 1        # 1
+60       # iadd            # 
+36 03    # vstore 3        # index += 1;
+A7 00 06 # goto +6         # goto <244:endif>
+# <243:else>
+A7 00 06 # goto +6         # break
+# <244:endif>
+A7 FF D3 # goto -45        # goto <239:loop>
+# <241:exit>
+15 05    # vload 5         # gapbuf_1
+62 10    # aaddf 16        # &gapbuf_1->gap_start
+15 0A    # vload 10        # gap_start_1
+4E       # imstore         # gapbuf_1->gap_start = gap_start_1;
+15 05    # vload 5         # gapbuf_1
+62 14    # aaddf 20        # &gapbuf_1->gap_end
+15 0B    # vload 11        # gap_end_1
+4E       # imstore         # gapbuf_1->gap_end = gap_end_1;
+15 06    # vload 6         # gapbuf_2
+62 10    # aaddf 16        # &gapbuf_2->gap_start
+15 0C    # vload 12        # gap_start_2
+4E       # imstore         # gapbuf_2->gap_start = gap_start_2;
+15 06    # vload 6         # gapbuf_2
+62 14    # aaddf 20        # &gapbuf_2->gap_end
+15 0D    # vload 13        # gap_end_2
+4E       # imstore         # gapbuf_2->gap_end = gap_end_2;
+A7 00 03 # goto +3         # goto <225:endif>
+# <224:else>
+# <225:endif>
+# <203:endif>
+15 05    # vload 5         # gapbuf_1
+62 00    # aaddf 0         # &gapbuf_1->limit
+10 10    # bipush 16       # 16
+4E       # imstore         # gapbuf_1->limit = 16;
+15 05    # vload 5         # gapbuf_1
+62 08    # aaddf 8         # &gapbuf_1->buffer
+15 07    # vload 7         # split_1
+4F       # amstore         # gapbuf_1->buffer = split_1;
+15 06    # vload 6         # gapbuf_2
+62 00    # aaddf 0         # &gapbuf_2->limit
+10 10    # bipush 16       # 16
+4E       # imstore         # gapbuf_2->limit = 16;
+15 06    # vload 6         # gapbuf_2
+62 08    # aaddf 8         # &gapbuf_2->buffer
+15 08    # vload 8         # split_2
+4F       # amstore         # gapbuf_2->buffer = split_2;
+BB 18    # new 24          # alloc(dll)
+36 0A    # vstore 10       # node_1 = alloc(dll);
+15 0A    # vload 10        # node_1
+62 00    # aaddf 0         # &node_1->data
+15 05    # vload 5         # gapbuf_1
+4F       # amstore         # node_1->data = gapbuf_1;
+BB 18    # new 24          # alloc(dll)
+36 0B    # vstore 11       # node_2 = alloc(dll);
+15 0B    # vload 11        # node_2
+62 00    # aaddf 0         # &node_2->data
+15 06    # vload 6         # gapbuf_2
+4F       # amstore         # node_2->data = gapbuf_2;
+15 0A    # vload 10        # node_1
+62 08    # aaddf 8         # &node_1->next
+15 0B    # vload 11        # node_2
+4F       # amstore         # node_1->next = node_2;
+15 0B    # vload 11        # node_2
+62 10    # aaddf 16        # &node_2->prev
+15 0A    # vload 10        # node_1
+4F       # amstore         # node_2->prev = node_1;
+15 00    # vload 0         # B
+62 08    # aaddf 8         # &B->point
+2F       # amload          # B->point
+62 10    # aaddf 16        # &B->point->prev
+2F       # amload          # B->point->prev
+62 08    # aaddf 8         # &B->point->prev->next
+15 0A    # vload 10        # node_1
+4F       # amstore         # B->point->prev->next = node_1;
+15 0A    # vload 10        # node_1
+62 10    # aaddf 16        # &node_1->prev
+15 00    # vload 0         # B
+62 08    # aaddf 8         # &B->point
+2F       # amload          # B->point
+62 10    # aaddf 16        # &B->point->prev
+2F       # amload          # B->point->prev
+4F       # amstore         # node_1->prev = B->point->prev;
+15 0B    # vload 11        # node_2
+62 08    # aaddf 8         # &node_2->next
+15 00    # vload 0         # B
+62 08    # aaddf 8         # &B->point
+2F       # amload          # B->point
+62 08    # aaddf 8         # &B->point->next
+2F       # amload          # B->point->next
+4F       # amstore         # node_2->next = B->point->next;
+15 00    # vload 0         # B
+62 08    # aaddf 8         # &B->point
+2F       # amload          # B->point
+62 08    # aaddf 8         # &B->point->next
+2F       # amload          # B->point->next
+62 10    # aaddf 16        # &B->point->next->prev
+15 0B    # vload 11        # node_2
+4F       # amstore         # B->point->next->prev = node_2;
+15 06    # vload 6         # gapbuf_2
+14 10 A4 # aldc 4260       # s[4260] = "tbuf.c0:204.7-204.31"
+B8 00 0E # invokestatic 14 # gapbuf_at_left(gapbuf_2, "tbuf.c0:204.7-204.31")
+10 01    # bipush 1        # true
+9F 00 06 # if_cmpeq +6     # if (gapbuf_at_left(gapbuf_2, "tbuf.c0:204.7-204.31") == true) goto <245:then>
+A7 00 0D # goto +13        # goto <246:else>
+# <245:then>
+15 00    # vload 0         # B
+62 08    # aaddf 8         # &B->point
+15 0A    # vload 10        # node_1
+4F       # amstore         # B->point = node_1;
+A7 00 1D # goto +29        # goto <247:endif>
+# <246:else>
+15 05    # vload 5         # gapbuf_1
+14 10 B9 # aldc 4281       # s[4281] = "tbuf.c0:207.12-207.37"
+B8 00 0F # invokestatic 15 # gapbuf_at_right(gapbuf_1, "tbuf.c0:207.12-207.37")
+10 01    # bipush 1        # true
+9F 00 06 # if_cmpeq +6     # if (gapbuf_at_right(gapbuf_1, "tbuf.c0:207.12-207.37") == true) goto <248:then>
+A7 00 0D # goto +13        # goto <249:else>
+# <248:then>
+15 00    # vload 0         # B
+62 08    # aaddf 8         # &B->point
+15 0B    # vload 11        # node_2
+4F       # amstore         # B->point = node_2;
+A7 00 03 # goto +3         # goto <250:endif>
+# <249:else>
+# <250:endif>
+# <247:endif>
+15 00    # vload 0         # B
+14 10 CF # aldc 4303       # s[4303] = "tbuf.c0:100.12-100.22"
+B8 00 20 # invokestatic 32 # is_tbuf(B, "tbuf.c0:100.12-100.22")
+10 01    # bipush 1        # true
+9F 00 06 # if_cmpeq +6     # if (is_tbuf(B, "tbuf.c0:100.12-100.22") == true) goto <251:cond_true>
+A7 00 17 # goto +23        # goto <252:cond_false>
+# <251:cond_true>
+15 00    # vload 0         # B
+62 08    # aaddf 8         # &B->point
+2F       # amload          # B->point
+62 00    # aaddf 0         # &B->point->data
+2F       # amload          # B->point->data
+14 10 E5 # aldc 4325       # s[4325] = "tbuf.c0:100.27-100.54"
+B8 00 0D # invokestatic 13 # gapbuf_full(B->point->data, "tbuf.c0:100.27-100.54")
+10 01    # bipush 1        # 
+82       # ixor            # !(gapbuf_full(B->point->data, "tbuf.c0:100.27-100.54"))
+A7 00 05 # goto +5         # goto <253:cond_end>
+# <252:cond_false>
+10 00    # bipush 0        # false
+# <253:cond_end>
+14 10 FB # aldc 4347       # s[4347] = "tbuf.c0:100.4-100.55: @ensures annotation failed"
+CF       # assert          # assert(is_tbuf(B, "tbuf.c0:100.12-100.22") && !(gapbuf_full(B->point->data, "tbuf.c0:100.27-100.54"))) [failure message on stack]
+10 00    # bipush 0        # dummy return value
+B0       # return          # 
+
+
+#<tbuf_forward>
+00 02             # number of arguments = 2
+00 0E             # number of local variables = 14
+00 8B             # code length = 139 bytes
+15 00    # vload 0         # B
+14 11 2C # aldc 4396       # s[4396] = "tbuf.c0:214.13-214.23"
+B8 00 20 # invokestatic 32 # is_tbuf(B, "tbuf.c0:214.13-214.23")
+14 11 42 # aldc 4418       # s[4418] = "tbuf.c0:214.4-214.24: @requires annotation failed\n"
+15 01    # vload 1         # _caller
+14 11 75 # aldc 4469       # s[4469] = ": caller location"
+B7 00 01 # invokenative 1  # string_join(_caller, ": caller location")
+B7 00 01 # invokenative 1  # string_join("tbuf.c0:214.4-214.24: @requires annotation failed\n", string_join(_caller, ": caller location"))
+CF       # assert          # assertis_tbuf(B, "tbuf.c0:214.13-214.23") [failure message on stack]
+15 00    # vload 0         # B
+62 08    # aaddf 8         # &B->point
+2F       # amload          # B->point
+62 00    # aaddf 0         # &B->point->data
+2F       # amload          # B->point->data
+36 02    # vstore 2        # gapbuffer = B->point->data;
+15 02    # vload 2         # gapbuffer
+14 11 87 # aldc 4487       # s[4487] = "tbuf.c0:220.7-220.33"
+B8 00 0F # invokestatic 15 # gapbuf_at_right(gapbuffer, "tbuf.c0:220.7-220.33")
+10 01    # bipush 1        # true
+9F 00 06 # if_cmpeq +6     # if (gapbuf_at_right(gapbuffer, "tbuf.c0:220.7-220.33") == true) goto <257:and>
+A7 00 32 # goto +50        # goto <255:else>
+# <257:and>
+15 00    # vload 0         # B
+14 11 9C # aldc 4508       # s[4508] = "tbuf.c0:220.38-220.56"
+B8 00 19 # invokestatic 25 # dll_pt_at_right(B, "tbuf.c0:220.38-220.56")
+10 01    # bipush 1        # true
+9F 00 25 # if_cmpeq +37    # if (dll_pt_at_right(B, "tbuf.c0:220.38-220.56") == true) goto <255:else>
+A7 00 03 # goto +3         # goto <254:then>
+# <254:then>
+15 00    # vload 0         # B
+14 11 B2 # aldc 4530       # s[4530] = "tbuf.c0:221.5-221.22"
+B8 00 1A # invokestatic 26 # dll_pt_forward(B, "tbuf.c0:221.5-221.22")
+57       # pop             # (ignore result)
+15 00    # vload 0         # B
+62 08    # aaddf 8         # &B->point
+2F       # amload          # B->point
+62 00    # aaddf 0         # &B->point->data
+2F       # amload          # B->point->data
+36 03    # vstore 3        # new = B->point->data;
+15 03    # vload 3         # new
+14 11 C7 # aldc 4551       # s[4551] = "tbuf.c0:224.5-224.24"
+B8 00 11 # invokestatic 17 # gapbuf_forward(new, "tbuf.c0:224.5-224.24")
+57       # pop             # (ignore result)
+A7 00 03 # goto +3         # goto <256:endif>
+# <255:else>
+# <256:endif>
+15 02    # vload 2         # gapbuffer
+14 11 DC # aldc 4572       # s[4572] = "tbuf.c0:227.8-227.34"
+B8 00 0F # invokestatic 15 # gapbuf_at_right(gapbuffer, "tbuf.c0:227.8-227.34")
+10 01    # bipush 1        # true
+9F 00 12 # if_cmpeq +18    # if (gapbuf_at_right(gapbuffer, "tbuf.c0:227.8-227.34") == true) goto <259:else>
+A7 00 03 # goto +3         # goto <258:then>
+# <258:then>
+15 02    # vload 2         # gapbuffer
+14 11 F1 # aldc 4593       # s[4593] = "tbuf.c0:228.5-228.30"
+B8 00 11 # invokestatic 17 # gapbuf_forward(gapbuffer, "tbuf.c0:228.5-228.30")
+57       # pop             # (ignore result)
+A7 00 03 # goto +3         # goto <260:endif>
+# <259:else>
+# <260:endif>
+15 00    # vload 0         # B
+14 12 06 # aldc 4614       # s[4614] = "tbuf.c0:215.12-215.22"
+B8 00 20 # invokestatic 32 # is_tbuf(B, "tbuf.c0:215.12-215.22")
+14 12 1C # aldc 4636       # s[4636] = "tbuf.c0:215.4-215.23: @ensures annotation failed"
+CF       # assert          # assertis_tbuf(B, "tbuf.c0:215.12-215.22") [failure message on stack]
+10 00    # bipush 0        # dummy return value
+B0       # return          # 
+
+
+#<tbuf_backward>
+00 02             # number of arguments = 2
+00 0E             # number of local variables = 14
+00 8B             # code length = 139 bytes
+15 00    # vload 0         # B
+14 12 4D # aldc 4685       # s[4685] = "tbuf.c0:234.13-234.23"
+B8 00 20 # invokestatic 32 # is_tbuf(B, "tbuf.c0:234.13-234.23")
+14 12 63 # aldc 4707       # s[4707] = "tbuf.c0:234.4-234.24: @requires annotation failed\n"
+15 01    # vload 1         # _caller
+14 12 96 # aldc 4758       # s[4758] = ": caller location"
+B7 00 01 # invokenative 1  # string_join(_caller, ": caller location")
+B7 00 01 # invokenative 1  # string_join("tbuf.c0:234.4-234.24: @requires annotation failed\n", string_join(_caller, ": caller location"))
+CF       # assert          # assertis_tbuf(B, "tbuf.c0:234.13-234.23") [failure message on stack]
+15 00    # vload 0         # B
+62 08    # aaddf 8         # &B->point
+2F       # amload          # B->point
+62 00    # aaddf 0         # &B->point->data
+2F       # amload          # B->point->data
+36 02    # vstore 2        # gapbuffer = B->point->data;
+15 02    # vload 2         # gapbuffer
+14 12 A8 # aldc 4776       # s[4776] = "tbuf.c0:240.7-240.32"
+B8 00 0E # invokestatic 14 # gapbuf_at_left(gapbuffer, "tbuf.c0:240.7-240.32")
+10 01    # bipush 1        # true
+9F 00 06 # if_cmpeq +6     # if (gapbuf_at_left(gapbuffer, "tbuf.c0:240.7-240.32") == true) goto <264:and>
+A7 00 32 # goto +50        # goto <262:else>
+# <264:and>
+15 00    # vload 0         # B
+14 12 BD # aldc 4797       # s[4797] = "tbuf.c0:240.37-240.54"
+B8 00 18 # invokestatic 24 # dll_pt_at_left(B, "tbuf.c0:240.37-240.54")
+10 01    # bipush 1        # true
+9F 00 25 # if_cmpeq +37    # if (dll_pt_at_left(B, "tbuf.c0:240.37-240.54") == true) goto <262:else>
+A7 00 03 # goto +3         # goto <261:then>
+# <261:then>
+15 00    # vload 0         # B
+14 12 D3 # aldc 4819       # s[4819] = "tbuf.c0:241.5-241.23"
+B8 00 1B # invokestatic 27 # dll_pt_backward(B, "tbuf.c0:241.5-241.23")
+57       # pop             # (ignore result)
+15 00    # vload 0         # B
+62 08    # aaddf 8         # &B->point
+2F       # amload          # B->point
+62 00    # aaddf 0         # &B->point->data
+2F       # amload          # B->point->data
+36 03    # vstore 3        # new = B->point->data;
+15 03    # vload 3         # new
+14 12 E8 # aldc 4840       # s[4840] = "tbuf.c0:244.5-244.25"
+B8 00 12 # invokestatic 18 # gapbuf_backward(new, "tbuf.c0:244.5-244.25")
+57       # pop             # (ignore result)
+A7 00 03 # goto +3         # goto <263:endif>
+# <262:else>
+# <263:endif>
+15 02    # vload 2         # gapbuffer
+14 12 FD # aldc 4861       # s[4861] = "tbuf.c0:247.8-247.33"
+B8 00 0E # invokestatic 14 # gapbuf_at_left(gapbuffer, "tbuf.c0:247.8-247.33")
+10 01    # bipush 1        # true
+9F 00 12 # if_cmpeq +18    # if (gapbuf_at_left(gapbuffer, "tbuf.c0:247.8-247.33") == true) goto <266:else>
+A7 00 03 # goto +3         # goto <265:then>
+# <265:then>
+15 02    # vload 2         # gapbuffer
+14 13 12 # aldc 4882       # s[4882] = "tbuf.c0:248.5-248.31"
+B8 00 12 # invokestatic 18 # gapbuf_backward(gapbuffer, "tbuf.c0:248.5-248.31")
+57       # pop             # (ignore result)
+A7 00 03 # goto +3         # goto <267:endif>
+# <266:else>
+# <267:endif>
+15 00    # vload 0         # B
+14 13 27 # aldc 4903       # s[4903] = "tbuf.c0:235.12-235.22"
+B8 00 20 # invokestatic 32 # is_tbuf(B, "tbuf.c0:235.12-235.22")
+14 13 3D # aldc 4925       # s[4925] = "tbuf.c0:235.4-235.23: @ensures annotation failed"
+CF       # assert          # assertis_tbuf(B, "tbuf.c0:235.12-235.22") [failure message on stack]
+10 00    # bipush 0        # dummy return value
+B0       # return          # 
+
+
+#<tbuf_insert>
+00 03             # number of arguments = 3
+00 0E             # number of local variables = 14
+00 61             # code length = 97 bytes
+15 00    # vload 0         # B
+14 13 6E # aldc 4974       # s[4974] = "tbuf.c0:254.13-254.23"
+B8 00 20 # invokestatic 32 # is_tbuf(B, "tbuf.c0:254.13-254.23")
+14 13 84 # aldc 4996       # s[4996] = "tbuf.c0:254.4-254.24: @requires annotation failed\n"
+15 02    # vload 2         # _caller
+14 13 B7 # aldc 5047       # s[5047] = ": caller location"
+B7 00 01 # invokenative 1  # string_join(_caller, ": caller location")
+B7 00 01 # invokenative 1  # string_join("tbuf.c0:254.4-254.24: @requires annotation failed\n", string_join(_caller, ": caller location"))
+CF       # assert          # assertis_tbuf(B, "tbuf.c0:254.13-254.23") [failure message on stack]
+15 00    # vload 0         # B
+62 08    # aaddf 8         # &B->point
+2F       # amload          # B->point
+62 00    # aaddf 0         # &B->point->data
+2F       # amload          # B->point->data
+36 03    # vstore 3        # gapbuffer = B->point->data;
+15 03    # vload 3         # gapbuffer
+14 13 C9 # aldc 5065       # s[5065] = "tbuf.c0:260.7-260.29"
+B8 00 0D # invokestatic 13 # gapbuf_full(gapbuffer, "tbuf.c0:260.7-260.29")
+10 01    # bipush 1        # true
+9F 00 06 # if_cmpeq +6     # if (gapbuf_full(gapbuffer, "tbuf.c0:260.7-260.29") == true) goto <268:then>
+A7 00 0F # goto +15        # goto <269:else>
+# <268:then>
+15 00    # vload 0         # B
+14 13 DE # aldc 5086       # s[5086] = "tbuf.c0:261.5-261.21"
+B8 00 22 # invokestatic 34 # tbuf_split_pt(B, "tbuf.c0:261.5-261.21")
+57       # pop             # (ignore result)
+A7 00 03 # goto +3         # goto <270:endif>
+# <269:else>
+# <270:endif>
+15 00    # vload 0         # B
+62 08    # aaddf 8         # &B->point
+2F       # amload          # B->point
+62 00    # aaddf 0         # &B->point->data
+2F       # amload          # B->point->data
+36 04    # vstore 4        # new_gb = B->point->data;
+15 04    # vload 4         # new_gb
+15 01    # vload 1         # c
+14 13 F3 # aldc 5107       # s[5107] = "tbuf.c0:265.3-265.27"
+B8 00 13 # invokestatic 19 # gapbuf_insert(new_gb, c, "tbuf.c0:265.3-265.27")
+57       # pop             # (ignore result)
+15 00    # vload 0         # B
+14 14 08 # aldc 5128       # s[5128] = "tbuf.c0:255.12-255.22"
+B8 00 20 # invokestatic 32 # is_tbuf(B, "tbuf.c0:255.12-255.22")
+14 14 1E # aldc 5150       # s[5150] = "tbuf.c0:255.4-255.23: @ensures annotation failed"
+CF       # assert          # assertis_tbuf(B, "tbuf.c0:255.12-255.22") [failure message on stack]
+10 00    # bipush 0        # dummy return value
+B0       # return          # 
+
+
+#<tbuf_delete>
+00 02             # number of arguments = 2
+00 0E             # number of local variables = 14
+01 13             # code length = 275 bytes
+15 00    # vload 0         # B
+14 14 4F # aldc 5199       # s[5199] = "tbuf.c0:270.13-270.23"
+B8 00 20 # invokestatic 32 # is_tbuf(B, "tbuf.c0:270.13-270.23")
+14 14 65 # aldc 5221       # s[5221] = "tbuf.c0:270.4-270.24: @requires annotation failed\n"
+15 01    # vload 1         # _caller
+14 14 98 # aldc 5272       # s[5272] = ": caller location"
+B7 00 01 # invokenative 1  # string_join(_caller, ": caller location")
+B7 00 01 # invokenative 1  # string_join("tbuf.c0:270.4-270.24: @requires annotation failed\n", string_join(_caller, ": caller location"))
+CF       # assert          # assertis_tbuf(B, "tbuf.c0:270.13-270.23") [failure message on stack]
+15 00    # vload 0         # B
+62 08    # aaddf 8         # &B->point
+2F       # amload          # B->point
+62 00    # aaddf 0         # &B->point->data
+2F       # amload          # B->point->data
+36 02    # vstore 2        # gapbuff = B->point->data;
+15 02    # vload 2         # gapbuff
+14 14 AA # aldc 5290       # s[5290] = "tbuf.c0:276.8-276.31"
+B8 00 0E # invokestatic 14 # gapbuf_at_left(gapbuff, "tbuf.c0:276.8-276.31")
+10 01    # bipush 1        # true
+9F 00 58 # if_cmpeq +88    # if (gapbuf_at_left(gapbuff, "tbuf.c0:276.8-276.31") == true) goto <272:else>
+A7 00 03 # goto +3         # goto <271:then>
+# <271:then>
+15 02    # vload 2         # gapbuff
+14 14 BF # aldc 5311       # s[5311] = "tbuf.c0:277.5-277.27"
+B8 00 14 # invokestatic 20 # gapbuf_delete(gapbuff, "tbuf.c0:277.5-277.27")
+57       # pop             # (ignore result)
+15 00    # vload 0         # B
+62 08    # aaddf 8         # &B->point
+2F       # amload          # B->point
+62 00    # aaddf 0         # &B->point->data
+2F       # amload          # B->point->data
+36 03    # vstore 3        # new = B->point->data;
+15 03    # vload 3         # new
+14 14 D4 # aldc 5332       # s[5332] = "tbuf.c0:281.9-281.26"
+B8 00 0C # invokestatic 12 # gapbuf_empty(new, "tbuf.c0:281.9-281.26")
+10 01    # bipush 1        # true
+9F 00 06 # if_cmpeq +6     # if (gapbuf_empty(new, "tbuf.c0:281.9-281.26") == true) goto <277:and>
+A7 00 2F # goto +47        # goto <275:else>
+# <277:and>
+15 00    # vload 0         # B
+14 14 E9 # aldc 5353       # s[5353] = "tbuf.c0:281.32-281.49"
+B8 00 18 # invokestatic 24 # dll_pt_at_left(B, "tbuf.c0:281.32-281.49")
+10 01    # bipush 1        # true
+9F 00 06 # if_cmpeq +6     # if (dll_pt_at_left(B, "tbuf.c0:281.32-281.49") == true) goto <278:and>
+A7 00 13 # goto +19        # goto <274:then>
+# <278:and>
+15 00    # vload 0         # B
+14 14 FF # aldc 5375       # s[5375] = "tbuf.c0:281.53-281.71"
+B8 00 19 # invokestatic 25 # dll_pt_at_right(B, "tbuf.c0:281.53-281.71")
+10 01    # bipush 1        # true
+9F 00 12 # if_cmpeq +18    # if (dll_pt_at_right(B, "tbuf.c0:281.53-281.71") == true) goto <275:else>
+A7 00 03 # goto +3         # goto <274:then>
+# <274:then>
+15 00    # vload 0         # B
+14 15 15 # aldc 5397       # s[5397] = "tbuf.c0:282.7-282.23"
+B8 00 1C # invokestatic 28 # dll_pt_delete(B, "tbuf.c0:282.7-282.23")
+57       # pop             # (ignore result)
+A7 00 03 # goto +3         # goto <276:endif>
+# <275:else>
+# <276:endif>
+A7 00 84 # goto +132       # goto <273:endif>
+# <272:else>
+15 02    # vload 2         # gapbuff
+14 15 2A # aldc 5418       # s[5418] = "tbuf.c0:287.12-287.35"
+B8 00 0E # invokestatic 14 # gapbuf_at_left(gapbuff, "tbuf.c0:287.12-287.35")
+10 01    # bipush 1        # true
+9F 00 06 # if_cmpeq +6     # if (gapbuf_at_left(gapbuff, "tbuf.c0:287.12-287.35") == true) goto <282:and>
+A7 00 74 # goto +116       # goto <280:else>
+# <282:and>
+15 00    # vload 0         # B
+14 15 40 # aldc 5440       # s[5440] = "tbuf.c0:287.40-287.57"
+B8 00 18 # invokestatic 24 # dll_pt_at_left(B, "tbuf.c0:287.40-287.57")
+10 01    # bipush 1        # true
+9F 00 67 # if_cmpeq +103   # if (dll_pt_at_left(B, "tbuf.c0:287.40-287.57") == true) goto <280:else>
+A7 00 03 # goto +3         # goto <279:then>
+# <279:then>
+15 00    # vload 0         # B
+14 15 56 # aldc 5462       # s[5462] = "tbuf.c0:289.5-289.23"
+B8 00 1B # invokestatic 27 # dll_pt_backward(B, "tbuf.c0:289.5-289.23")
+57       # pop             # (ignore result)
+15 00    # vload 0         # B
+62 08    # aaddf 8         # &B->point
+2F       # amload          # B->point
+62 00    # aaddf 0         # &B->point->data
+2F       # amload          # B->point->data
+14 15 6B # aldc 5483       # s[5483] = "tbuf.c0:290.5-290.34"
+B8 00 14 # invokestatic 20 # gapbuf_delete(B->point->data, "tbuf.c0:290.5-290.34")
+57       # pop             # (ignore result)
+15 00    # vload 0         # B
+62 08    # aaddf 8         # &B->point
+2F       # amload          # B->point
+62 00    # aaddf 0         # &B->point->data
+2F       # amload          # B->point->data
+36 03    # vstore 3        # newbuf = B->point->data;
+15 03    # vload 3         # newbuf
+14 15 80 # aldc 5504       # s[5504] = "tbuf.c0:294.9-294.29"
+B8 00 0C # invokestatic 12 # gapbuf_empty(newbuf, "tbuf.c0:294.9-294.29")
+10 01    # bipush 1        # true
+9F 00 06 # if_cmpeq +6     # if (gapbuf_empty(newbuf, "tbuf.c0:294.9-294.29") == true) goto <286:and>
+A7 00 2F # goto +47        # goto <284:else>
+# <286:and>
+15 00    # vload 0         # B
+14 15 95 # aldc 5525       # s[5525] = "tbuf.c0:294.35-294.52"
+B8 00 18 # invokestatic 24 # dll_pt_at_left(B, "tbuf.c0:294.35-294.52")
+10 01    # bipush 1        # true
+9F 00 06 # if_cmpeq +6     # if (dll_pt_at_left(B, "tbuf.c0:294.35-294.52") == true) goto <287:and>
+A7 00 13 # goto +19        # goto <283:then>
+# <287:and>
+15 00    # vload 0         # B
+14 15 AB # aldc 5547       # s[5547] = "tbuf.c0:294.56-294.74"
+B8 00 19 # invokestatic 25 # dll_pt_at_right(B, "tbuf.c0:294.56-294.74")
+10 01    # bipush 1        # true
+9F 00 12 # if_cmpeq +18    # if (dll_pt_at_right(B, "tbuf.c0:294.56-294.74") == true) goto <284:else>
+A7 00 03 # goto +3         # goto <283:then>
+# <283:then>
+15 00    # vload 0         # B
+14 15 C1 # aldc 5569       # s[5569] = "tbuf.c0:295.7-295.23"
+B8 00 1C # invokestatic 28 # dll_pt_delete(B, "tbuf.c0:295.7-295.23")
+57       # pop             # (ignore result)
+A7 00 03 # goto +3         # goto <285:endif>
+# <284:else>
+# <285:endif>
+A7 00 03 # goto +3         # goto <281:endif>
+# <280:else>
+# <281:endif>
+# <273:endif>
+15 00    # vload 0         # B
+14 15 D6 # aldc 5590       # s[5590] = "tbuf.c0:271.12-271.22"
+B8 00 20 # invokestatic 32 # is_tbuf(B, "tbuf.c0:271.12-271.22")
+14 15 EC # aldc 5612       # s[5612] = "tbuf.c0:271.4-271.23: @ensures annotation failed"
+CF       # assert          # assertis_tbuf(B, "tbuf.c0:271.12-271.22") [failure message on stack]
+10 00    # bipush 0        # dummy return value
+B0       # return          # 
+
+
+#<valid_buffers>
+00 03             # number of arguments = 3
+00 07             # number of local variables = 7
+00 62             # code length = 98 bytes
+15 00    # vload 0         # start
+62 08    # aaddf 8         # &start->next
+2F       # amload          # start->next
+62 08    # aaddf 8         # &start->next->next
+2F       # amload          # start->next->next
+15 01    # vload 1         # end
+A0 00 06 # if_cmpne +6     # if (start->next->next != end) goto <152:then>
+A7 00 4E # goto +78        # goto <153:else>
+# <152:then>
+15 00    # vload 0         # start
+62 08    # aaddf 8         # &start->next
+2F       # amload          # start->next
+36 04    # vstore 4        # p = start->next;
+# <155:loop>
+A7 00 03 # goto +3         # goto <156:body>
+# <156:body>
+15 04    # vload 4         # p
+15 01    # vload 1         # end
+A0 00 06 # if_cmpne +6     # if (p != end) goto <158:then>
+A7 00 2A # goto +42        # goto <159:else>
+# <158:then>
+15 04    # vload 4         # p
+62 00    # aaddf 0         # &p->data
+2F       # amload          # p->data
+14 0F 57 # aldc 3927       # s[3927] = "tbuf.c0:32.11-32.32"
+B8 00 0C # invokestatic 12 # gapbuf_empty(p->data, "tbuf.c0:32.11-32.32")
+10 01    # bipush 1        # true
+9F 00 06 # if_cmpeq +6     # if (gapbuf_empty(p->data, "tbuf.c0:32.11-32.32") == true) goto <161:then>
+A7 00 0D # goto +13        # goto <162:else>
+# <161:then>
+10 00    # bipush 0        # false
+36 03    # vstore 3        # _result = false;
+15 03    # vload 3         # _result
+B0       # return          # 
+A7 00 03 # goto +3         # goto <163:endif>
+# <162:else>
+# <163:endif>
+15 04    # vload 4         # p
+62 08    # aaddf 8         # &p->next
+2F       # amload          # p->next
+36 04    # vstore 4        # p = p->next;
+A7 00 06 # goto +6         # goto <160:endif>
+# <159:else>
+A7 00 06 # goto +6         # break
+# <160:endif>
+A7 FF C9 # goto -55        # goto <155:loop>
+# <157:exit>
+10 01    # bipush 1        # true
+36 03    # vstore 3        # _result = true;
+15 03    # vload 3         # _result
+B0       # return          # 
+A7 00 03 # goto +3         # goto <154:endif>
+# <153:else>
+# <154:endif>
+10 01    # bipush 1        # true
+36 03    # vstore 3        # _result = true;
+15 03    # vload 3         # _result
+B0       # return          # 
+
+
+#<align>
+00 04             # number of arguments = 4
+00 07             # number of local variables = 7
+00 89             # code length = 137 bytes
+15 01    # vload 1         # point
+62 10    # aaddf 16        # &point->prev
+2F       # amload          # point->prev
+36 05    # vstore 5        # p = point->prev;
+# <164:loop>
+A7 00 03 # goto +3         # goto <165:body>
+# <165:body>
+15 05    # vload 5         # p
+15 00    # vload 0         # start
+A0 00 06 # if_cmpne +6     # if (p != start) goto <167:then>
+A7 00 2A # goto +42        # goto <168:else>
+# <167:then>
+15 05    # vload 5         # p
+62 00    # aaddf 0         # &p->data
+2F       # amload          # p->data
+14 0F 6B # aldc 3947       # s[3947] = "tbuf.c0:45.10-45.34"
+B8 00 0F # invokestatic 15 # gapbuf_at_right(p->data, "tbuf.c0:45.10-45.34")
+10 01    # bipush 1        # true
+9F 00 10 # if_cmpeq +16    # if (gapbuf_at_right(p->data, "tbuf.c0:45.10-45.34") == true) goto <171:else>
+A7 00 03 # goto +3         # goto <170:then>
+# <170:then>
+10 00    # bipush 0        # false
+36 04    # vstore 4        # _result = false;
+15 04    # vload 4         # _result
+B0       # return          # 
+A7 00 03 # goto +3         # goto <172:endif>
+# <171:else>
+# <172:endif>
+15 05    # vload 5         # p
+62 10    # aaddf 16        # &p->prev
+2F       # amload          # p->prev
+36 05    # vstore 5        # p = p->prev;
+A7 00 06 # goto +6         # goto <169:endif>
+# <168:else>
+A7 00 06 # goto +6         # break
+# <169:endif>
+A7 FF C9 # goto -55        # goto <164:loop>
+# <166:exit>
+15 01    # vload 1         # point
+62 08    # aaddf 8         # &point->next
+2F       # amload          # point->next
+36 05    # vstore 5        # q = point->next;
+# <173:loop>
+A7 00 03 # goto +3         # goto <174:body>
+# <174:body>
+15 05    # vload 5         # q
+15 02    # vload 2         # end
+A0 00 06 # if_cmpne +6     # if (q != end) goto <176:then>
+A7 00 2A # goto +42        # goto <177:else>
+# <176:then>
+15 05    # vload 5         # q
+62 00    # aaddf 0         # &q->data
+2F       # amload          # q->data
+14 0F 7F # aldc 3967       # s[3967] = "tbuf.c0:48.10-48.33"
+B8 00 0E # invokestatic 14 # gapbuf_at_left(q->data, "tbuf.c0:48.10-48.33")
+10 01    # bipush 1        # true
+9F 00 10 # if_cmpeq +16    # if (gapbuf_at_left(q->data, "tbuf.c0:48.10-48.33") == true) goto <180:else>
+A7 00 03 # goto +3         # goto <179:then>
+# <179:then>
+10 00    # bipush 0        # false
+36 04    # vstore 4        # _result = false;
+15 04    # vload 4         # _result
+B0       # return          # 
+A7 00 03 # goto +3         # goto <181:endif>
+# <180:else>
+# <181:endif>
+15 05    # vload 5         # q
+62 08    # aaddf 8         # &q->next
+2F       # amload          # q->next
+36 05    # vstore 5        # q = q->next;
+A7 00 06 # goto +6         # goto <178:endif>
+# <177:else>
+A7 00 06 # goto +6         # break
+# <178:endif>
+A7 FF C9 # goto -55        # goto <173:loop>
+# <175:exit>
+10 01    # bipush 1        # true
+36 04    # vstore 4        # _result = true;
+15 04    # vload 4         # _result
+B0       # return          # 
+
+
+#<render_char>
+00 04             # number of arguments = 4
+00 0E             # number of local variables = 14
+00 8E             # code length = 142 bytes
+15 01    # vload 1         # point
+01       # aconst_null     # NULL
+A0 00 06 # if_cmpne +6     # if (point != NULL) goto <291:and>
+A7 00 53 # goto +83        # goto <289:else>
+# <291:and>
+15 01    # vload 1         # point
+34       # cmload          # *(point)
+10 01    # bipush 1        # true
+9F 00 06 # if_cmpeq +6     # if (*(point) == true) goto <288:then>
+A7 00 48 # goto +72        # goto <289:else>
+# <288:then>
+15 00    # vload 0         # c
+10 0A    # bipush 10       # '\n'
+9F 00 06 # if_cmpeq +6     # if (c == '\n') goto <292:then>
+A7 00 25 # goto +37        # goto <293:else>
+# <292:then>
+15 02    # vload 2         # w
+10 20    # bipush 32       # ' '
+14 16 1D # aldc 5661       # s[5661] = "lovas-E0.c0:33.38-33.51"
+B8 00 09 # invokestatic 9  # char_ord__1(' ', "lovas-E0.c0:33.38-33.51")
+B7 00 0E # invokenative 14 # cc_highlight(char_ord__1(' ', "lovas-E0.c0:33.38-33.51"))
+B7 00 0D # invokenative 13 # c_waddch(w, cc_highlight(char_ord__1(' ', "lovas-E0.c0:33.38-33.51")))
+57       # pop             # (ignore result)
+15 02    # vload 2         # w
+10 0A    # bipush 10       # '\n'
+14 16 35 # aldc 5685       # s[5685] = "lovas-E0.c0:34.25-34.39"
+B8 00 09 # invokestatic 9  # char_ord__1('\n', "lovas-E0.c0:34.25-34.39")
+B7 00 0D # invokenative 13 # c_waddch(w, char_ord__1('\n', "lovas-E0.c0:34.25-34.39"))
+57       # pop             # (ignore result)
+A7 00 14 # goto +20        # goto <294:endif>
+# <293:else>
+15 02    # vload 2         # w
+15 00    # vload 0         # c
+14 16 4D # aldc 5709       # s[5709] = "lovas-E0.c0:36.38-36.49"
+B8 00 09 # invokestatic 9  # char_ord__1(c, "lovas-E0.c0:36.38-36.49")
+B7 00 0E # invokenative 14 # cc_highlight(char_ord__1(c, "lovas-E0.c0:36.38-36.49"))
+B7 00 0D # invokenative 13 # c_waddch(w, cc_highlight(char_ord__1(c, "lovas-E0.c0:36.38-36.49")))
+57       # pop             # (ignore result)
+# <294:endif>
+15 01    # vload 1         # point
+10 00    # bipush 0        # false
+55       # cmstore         # *(point) = false;
+A7 00 11 # goto +17        # goto <290:endif>
+# <289:else>
+15 02    # vload 2         # w
+15 00    # vload 0         # c
+14 16 65 # aldc 5733       # s[5733] = "lovas-E0.c0:40.21-40.32"
+B8 00 09 # invokestatic 9  # char_ord__1(c, "lovas-E0.c0:40.21-40.32")
+B7 00 0D # invokenative 13 # c_waddch(w, char_ord__1(c, "lovas-E0.c0:40.21-40.32"))
+57       # pop             # (ignore result)
+# <290:endif>
+15 01    # vload 1         # point
+01       # aconst_null     # NULL
+9F 00 06 # if_cmpeq +6     # if (point == NULL) goto <295:cond_true>
+A7 00 08 # goto +8         # goto <296:cond_false>
+# <295:cond_true>
+10 01    # bipush 1        # true
+A7 00 15 # goto +21        # goto <297:cond_end>
+# <296:cond_false>
+15 01    # vload 1         # point
+34       # cmload          # *(point)
+10 00    # bipush 0        # false
+9F 00 06 # if_cmpeq +6     # if (*(point) == false) goto <298:cond_true>
+A7 00 08 # goto +8         # goto <299:cond_false>
+# <298:cond_true>
+10 01    # bipush 1        # true
+A7 00 05 # goto +5         # goto <300:cond_end>
+# <299:cond_false>
+10 00    # bipush 0        # false
+# <300:cond_end>
+# <297:cond_end>
+14 16 7D # aldc 5757       # s[5757] = "lovas-E0.c0:29.4-29.45: @ensures annotation failed"
+CF       # assert          # assert((point == NULL) || (*(point) == false)) [failure message on stack]
+10 00    # bipush 0        # dummy return value
+B0       # return          # 
+
+
+#<render_gapbuf>
+00 04             # number of arguments = 4
+00 0E             # number of local variables = 14
+00 98             # code length = 152 bytes
+15 00    # vload 0         # G
+14 16 B0 # aldc 5808       # s[5808] = "lovas-E0.c0:45.13-45.25"
+B8 00 0B # invokestatic 11 # is_gapbuf(G, "lovas-E0.c0:45.13-45.25")
+14 16 C8 # aldc 5832       # s[5832] = "lovas-E0.c0:45.4-45.26: @requires annotation failed\n"
+15 03    # vload 3         # _caller
+14 16 FD # aldc 5885       # s[5885] = ": caller location"
+B7 00 01 # invokenative 1  # string_join(_caller, ": caller location")
+B7 00 01 # invokenative 1  # string_join("lovas-E0.c0:45.4-45.26: @requires annotation failed\n", string_join(_caller, ": caller location"))
+CF       # assert          # assertis_gapbuf(G, "lovas-E0.c0:45.13-45.25") [failure message on stack]
+10 00    # bipush 0        # 0
+36 04    # vstore 4        # i = 0;
+# <301:loop>
+A7 00 03 # goto +3         # goto <302:body>
+# <302:body>
+15 04    # vload 4         # i
+15 00    # vload 0         # G
+62 10    # aaddf 16        # &G->gap_start
+2E       # imload          # G->gap_start
+A1 00 06 # if_icmplt +6    # if (i < G->gap_start) goto <304:then>
+A7 00 20 # goto +32        # goto <305:else>
+# <304:then>
+15 00    # vload 0         # G
+62 08    # aaddf 8         # &G->buffer
+2F       # amload          # G->buffer
+15 04    # vload 4         # i
+63       # aadds           # &G->buffer[i]
+34       # cmload          # G->buffer[i]
+01       # aconst_null     # NULL
+15 02    # vload 2         # w
+14 17 0F # aldc 5903       # s[5903] = "lovas-E0.c0:48.44-48.78"
+B8 00 29 # invokestatic 41 # render_char(G->buffer[i], NULL, w, "lovas-E0.c0:48.44-48.78")
+57       # pop             # (ignore result)
+15 04    # vload 4         # i
+10 01    # bipush 1        # 1
+60       # iadd            # 
+36 04    # vstore 4        # i += 1;
+A7 00 06 # goto +6         # goto <306:endif>
+# <305:else>
+A7 00 06 # goto +6         # break
+# <306:endif>
+A7 FF D0 # goto -48        # goto <301:loop>
+# <303:exit>
+15 00    # vload 0         # G
+62 14    # aaddf 20        # &G->gap_end
+2E       # imload          # G->gap_end
+36 04    # vstore 4        # i = G->gap_end;
+# <307:loop>
+A7 00 03 # goto +3         # goto <308:body>
+# <308:body>
+15 04    # vload 4         # i
+15 00    # vload 0         # G
+62 00    # aaddf 0         # &G->limit
+2E       # imload          # G->limit
+A1 00 06 # if_icmplt +6    # if (i < G->limit) goto <310:then>
+A7 00 21 # goto +33        # goto <311:else>
+# <310:then>
+15 00    # vload 0         # G
+62 08    # aaddf 8         # &G->buffer
+2F       # amload          # G->buffer
+15 04    # vload 4         # i
+63       # aadds           # &G->buffer[i]
+34       # cmload          # G->buffer[i]
+15 01    # vload 1         # point
+15 02    # vload 2         # w
+14 17 27 # aldc 5927       # s[5927] = "lovas-E0.c0:50.7-50.42"
+B8 00 29 # invokestatic 41 # render_char(G->buffer[i], point, w, "lovas-E0.c0:50.7-50.42")
+57       # pop             # (ignore result)
+15 04    # vload 4         # i
+10 01    # bipush 1        # 1
+60       # iadd            # 
+36 04    # vstore 4        # i += 1;
+A7 00 06 # goto +6         # goto <312:endif>
+# <311:else>
+A7 00 06 # goto +6         # break
+# <312:endif>
+A7 FF CF # goto -49        # goto <307:loop>
+# <309:exit>
+15 00    # vload 0         # G
+14 17 3E # aldc 5950       # s[5950] = "lovas-E0.c0:46.12-46.24"
+B8 00 0B # invokestatic 11 # is_gapbuf(G, "lovas-E0.c0:46.12-46.24")
+14 17 56 # aldc 5974       # s[5974] = "lovas-E0.c0:46.4-46.25: @ensures annotation failed"
+CF       # assert          # assertis_gapbuf(G, "lovas-E0.c0:46.12-46.24") [failure message on stack]
+10 00    # bipush 0        # dummy return value
+B0       # return          # 
+
+
+#<render_buf>
+00 03             # number of arguments = 3
+00 0E             # number of local variables = 14
+00 AF             # code length = 175 bytes
+15 00    # vload 0         # B
+14 17 89 # aldc 6025       # s[6025] = "lovas-E0.c0:54.13-54.23"
+B8 00 20 # invokestatic 32 # is_tbuf(B, "lovas-E0.c0:54.13-54.23")
+14 17 A1 # aldc 6049       # s[6049] = "lovas-E0.c0:54.4-54.24: @requires annotation failed\n"
+15 02    # vload 2         # _caller
+14 17 D6 # aldc 6102       # s[6102] = ": caller location"
+B7 00 01 # invokenative 1  # string_join(_caller, ": caller location")
+B7 00 01 # invokenative 1  # string_join("lovas-E0.c0:54.4-54.24: @requires annotation failed\n", string_join(_caller, ": caller location"))
+CF       # assert          # assertis_tbuf(B, "lovas-E0.c0:54.13-54.23") [failure message on stack]
+BB 01    # new 1           # alloc(bool)
+36 03    # vstore 3        # point = alloc(bool);
+15 03    # vload 3         # point
+10 00    # bipush 0        # false
+55       # cmstore         # *(point) = false;
+15 01    # vload 1         # w
+10 00    # bipush 0        # 0
+10 00    # bipush 0        # 0
+B7 00 0F # invokenative 15 # c_wmove(w, 0, 0)
+57       # pop             # (ignore result)
+15 01    # vload 1         # w
+B7 00 10 # invokenative 16 # c_werase(w)
+57       # pop             # (ignore result)
+15 00    # vload 0         # B
+62 00    # aaddf 0         # &B->start
+2F       # amload          # B->start
+62 08    # aaddf 8         # &B->start->next
+2F       # amload          # B->start->next
+36 04    # vstore 4        # L = B->start->next;
+# <313:loop>
+A7 00 03 # goto +3         # goto <314:body>
+# <314:body>
+15 04    # vload 4         # L
+15 00    # vload 0         # B
+62 10    # aaddf 16        # &B->end
+2F       # amload          # B->end
+A0 00 06 # if_cmpne +6     # if (L != B->end) goto <316:then>
+A7 00 32 # goto +50        # goto <317:else>
+# <316:then>
+15 04    # vload 4         # L
+15 00    # vload 0         # B
+62 08    # aaddf 8         # &B->point
+2F       # amload          # B->point
+9F 00 06 # if_cmpeq +6     # if (L == B->point) goto <319:then>
+A7 00 0B # goto +11        # goto <320:else>
+# <319:then>
+15 03    # vload 3         # point
+10 01    # bipush 1        # true
+55       # cmstore         # *(point) = true;
+A7 00 03 # goto +3         # goto <321:endif>
+# <320:else>
+# <321:endif>
+15 04    # vload 4         # L
+62 00    # aaddf 0         # &L->data
+2F       # amload          # L->data
+15 03    # vload 3         # point
+15 01    # vload 1         # w
+14 17 E8 # aldc 6120       # s[6120] = "lovas-E0.c0:65.9-65.41"
+B8 00 2A # invokestatic 42 # render_gapbuf(L->data, point, w, "lovas-E0.c0:65.9-65.41")
+57       # pop             # (ignore result)
+15 04    # vload 4         # L
+62 08    # aaddf 8         # &L->next
+2F       # amload          # L->next
+36 04    # vstore 4        # L = L->next;
+A7 00 06 # goto +6         # goto <318:endif>
+# <317:else>
+A7 00 06 # goto +6         # break
+# <318:endif>
+A7 FF BE # goto -66        # goto <313:loop>
+# <315:exit>
+15 03    # vload 3         # point
+34       # cmload          # *(point)
+10 01    # bipush 1        # true
+9F 00 06 # if_cmpeq +6     # if (*(point) == true) goto <322:then>
+A7 00 13 # goto +19        # goto <323:else>
+# <322:then>
+10 20    # bipush 32       # ' '
+15 03    # vload 3         # point
+15 01    # vload 1         # w
+14 17 FF # aldc 6143       # s[6143] = "lovas-E0.c0:69.17-69.43"
+B8 00 29 # invokestatic 41 # render_char(' ', point, w, "lovas-E0.c0:69.17-69.43")
+57       # pop             # (ignore result)
+A7 00 03 # goto +3         # goto <324:endif>
+# <323:else>
+# <324:endif>
+15 01    # vload 1         # w
+B7 00 11 # invokenative 17 # c_wrefresh(w)
+57       # pop             # (ignore result)
+15 00    # vload 0         # B
+14 18 17 # aldc 6167       # s[6167] = "lovas-E0.c0:55.12-55.22"
+B8 00 20 # invokestatic 32 # is_tbuf(B, "lovas-E0.c0:55.12-55.22")
+14 18 2F # aldc 6191       # s[6191] = "lovas-E0.c0:55.4-55.23: @ensures annotation failed"
+CF       # assert          # assertis_tbuf(B, "lovas-E0.c0:55.12-55.22") [failure message on stack]
+10 00    # bipush 0        # dummy return value
+B0       # return          # 
+
+
+#<render_topbar>
+00 02             # number of arguments = 2
+00 0E             # number of local variables = 14
+00 60             # code length = 96 bytes
+15 00    # vload 0         # w
+B7 00 10 # invokenative 16 # c_werase(w)
+57       # pop             # (ignore result)
+15 00    # vload 0         # w
+B7 00 12 # invokenative 18 # cc_getbegx(w)
+36 02    # vstore 2        # i = cc_getbegx(w);
+# <325:loop>
+A7 00 03 # goto +3         # goto <326:body>
+# <326:body>
+15 02    # vload 2         # i
+15 00    # vload 0         # w
+B7 00 13 # invokenative 19 # cc_getmaxx(w)
+A1 00 06 # if_icmplt +6    # if (i < cc_getmaxx(w)) goto <328:then>
+A7 00 1E # goto +30        # goto <329:else>
+# <328:then>
+15 00    # vload 0         # w
+10 20    # bipush 32       # ' '
+14 18 62 # aldc 6242       # s[6242] = "lovas-E0.c0:77.34-77.47"
+B8 00 09 # invokestatic 9  # char_ord__1(' ', "lovas-E0.c0:77.34-77.47")
+B7 00 0E # invokenative 14 # cc_highlight(char_ord__1(' ', "lovas-E0.c0:77.34-77.47"))
+B7 00 0D # invokenative 13 # c_waddch(w, cc_highlight(char_ord__1(' ', "lovas-E0.c0:77.34-77.47")))
+57       # pop             # (ignore result)
+15 02    # vload 2         # i
+10 01    # bipush 1        # 1
+60       # iadd            # 
+36 02    # vstore 2        # i += 1;
+A7 00 06 # goto +6         # goto <330:endif>
+# <329:else>
+A7 00 06 # goto +6         # break
+# <330:endif>
+A7 FF D2 # goto -46        # goto <325:loop>
+# <327:exit>
+15 00    # vload 0         # w
+10 00    # bipush 0        # 0
+10 01    # bipush 1        # 1
+B7 00 0F # invokenative 15 # c_wmove(w, 0, 1)
+57       # pop             # (ignore result)
+15 00    # vload 0         # w
+B7 00 14 # invokenative 20 # cc_wreverseon(w)
+57       # pop             # (ignore result)
+15 00    # vload 0         # w
+14 18 7A # aldc 6266       # s[6266] = "E0, the minimalist editor -- ^X to exit, ^L to refresh"
+B7 00 15 # invokenative 21 # c_waddstr(w, "E0, the minimalist editor -- ^X to exit, ^L to refresh")
+57       # pop             # (ignore result)
+15 00    # vload 0         # w
+B7 00 16 # invokenative 22 # cc_wreverseoff(w)
+57       # pop             # (ignore result)
+10 00    # bipush 0        # dummy return value
+B0       # return          # 
+
+
+#<render_botbar>
+00 02             # number of arguments = 2
+00 0E             # number of local variables = 14
+00 41             # code length = 65 bytes
+15 00    # vload 0         # w
+B7 00 10 # invokenative 16 # c_werase(w)
+57       # pop             # (ignore result)
+15 00    # vload 0         # w
+B7 00 12 # invokenative 18 # cc_getbegx(w)
+36 02    # vstore 2        # i = cc_getbegx(w);
+# <331:loop>
+A7 00 03 # goto +3         # goto <332:body>
+# <332:body>
+15 02    # vload 2         # i
+15 00    # vload 0         # w
+B7 00 13 # invokenative 19 # cc_getmaxx(w)
+A1 00 06 # if_icmplt +6    # if (i < cc_getmaxx(w)) goto <334:then>
+A7 00 1E # goto +30        # goto <335:else>
+# <334:then>
+15 00    # vload 0         # w
+10 20    # bipush 32       # ' '
+14 18 B1 # aldc 6321       # s[6321] = "lovas-E0.c0:87.34-87.47"
+B8 00 09 # invokestatic 9  # char_ord__1(' ', "lovas-E0.c0:87.34-87.47")
+B7 00 0E # invokenative 14 # cc_highlight(char_ord__1(' ', "lovas-E0.c0:87.34-87.47"))
+B7 00 0D # invokenative 13 # c_waddch(w, cc_highlight(char_ord__1(' ', "lovas-E0.c0:87.34-87.47")))
+57       # pop             # (ignore result)
+15 02    # vload 2         # i
+10 01    # bipush 1        # 1
+60       # iadd            # 
+36 02    # vstore 2        # i += 1;
+A7 00 06 # goto +6         # goto <336:endif>
+# <335:else>
+A7 00 06 # goto +6         # break
+# <336:endif>
+A7 FF D2 # goto -46        # goto <331:loop>
+# <333:exit>
+10 00    # bipush 0        # dummy return value
+B0       # return          # 
+
+
+#<vrender_char>
+00 03             # number of arguments = 3
+00 0E             # number of local variables = 14
+00 77             # code length = 119 bytes
+15 01    # vload 1         # c
+10 0A    # bipush 10       # '\n'
+9F 00 06 # if_cmpeq +6     # if (c == '\n') goto <337:then>
+A7 00 2C # goto +44        # goto <338:else>
+# <337:then>
+15 00    # vload 0         # w
+B7 00 17 # invokenative 23 # cc_wboldon(w)
+57       # pop             # (ignore result)
+15 00    # vload 0         # w
+B7 00 18 # invokenative 24 # cc_wunderon(w)
+57       # pop             # (ignore result)
+15 00    # vload 0         # w
+10 23    # bipush 35       # '#'
+14 18 C9 # aldc 6345       # s[6345] = "lovas-E0.c0:96.21-96.34"
+B8 00 09 # invokestatic 9  # char_ord__1('#', "lovas-E0.c0:96.21-96.34")
+B7 00 0D # invokenative 13 # c_waddch(w, char_ord__1('#', "lovas-E0.c0:96.21-96.34"))
+57       # pop             # (ignore result)
+15 00    # vload 0         # w
+B7 00 19 # invokenative 25 # cc_wunderoff(w)
+57       # pop             # (ignore result)
+15 00    # vload 0         # w
+B7 00 1A # invokenative 26 # cc_wboldoff(w)
+57       # pop             # (ignore result)
+A7 00 44 # goto +68        # goto <339:endif>
+# <338:else>
+15 01    # vload 1         # c
+10 09    # bipush 9        # '\t'
+9F 00 06 # if_cmpeq +6     # if (c == '\t') goto <340:then>
+A7 00 2C # goto +44        # goto <341:else>
+# <340:then>
+15 00    # vload 0         # w
+B7 00 17 # invokenative 23 # cc_wboldon(w)
+57       # pop             # (ignore result)
+15 00    # vload 0         # w
+B7 00 18 # invokenative 24 # cc_wunderon(w)
+57       # pop             # (ignore result)
+15 00    # vload 0         # w
+10 3E    # bipush 62       # '>'
+14 18 E1 # aldc 6369       # s[6369] = "lovas-E0.c0:100.21-100.34"
+B8 00 09 # invokestatic 9  # char_ord__1('>', "lovas-E0.c0:100.21-100.34")
+B7 00 0D # invokenative 13 # c_waddch(w, char_ord__1('>', "lovas-E0.c0:100.21-100.34"))
+57       # pop             # (ignore result)
+15 00    # vload 0         # w
+B7 00 19 # invokenative 25 # cc_wunderoff(w)
+57       # pop             # (ignore result)
+15 00    # vload 0         # w
+B7 00 1A # invokenative 26 # cc_wboldoff(w)
+57       # pop             # (ignore result)
+A7 00 11 # goto +17        # goto <342:endif>
+# <341:else>
+15 00    # vload 0         # w
+15 01    # vload 1         # c
+14 18 FB # aldc 6395       # s[6395] = "lovas-E0.c0:103.21-103.32"
+B8 00 09 # invokestatic 9  # char_ord__1(c, "lovas-E0.c0:103.21-103.32")
+B7 00 0D # invokenative 13 # c_waddch(w, char_ord__1(c, "lovas-E0.c0:103.21-103.32"))
+57       # pop             # (ignore result)
+# <342:endif>
+# <339:endif>
+10 00    # bipush 0        # dummy return value
+B0       # return          # 
+
+
+#<vrender_gapbuf>
+00 03             # number of arguments = 3
+00 0E             # number of local variables = 14
+00 FE             # code length = 254 bytes
+15 00    # vload 0         # G
+14 19 15 # aldc 6421       # s[6421] = "lovas-E0.c0:108.13-108.25"
+B8 00 0B # invokestatic 11 # is_gapbuf(G, "lovas-E0.c0:108.13-108.25")
+14 19 2F # aldc 6447       # s[6447] = "lovas-E0.c0:108.4-108.26: @requires annotation failed\n"
+15 02    # vload 2         # _caller
+14 19 66 # aldc 6502       # s[6502] = ": caller location"
+B7 00 01 # invokenative 1  # string_join(_caller, ": caller location")
+B7 00 01 # invokenative 1  # string_join("lovas-E0.c0:108.4-108.26: @requires annotation failed\n", string_join(_caller, ": caller location"))
+CF       # assert          # assertis_gapbuf(G, "lovas-E0.c0:108.13-108.25") [failure message on stack]
+10 00    # bipush 0        # 0
+36 03    # vstore 3        # i = 0;
+# <343:loop>
+A7 00 03 # goto +3         # goto <344:body>
+# <344:body>
+15 03    # vload 3         # i
+15 00    # vload 0         # G
+62 10    # aaddf 16        # &G->gap_start
+2E       # imload          # G->gap_start
+A1 00 06 # if_icmplt +6    # if (i < G->gap_start) goto <346:then>
+A7 00 1F # goto +31        # goto <347:else>
+# <346:then>
+15 01    # vload 1         # w
+15 00    # vload 0         # G
+62 08    # aaddf 8         # &G->buffer
+2F       # amload          # G->buffer
+15 03    # vload 3         # i
+63       # aadds           # &G->buffer[i]
+34       # cmload          # G->buffer[i]
+14 19 78 # aldc 6520       # s[6520] = "lovas-E0.c0:111.44-111.73"
+B8 00 2E # invokestatic 46 # vrender_char(w, G->buffer[i], "lovas-E0.c0:111.44-111.73")
+57       # pop             # (ignore result)
+15 03    # vload 3         # i
+10 01    # bipush 1        # 1
+60       # iadd            # 
+36 03    # vstore 3        # i += 1;
+A7 00 06 # goto +6         # goto <348:endif>
+# <347:else>
+A7 00 06 # goto +6         # break
+# <348:endif>
+A7 FF D1 # goto -47        # goto <343:loop>
+# <345:exit>
+15 01    # vload 1         # w
+B7 00 17 # invokenative 23 # cc_wboldon(w)
+57       # pop             # (ignore result)
+15 01    # vload 1         # w
+B7 00 18 # invokenative 24 # cc_wunderon(w)
+57       # pop             # (ignore result)
+15 01    # vload 1         # w
+10 5B    # bipush 91       # '['
+14 19 92 # aldc 6546       # s[6546] = "lovas-E0.c0:113.17-113.30"
+B8 00 09 # invokestatic 9  # char_ord__1('[', "lovas-E0.c0:113.17-113.30")
+B7 00 0D # invokenative 13 # c_waddch(w, char_ord__1('[', "lovas-E0.c0:113.17-113.30"))
+57       # pop             # (ignore result)
+15 00    # vload 0         # G
+62 10    # aaddf 16        # &G->gap_start
+2E       # imload          # G->gap_start
+36 03    # vstore 3        # i = G->gap_start;
+# <349:loop>
+A7 00 03 # goto +3         # goto <350:body>
+# <350:body>
+15 03    # vload 3         # i
+15 00    # vload 0         # G
+62 14    # aaddf 20        # &G->gap_end
+2E       # imload          # G->gap_end
+A1 00 06 # if_icmplt +6    # if (i < G->gap_end) goto <352:then>
+A7 00 1B # goto +27        # goto <353:else>
+# <352:then>
+15 01    # vload 1         # w
+10 2E    # bipush 46       # '.'
+14 19 AC # aldc 6572       # s[6572] = "lovas-E0.c0:114.65-114.78"
+B8 00 09 # invokestatic 9  # char_ord__1('.', "lovas-E0.c0:114.65-114.78")
+B7 00 0D # invokenative 13 # c_waddch(w, char_ord__1('.', "lovas-E0.c0:114.65-114.78"))
+57       # pop             # (ignore result)
+15 03    # vload 3         # i
+10 01    # bipush 1        # 1
+60       # iadd            # 
+36 03    # vstore 3        # i += 1;
+A7 00 06 # goto +6         # goto <354:endif>
+# <353:else>
+A7 00 06 # goto +6         # break
+# <354:endif>
+A7 FF D5 # goto -43        # goto <349:loop>
+# <351:exit>
+15 01    # vload 1         # w
+10 5D    # bipush 93       # ']'
+14 19 C6 # aldc 6598       # s[6598] = "lovas-E0.c0:115.17-115.30"
+B8 00 09 # invokestatic 9  # char_ord__1(']', "lovas-E0.c0:115.17-115.30")
+B7 00 0D # invokenative 13 # c_waddch(w, char_ord__1(']', "lovas-E0.c0:115.17-115.30"))
+57       # pop             # (ignore result)
+15 01    # vload 1         # w
+B7 00 19 # invokenative 25 # cc_wunderoff(w)
+57       # pop             # (ignore result)
+15 01    # vload 1         # w
+B7 00 1A # invokenative 26 # cc_wboldoff(w)
+57       # pop             # (ignore result)
+15 00    # vload 0         # G
+62 14    # aaddf 20        # &G->gap_end
+2E       # imload          # G->gap_end
+36 03    # vstore 3        # i = G->gap_end;
+# <355:loop>
+A7 00 03 # goto +3         # goto <356:body>
+# <356:body>
+15 03    # vload 3         # i
+15 00    # vload 0         # G
+62 00    # aaddf 0         # &G->limit
+2E       # imload          # G->limit
+A1 00 06 # if_icmplt +6    # if (i < G->limit) goto <358:then>
+A7 00 1F # goto +31        # goto <359:else>
+# <358:then>
+15 01    # vload 1         # w
+15 00    # vload 0         # G
+62 08    # aaddf 8         # &G->buffer
+2F       # amload          # G->buffer
+15 03    # vload 3         # i
+63       # aadds           # &G->buffer[i]
+34       # cmload          # G->buffer[i]
+14 19 E0 # aldc 6624       # s[6624] = "lovas-E0.c0:117.49-117.78"
+B8 00 2E # invokestatic 46 # vrender_char(w, G->buffer[i], "lovas-E0.c0:117.49-117.78")
+57       # pop             # (ignore result)
+15 03    # vload 3         # i
+10 01    # bipush 1        # 1
+60       # iadd            # 
+36 03    # vstore 3        # i += 1;
+A7 00 06 # goto +6         # goto <360:endif>
+# <359:else>
+A7 00 06 # goto +6         # break
+# <360:endif>
+A7 FF D1 # goto -47        # goto <355:loop>
+# <357:exit>
+15 00    # vload 0         # G
+14 19 FA # aldc 6650       # s[6650] = "lovas-E0.c0:109.12-109.24"
+B8 00 0B # invokestatic 11 # is_gapbuf(G, "lovas-E0.c0:109.12-109.24")
+14 1A 14 # aldc 6676       # s[6676] = "lovas-E0.c0:109.4-109.25: @ensures annotation failed"
+CF       # assert          # assertis_gapbuf(G, "lovas-E0.c0:109.12-109.24") [failure message on stack]
+10 00    # bipush 0        # dummy return value
+B0       # return          # 
+
+
+#<vrender_buf>
+00 03             # number of arguments = 3
+00 0E             # number of local variables = 14
+01 AD             # code length = 429 bytes
+15 00    # vload 0         # B
+14 1A 49 # aldc 6729       # s[6729] = "lovas-E0.c0:121.13-121.23"
+B8 00 20 # invokestatic 32 # is_tbuf(B, "lovas-E0.c0:121.13-121.23")
+14 1A 63 # aldc 6755       # s[6755] = "lovas-E0.c0:121.4-121.24: @requires annotation failed\n"
+15 02    # vload 2         # _caller
+14 1A 9A # aldc 6810       # s[6810] = ": caller location"
+B7 00 01 # invokenative 1  # string_join(_caller, ": caller location")
+B7 00 01 # invokenative 1  # string_join("lovas-E0.c0:121.4-121.24: @requires annotation failed\n", string_join(_caller, ": caller location"))
+CF       # assert          # assertis_tbuf(B, "lovas-E0.c0:121.13-121.23") [failure message on stack]
+15 01    # vload 1         # w
+B7 00 1B # invokenative 27 # c_wclear(w)
+57       # pop             # (ignore result)
+15 00    # vload 0         # B
+62 08    # aaddf 8         # &B->point
+2F       # amload          # B->point
+62 10    # aaddf 16        # &B->point->prev
+2F       # amload          # B->point->prev
+15 00    # vload 0         # B
+62 00    # aaddf 0         # &B->start
+2F       # amload          # B->start
+9F 00 1C # if_cmpeq +28    # if (B->point->prev == B->start) goto <361:then>
+A7 00 03 # goto +3         # goto <364:or>
+# <364:or>
+15 00    # vload 0         # B
+62 08    # aaddf 8         # &B->point
+2F       # amload          # B->point
+62 10    # aaddf 16        # &B->point->prev
+2F       # amload          # B->point->prev
+62 10    # aaddf 16        # &B->point->prev->prev
+2F       # amload          # B->point->prev->prev
+15 00    # vload 0         # B
+62 00    # aaddf 0         # &B->start
+2F       # amload          # B->start
+9F 00 06 # if_cmpeq +6     # if (B->point->prev->prev == B->start) goto <361:then>
+A7 00 1B # goto +27        # goto <362:else>
+# <361:then>
+15 01    # vload 1         # w
+B7 00 17 # invokenative 23 # cc_wboldon(w)
+57       # pop             # (ignore result)
+15 01    # vload 1         # w
+14 1A AC # aldc 6828       # s[6828] = " **"
+B7 00 15 # invokenative 21 # c_waddstr(w, " **")
+57       # pop             # (ignore result)
+15 01    # vload 1         # w
+B7 00 1A # invokenative 26 # cc_wboldoff(w)
+57       # pop             # (ignore result)
+A7 00 18 # goto +24        # goto <363:endif>
+# <362:else>
+15 01    # vload 1         # w
+B7 00 1C # invokenative 28 # cc_wdimon(w)
+57       # pop             # (ignore result)
+15 01    # vload 1         # w
+14 1A B0 # aldc 6832       # s[6832] = "<.."
+B7 00 15 # invokenative 21 # c_waddstr(w, "<..")
+57       # pop             # (ignore result)
+15 01    # vload 1         # w
+B7 00 1D # invokenative 29 # cc_wdimoff(w)
+57       # pop             # (ignore result)
+# <363:endif>
+15 00    # vload 0         # B
+62 08    # aaddf 8         # &B->point
+2F       # amload          # B->point
+36 03    # vstore 3        # L = B->point;
+15 03    # vload 3         # L
+62 10    # aaddf 16        # &L->prev
+2F       # amload          # L->prev
+15 00    # vload 0         # B
+62 00    # aaddf 0         # &B->start
+2F       # amload          # B->start
+A0 00 06 # if_cmpne +6     # if (L->prev != B->start) goto <365:then>
+A7 00 0D # goto +13        # goto <366:else>
+# <365:then>
+15 03    # vload 3         # L
+62 10    # aaddf 16        # &L->prev
+2F       # amload          # L->prev
+36 03    # vstore 3        # L = L->prev;
+A7 00 03 # goto +3         # goto <367:endif>
+# <366:else>
+# <367:endif>
+15 03    # vload 3         # L
+62 10    # aaddf 16        # &L->prev
+2F       # amload          # L->prev
+15 00    # vload 0         # B
+62 00    # aaddf 0         # &B->start
+2F       # amload          # B->start
+A0 00 06 # if_cmpne +6     # if (L->prev != B->start) goto <371:and>
+A7 00 20 # goto +32        # goto <369:else>
+# <371:and>
+15 03    # vload 3         # L
+62 08    # aaddf 8         # &L->next
+2F       # amload          # L->next
+62 08    # aaddf 8         # &L->next->next
+2F       # amload          # L->next->next
+15 00    # vload 0         # B
+62 10    # aaddf 16        # &B->end
+2F       # amload          # B->end
+9F 00 06 # if_cmpeq +6     # if (L->next->next == B->end) goto <368:then>
+A7 00 0D # goto +13        # goto <369:else>
+# <368:then>
+15 03    # vload 3         # L
+62 10    # aaddf 16        # &L->prev
+2F       # amload          # L->prev
+36 03    # vstore 3        # L = L->prev;
+A7 00 03 # goto +3         # goto <370:endif>
+# <369:else>
+# <370:endif>
+10 00    # bipush 0        # 0
+36 04    # vstore 4        # i = 0;
+# <372:loop>
+A7 00 03 # goto +3         # goto <373:body>
+# <373:body>
+15 04    # vload 4         # i
+10 03    # bipush 3        # 3
+A1 00 06 # if_icmplt +6    # if (i < 3) goto <378:and>
+A7 00 64 # goto +100       # goto <376:else>
+# <378:and>
+15 03    # vload 3         # L
+15 00    # vload 0         # B
+62 10    # aaddf 16        # &B->end
+2F       # amload          # B->end
+A0 00 06 # if_cmpne +6     # if (L != B->end) goto <375:then>
+A7 00 57 # goto +87        # goto <376:else>
+# <375:then>
+15 01    # vload 1         # w
+14 1A B4 # aldc 6836       # s[6836] = " <-> "
+B7 00 15 # invokenative 21 # c_waddstr(w, " <-> ")
+57       # pop             # (ignore result)
+15 03    # vload 3         # L
+15 00    # vload 0         # B
+62 08    # aaddf 8         # &B->point
+2F       # amload          # B->point
+9F 00 06 # if_cmpeq +6     # if (L == B->point) goto <379:then>
+A7 00 0C # goto +12        # goto <380:else>
+# <379:then>
+15 01    # vload 1         # w
+B7 00 14 # invokenative 20 # cc_wreverseon(w)
+57       # pop             # (ignore result)
+A7 00 03 # goto +3         # goto <381:endif>
+# <380:else>
+# <381:endif>
+15 03    # vload 3         # L
+62 00    # aaddf 0         # &L->data
+2F       # amload          # L->data
+15 01    # vload 1         # w
+14 1A BA # aldc 6842       # s[6842] = "lovas-E0.c0:143.9-143.35"
+B8 00 2F # invokestatic 47 # vrender_gapbuf(L->data, w, "lovas-E0.c0:143.9-143.35")
+57       # pop             # (ignore result)
+15 03    # vload 3         # L
+15 00    # vload 0         # B
+62 08    # aaddf 8         # &B->point
+2F       # amload          # B->point
+9F 00 06 # if_cmpeq +6     # if (L == B->point) goto <382:then>
+A7 00 0C # goto +12        # goto <383:else>
+# <382:then>
+15 01    # vload 1         # w
+B7 00 16 # invokenative 22 # cc_wreverseoff(w)
+57       # pop             # (ignore result)
+A7 00 03 # goto +3         # goto <384:endif>
+# <383:else>
+# <384:endif>
+15 03    # vload 3         # L
+62 08    # aaddf 8         # &L->next
+2F       # amload          # L->next
+36 03    # vstore 3        # L = L->next;
+15 04    # vload 4         # i
+10 01    # bipush 1        # 1
+60       # iadd            # 
+36 04    # vstore 4        # i += 1;
+A7 00 06 # goto +6         # goto <377:endif>
+# <376:else>
+A7 00 06 # goto +6         # break
+# <377:endif>
+A7 FF 8F # goto -113       # goto <372:loop>
+# <374:exit>
+15 01    # vload 1         # w
+14 1A D3 # aldc 6867       # s[6867] = " <-> "
+B7 00 15 # invokenative 21 # c_waddstr(w, " <-> ")
+57       # pop             # (ignore result)
+15 00    # vload 0         # B
+62 08    # aaddf 8         # &B->point
+2F       # amload          # B->point
+62 08    # aaddf 8         # &B->point->next
+2F       # amload          # B->point->next
+15 00    # vload 0         # B
+62 10    # aaddf 16        # &B->end
+2F       # amload          # B->end
+9F 00 1C # if_cmpeq +28    # if (B->point->next == B->end) goto <385:then>
+A7 00 03 # goto +3         # goto <388:or>
+# <388:or>
+15 00    # vload 0         # B
+62 08    # aaddf 8         # &B->point
+2F       # amload          # B->point
+62 08    # aaddf 8         # &B->point->next
+2F       # amload          # B->point->next
+62 08    # aaddf 8         # &B->point->next->next
+2F       # amload          # B->point->next->next
+15 00    # vload 0         # B
+62 10    # aaddf 16        # &B->end
+2F       # amload          # B->end
+9F 00 06 # if_cmpeq +6     # if (B->point->next->next == B->end) goto <385:then>
+A7 00 1B # goto +27        # goto <386:else>
+# <385:then>
+15 01    # vload 1         # w
+B7 00 17 # invokenative 23 # cc_wboldon(w)
+57       # pop             # (ignore result)
+15 01    # vload 1         # w
+14 1A D9 # aldc 6873       # s[6873] = "** "
+B7 00 15 # invokenative 21 # c_waddstr(w, "** ")
+57       # pop             # (ignore result)
+15 01    # vload 1         # w
+B7 00 1A # invokenative 26 # cc_wboldoff(w)
+57       # pop             # (ignore result)
+A7 00 18 # goto +24        # goto <387:endif>
+# <386:else>
+15 01    # vload 1         # w
+B7 00 1C # invokenative 28 # cc_wdimon(w)
+57       # pop             # (ignore result)
+15 01    # vload 1         # w
+14 1A DD # aldc 6877       # s[6877] = "..>"
+B7 00 15 # invokenative 21 # c_waddstr(w, "..>")
+57       # pop             # (ignore result)
+15 01    # vload 1         # w
+B7 00 1D # invokenative 29 # cc_wdimoff(w)
+57       # pop             # (ignore result)
+# <387:endif>
+15 01    # vload 1         # w
+B7 00 11 # invokenative 17 # c_wrefresh(w)
+57       # pop             # (ignore result)
+15 00    # vload 0         # B
+14 1A E1 # aldc 6881       # s[6881] = "lovas-E0.c0:122.12-122.22"
+B8 00 20 # invokestatic 32 # is_tbuf(B, "lovas-E0.c0:122.12-122.22")
+14 1A FB # aldc 6907       # s[6907] = "lovas-E0.c0:122.4-122.23: @ensures annotation failed"
+CF       # assert          # assertis_tbuf(B, "lovas-E0.c0:122.12-122.22") [failure message on stack]
+10 00    # bipush 0        # dummy return value
+B0       # return          # 
+
+00 2D             # native count
+# native pool
+00 01 00 65       # string_length
+00 02 00 64       # string_join
+00 02 00 5D       # string_charat
+00 03 00 66       # string_sub
+00 02 00 5E       # string_compare
+00 01 00 62       # string_fromchar
+00 02 00 67       # string_terminated
+00 01 00 68       # string_to_chararray
+00 01 00 60       # string_from_chararray
+00 01 00 5C       # char_ord
+00 01 00 5B       # char_chr
+00 00 00 04       # eof
+00 00 00 0B       # readline
+00 02 00 19       # c_waddch
+00 01 00 27       # cc_highlight
+00 03 00 1D       # c_wmove
+00 01 00 1C       # c_werase
+00 01 00 1E       # c_wrefresh
+00 01 00 21       # cc_getbegx
+00 01 00 23       # cc_getmaxx
+00 01 00 33       # cc_wreverseon
+00 02 00 1A       # c_waddstr
+00 01 00 32       # cc_wreverseoff
+00 01 00 2F       # cc_wboldon
+00 01 00 35       # cc_wunderon
+00 01 00 34       # cc_wunderoff
+00 01 00 2E       # cc_wboldoff
+00 01 00 1B       # c_wclear
+00 01 00 31       # cc_wdimon
+00 01 00 30       # cc_wdimoff
+00 00 00 13       # c_initscr
+00 00 00 0D       # c_cbreak
+00 00 00 16       # c_noecho
+00 02 00 14       # c_keypad
+00 01 00 0E       # c_curs_set
+00 01 00 24       # cc_getmaxy
+00 01 00 22       # cc_getbegy
+00 05 00 18       # c_subwin
+00 00 00 12       # c_getch
+00 01 00 28       # cc_key_is_backspace
+00 01 00 2B       # cc_key_is_left
+00 01 00 2C       # cc_key_is_right
+00 01 00 2A       # cc_key_is_enter
+00 00 00 10       # c_endwin
+00 01 00 06       # print
+

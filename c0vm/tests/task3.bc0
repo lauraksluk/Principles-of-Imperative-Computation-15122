@@ -1,0 +1,126 @@
+C0 C0 FF EE       # magic number
+00 13             # version 9, arch = 1 (64 bits)
+
+00 02             # int pool count
+# int pool
+00 00 4E 20
+00 00 01 F4
+
+00 00             # string pool total size
+# string pool
+
+00 01             # function count
+# function_pool
+
+#<main>
+00 00             # number of arguments = 0
+00 03             # number of local variables = 3
+00 B2             # code length = 178 bytes
+13 00 00 # ildc 0          # c[0] = 20000
+36 00    # vstore 0        # n = 20000;
+10 00    # bipush 0        # 0
+36 01    # vstore 1        # sum = 0;
+15 01    # vload 1         # sum
+10 05    # bipush 5        # 5
+60       # iadd            # 
+36 01    # vstore 1        # sum += 5;
+15 01    # vload 1         # sum
+10 05    # bipush 5        # 5
+64       # isub            # 
+36 01    # vstore 1        # sum -= 5;
+10 00    # bipush 0        # 0
+36 02    # vstore 2        # i = 0;
+# <00:loop>
+15 02    # vload 2         # i
+15 00    # vload 0         # n
+A1 00 06 # if_icmplt +6    # if (i < n) goto <01:body>
+A7 00 14 # goto +20        # goto <02:exit>
+# <01:body>
+15 01    # vload 1         # sum
+15 02    # vload 2         # i
+60       # iadd            # 
+36 01    # vstore 1        # sum += i;
+15 02    # vload 2         # i
+10 01    # bipush 1        # 1
+60       # iadd            # 
+36 02    # vstore 2        # i += 1;
+A7 FF E8 # goto -24        # goto <00:loop>
+# <02:exit>
+10 00    # bipush 0        # 0
+36 02    # vstore 2        # j = 0;
+# <03:loop>
+15 02    # vload 2         # j
+15 00    # vload 0         # n
+A1 00 06 # if_icmplt +6    # if (j < n) goto <04:body>
+A7 00 24 # goto +36        # goto <05:exit>
+# <04:body>
+15 02    # vload 2         # j
+10 02    # bipush 2        # 2
+70       # irem            # (j % 2)
+10 00    # bipush 0        # 0
+9F 00 06 # if_cmpeq +6     # if ((j % 2) == 0) goto <06:then>
+A7 00 0D # goto +13        # goto <07:else>
+# <06:then>
+15 01    # vload 1         # sum
+15 02    # vload 2         # j
+64       # isub            # 
+36 01    # vstore 1        # sum -= j;
+A7 00 03 # goto +3         # goto <08:endif>
+# <07:else>
+# <08:endif>
+15 02    # vload 2         # j
+10 01    # bipush 1        # 1
+60       # iadd            # 
+36 02    # vstore 2        # j += 1;
+A7 FF D8 # goto -40        # goto <03:loop>
+# <05:exit>
+10 00    # bipush 0        # 0
+36 02    # vstore 2        # k = 0;
+# <09:loop>
+15 02    # vload 2         # k
+15 00    # vload 0         # n
+13 00 01 # ildc 1          # c[1] = 500
+68       # imul            # (n * 500)
+A1 00 06 # if_icmplt +6    # if (k < (n * 500)) goto <10:body>
+A7 00 3B # goto +59        # goto <11:exit>
+# <10:body>
+15 02    # vload 2         # k
+10 05    # bipush 5        # 5
+70       # irem            # (k % 5)
+10 00    # bipush 0        # 0
+9F 00 06 # if_cmpeq +6     # if ((k % 5) == 0) goto <12:then>
+A7 00 0D # goto +13        # goto <13:else>
+# <12:then>
+15 01    # vload 1         # sum
+10 02    # bipush 2        # 2
+68       # imul            # 
+36 01    # vstore 1        # sum *= 2;
+A7 00 03 # goto +3         # goto <14:endif>
+# <13:else>
+# <14:endif>
+15 02    # vload 2         # k
+10 03    # bipush 3        # 3
+70       # irem            # (k % 3)
+10 00    # bipush 0        # 0
+9F 00 06 # if_cmpeq +6     # if ((k % 3) == 0) goto <15:then>
+A7 00 0D # goto +13        # goto <16:else>
+# <15:then>
+15 01    # vload 1         # sum
+10 0D    # bipush 13       # 13
+60       # iadd            # 
+36 01    # vstore 1        # sum += 13;
+A7 00 03 # goto +3         # goto <17:endif>
+# <16:else>
+# <17:endif>
+15 02    # vload 2         # k
+10 01    # bipush 1        # 1
+60       # iadd            # 
+36 02    # vstore 2        # k += 1;
+A7 FF BD # goto -67        # goto <09:loop>
+# <11:exit>
+15 01    # vload 1         # sum
+B0       # return          # 
+
+00 00             # native count
+# native pool
+

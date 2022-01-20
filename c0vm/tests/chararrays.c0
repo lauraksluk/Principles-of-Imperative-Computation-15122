@@ -1,0 +1,8 @@
+#use <conio>
+
+int main() {
+    char[] A = alloc_array(char, 5);
+    A[3] = 'a';
+    printchar(A[3]);
+    return 0;
+}
