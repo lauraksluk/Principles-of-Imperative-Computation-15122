@@ -1,0 +1,22 @@
+int main() {
+  pixel laura = make_pixel(255,238,127,45);
+  pixel sam = make_pixel(0,0,0,0);
+
+  assert(get_red(0x183AB8D2) == 0x3A);
+  assert(get_red(laura) == 238);
+  assert(get_red(sam) == 0);
+
+  assert(get_green(0x183AB8D2) == 0xB8);
+  assert(get_green(laura) == 127);
+  assert(get_green(sam) == 0);
+
+  assert(get_blue(0x183AB8D2) == 0xD2);
+  assert(get_blue(laura) == 45);
+  assert(get_green(sam) == 0);
+
+  assert(get_alpha(0x183AB8D2) == 0x18);
+  assert(get_alpha(laura) == 255);
+  assert(get_alpha(sam) == 0);
+  assert(get_alpha(0xFF123802) == 0xFF);
+  return 0;
+}
