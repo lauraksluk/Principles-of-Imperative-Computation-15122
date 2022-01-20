@@ -1,0 +1,115 @@
+/* 
+ * String Buffer Library
+ *
+ * 15-122 Principles of Imperative Computation
+ * This version exposes the externals, requires
+ * discipline from client! */
+
+/*** Interface ***/
+
+struct strbuf {
+  int limit;
+  int len;
+  char[] buf;
+};
+
+bool is_strbuf(struct strbuf* sb);
+
+struct strbuf* strbuf_new(int init_limit);
+char[] strbuf_str(struct strbuf* sb);
+void strbuf_add(struct strbuf* sb, char[] str, int len);
+void strbuf_addstr(struct strbuf* sb, char[] str);
+
+
+/*** Implementation ***/
+
+// Taken from Data Structure Invariant Lecture.
+// Returns boolean value depending on if the length of array is equal to limit.
+bool is_array_expected_length(char[] A, int limit) {
+  //@assert \length(A) == limit;
+  return true;
+}
+
+// Checks that the NUL-terminator doesn't exist until the end of the string.
+bool no_nul_term_until_end(char[] buffer, int len, int limit)
+//@requires \length(buffer) == limit && len < limit;
+{
+  for (int i = 0; i < len; i++)
+  //@loop_invariant 0 <= i && i <= len;
+  {
+    if (buffer[i] == '\0') return false;
+  }
+  return buffer[len] == '\0';
+}
+
+// Checks if sb satisfies the data structure invariants of being a string buffer.
+bool is_strbuf(struct strbuf* sb) {
+  return sb != NULL && sb->limit > 0 && sb->len >= 0 && sb->limit > sb->len
+         && is_cstring(sb->buf, 0, sb->limit)
+         && no_nul_term_until_end(sb->buf, sb->len, sb->limit)
+         && is_array_expected_length(sb->buf, sb->limit)
+         && strlen(sb->buf, 0) == sb->len;
+}
+
+// Returns a string buffer of size init_limit, consisting of an empty string.
+struct strbuf* strbuf_new(int init_limit)
+//@requires 0 < init_limit;
+//@ensures is_strbuf(\result);
+{
+  struct strbuf* new = alloc(struct strbuf);
+  new->limit = init_limit;
+  new->len = 0;
+  new->buf = alloc_array(char, init_limit);
+  return new;
+}
+
+// Returns a copy of the string-occupied portion of the string buffer.
+// The copy is NUL-terminated.
+char[] strbuf_str(struct strbuf* sb)
+//@requires is_strbuf(sb);
+{
+  char[] result = alloc_array(char, sb->len + 1);
+  return strcpy(result, 0, sb->buf, 0);
+}
+
+// Concept from Lecture 11, Unbounded Arrays
+// Resizes given array to double its size when full.
+void resize(struct strbuf* sb)
+//@requires is_strbuf(sb) && sb->limit <= int_max()/2;
+//@ensures is_strbuf(sb);
+{ 
+  sb->limit = 2 * (sb->limit);
+  char[] new = alloc_array(char, sb->limit);
+  for (int i = 0; i < sb->len; i++)
+  //@loop_invariant 0 <= i && i <= sb->len;
+  {
+    new[i] = sb->buf[i];
+  }
+  sb->buf = new;
+}
+
+// Modifies string buffer to add in input string, str, of length, len.
+void strbuf_add(struct strbuf* sb, char[] str, int len)
+//@requires is_strbuf(sb) && strlen(str, 0) == len;
+//@ensures is_strbuf(sb);
+{
+  for (int i = 0; i < len; i++)
+  //@loop_invariant 0 <= i && i <= len;
+  {
+    if (sb->len == sb->limit - 1) {
+      resize(sb);
+    }
+    sb->buf[sb->len] = str[i];
+    (sb->len)++;
+    sb->buf[sb->len] = '\0';
+  }
+}
+
+// Modifies string buffer to add in input string, str.
+void strbuf_addstr(struct strbuf* sb, char[] str)
+//@requires is_strbuf(sb);
+//@ensures is_strbuf(sb);
+{
+  int len = strlen(str, 0);
+  strbuf_add(sb, str, len);
+}

@@ -1,0 +1,61 @@
+#use <string>
+#use <conio>
+
+bool equal(char[] A, char[] B) {
+  string s1 = string_from_chararray(A);
+  string s2 = string_from_chararray(B);
+  return string_equal(s1, s2);
+}
+
+int main() {
+  struct strbuf* buf1 = strbuf_new(5);
+  strbuf_addstr(buf1, string_to_chararray("hi"));
+  buf1->buf[0] = '\0';
+  buf1->buf[1] = '\0';
+  buf1->len = 0;
+  assert(is_strbuf(buf1) == true);
+  
+  char[] laur = string_to_chararray("laur");
+  strbuf_add(buf1, laur, 4);
+  assert(equal(buf1->buf, laur));
+
+  strbuf_add(buf1, laur, 4);
+  strbuf_addstr(buf1, laur);
+  char[] laur3 = string_to_chararray("laurlaurlaur");
+  char[] b1 = strbuf_str(buf1);
+  assert(equal(b1, laur3));
+  println("buf1 is good.\n");
+
+  struct strbuf* buf2 = strbuf_new(7);
+  strbuf_addstr(buf2, string_to_chararray("h"));
+  buf2->buf[2] = 'l';
+  assert(buf2->len == 1);
+  assert(strlen(strbuf_str(buf2), 0) == 1);
+  buf2->buf[1] = 'e';
+  buf2->buf[3] = '\0';
+  buf2->len = 3;
+  char[] b2 = strbuf_str(buf2);
+  assert(strlen(b2, 0) == 3);
+  strbuf_addstr(buf2, string_to_chararray("o"));
+  b2 = strbuf_str(buf2);
+  assert(equal(b2, string_to_chararray("helo")));
+  println("buf2 is good.\n");
+
+  struct strbuf* buf3 = alloc(struct strbuf);
+  buf3->limit = 2;
+  buf3->len = 0;
+  buf3->buf = alloc_array(char, 2);
+  char[] emptyS = string_to_chararray("");
+  strbuf_addstr(buf3, emptyS);
+  assert(equal(buf3->buf, emptyS));
+  buf3->len = 1;
+  assert(is_strbuf(buf3) == false);
+  buf3->len = 0;
+  strbuf_addstr(buf3, string_to_chararray("hi there!"));
+  char[] b3 = strbuf_str(buf3);
+  assert(equal(b3, string_to_chararray("hi there!")));
+  assert(equal(b3, buf3->buf));
+  println("buf3 is good.\n");
+
+  return 0;
+}
