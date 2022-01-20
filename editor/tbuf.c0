@@ -1,0 +1,298 @@
+/*
+ * Text buffers
+ *
+ * The back end for a one-character text editor, a doubly-linked list
+ * whose elements are 16-character gap buffers.
+ *
+ * 15-122 Principles of Imperative Computation */
+
+/*** Interface (missing appropriate contracts) ***/
+
+typedef dll_pt tbuf;
+
+bool is_tbuf(tbuf* B);
+
+tbuf* tbuf_new();                  /* Creates an empty text buffer with   */
+                                   /* gap buffers of size 16              */
+void tbuf_split_pt(tbuf* B);       /* Splits a full point into two nodes  */
+                                   /* so that the new point is not full   */
+void tbuf_forward(tbuf* B);        /* Move the cursor forward/right by 1  */
+void tbuf_backward(tbuf* B);       /* Move the cursor backward/left by 1  */
+void tbuf_insert(tbuf* B, char c); /* Insert c before the cursor          */
+void tbuf_delete(tbuf* B);         /* Delete the char before the cursor   */
+                                   /* and delete point if it is empty     */
+
+//************************* Implementation *************************//
+
+// Returns true if there is 1 gap buffer and it's empty, or all of them
+// are nonempty gap buffers.
+bool valid_buffers(dll* start, dll* end) {
+  if (start->next->next != end) {
+    for (dll* p = start->next; p != end; p = p->next) {
+      if (gapbuf_empty(p->data)) return false;
+    }
+    return true;
+  }
+  // There is only 1 gap buffer (can be empty or nonempty).
+  return true;
+}
+
+// Returns true if gap buffers are all aligned properly.
+// Alignment: all gap buffers to the left of the point, the gap is on the 
+// right; all gap buffers to the right of the point, the gap is on the left.
+bool align(dll* start, dll* point, dll* end) {
+  for (dll* p = point->prev; p != start; p = p->prev) {
+    if (!gapbuf_at_right(p->data)) return false;
+  }
+  for (dll* q = point->next; q != end; q = q->next) {
+    if (!gapbuf_at_left(q->data)) return false;
+  }
+  return true;
+}
+
+// Returns boolean value depending on if given text buffer is valid based on
+// its data structure invariants.
+bool is_tbuf(tbuf* B) {
+
+  // Check input is a valid doubly-linked list with a point.
+  if (!is_dll_pt(B)) return false;
+
+  // Initialize variables.
+  dll* start = B->start;
+  dll* point = B->point;
+  dll* end = B->end;
+
+  for (dll* p = start->next; p != end; p = p->next) {
+    // Each gap buffer must be a valid size-16 gap buffer.
+    if (!is_gapbuf(p->data) || p->data->limit != 16) return false;
+  }
+
+  // Check one-empty-or-all-nonempty property and alignment.
+  return valid_buffers(start, end) && align(start, point, end);
+}
+
+// Creates an empty text buffer with a gap buffer of size 16.
+tbuf* tbuf_new()
+//@ensures is_tbuf(\result);
+{
+  // Initialize text buffer.
+  tbuf* new = alloc(tbuf);
+
+  // Initialize start node.
+  new->start = alloc(dll);
+  dll* node = new->start;
+
+  // Initialize point node and end node.
+  node->next = alloc(dll);
+  node->next->prev = node;
+  node->next->data = gapbuf_new(16);
+
+  node->next->next = alloc(dll);
+  new->end = node->next->next;
+  new->end->prev = node->next;
+  new->point = node->next;
+  return new;
+}
+
+// Splits a full point into two nodes so that the new point is not full.
+void tbuf_split_pt(tbuf* B)
+//@requires is_tbuf(B) && gapbuf_full(B->point->data);
+//@ensures is_tbuf(B) && !gapbuf_full(B->point->data);
+{
+  // Initialize variables for old buffer array and its index.
+  char[] old = B->point->data->buffer;
+  int index = 0;
+  // Initialize variable for gap index (gap_start == gap_end).
+  int gap_index = B->point->data->gap_start;
+
+  // Allocate new gap buffers.
+  gapbuf* gapbuf_1 = alloc(gapbuf);
+  gapbuf* gapbuf_2 = alloc(gapbuf);
+
+  // Allocate new buffer arrays and their index.
+  char[] split_1 = alloc_array(char, 16);
+  char[] split_2 = alloc_array(char, 16);
+  int count = 0;
+
+  // Case on where gap is in first half of buffer.
+  if (0 <= gap_index && gap_index < 8) {
+    // Initialize new gap_start for first new buffer.
+    int gap_start_1 = gap_index;
+
+    // Copy over character data until gap.
+    while (count < gap_index) {
+      split_1[count] = old[index];
+      count++; index++;
+    }
+    // Increment first new buffer's index for gap.
+    count += 8;
+    // Update new gap_end for first new buffer.
+    int gap_end_1 = count;
+    // Copy over remaining character data for first new buffer.
+    while (count < 16) {
+      split_1[count] = old[index];
+      count++; index++;
+    }
+    // Copy over remaining character data for second new buffer. 
+    while (index < 16) {
+      split_2[index] = old[index];
+      index++;
+    }
+    // Update new gap indices for second new buffer.
+    int gap_start_2 = 0;
+    int gap_end_2 = 8;
+
+    // Update new gap buffers' fields with gap indices.
+    gapbuf_1->gap_start = gap_start_1;
+    gapbuf_1->gap_end = gap_end_1;
+    gapbuf_2->gap_start = gap_start_2;
+    gapbuf_2->gap_end = gap_end_2;
+  }
+
+  // Case on where gap is in second half of buffer.
+  else if (8 <= gap_index && gap_index <= 16) {
+    // Copy over character data for first new buffer.
+    while (index < 8) {
+      split_1[index] = old[index];
+      index++;
+    }
+    // Update gap indices for first new buffer.
+    int gap_start_1 = 8;
+    int gap_end_1 = 16;
+    // Copy over character data for second new buffer until gap.
+    while (index < gap_index) {
+      split_2[count] = old[index];
+      count++; index++;
+    }
+    // Update gap indices for second new buffer.
+    int gap_start_2 = gap_index - 8;
+    int gap_end_2 = gap_index;
+
+    // Increment index for gap.
+    count += 8;
+    // Copy over remaining character data for second new buffer.
+    while (index < 16) {
+      split_2[count] = old[index];
+      count++; index++;
+    }
+    // Update new gap buffers' fields with gap indices.
+    gapbuf_1->gap_start = gap_start_1;
+    gapbuf_1->gap_end = gap_end_1;
+    gapbuf_2->gap_start = gap_start_2;
+    gapbuf_2->gap_end = gap_end_2;
+  }
+  // Update new gap buffers' fields.
+  gapbuf_1->limit = 16;
+  gapbuf_1->buffer = split_1;
+  gapbuf_2->limit = 16;
+  gapbuf_2->buffer = split_2;
+
+  // Allocate new nodes and update data, prev/next fields.
+  dll* node_1 = alloc(dll);
+  node_1->data = gapbuf_1;
+  dll* node_2 = alloc(dll);
+  node_2->data = gapbuf_2;
+
+  node_1->next = node_2;
+  node_2->prev = node_1;
+  B->point->prev->next = node_1;
+  node_1->prev = B->point->prev;
+  node_2->next = B->point->next;
+  B->point->next->prev = node_2;
+  
+  // Case on alignment to update point node.
+  if (gapbuf_at_left(gapbuf_2)) {
+    B->point = node_1;
+  }
+  else if (gapbuf_at_right(gapbuf_1)) {
+    B->point = node_2;
+  }
+}
+
+// Move the cursor forward/right by 1.
+void tbuf_forward(tbuf* B)
+//@requires is_tbuf(B);
+//@ensures is_tbuf(B);
+{
+  gapbuf* gapbuffer = B->point->data;
+
+  // If gap/cursor is at buffer's most right, shift point to next node.
+  if (gapbuf_at_right(gapbuffer) && !dll_pt_at_right(B)) {
+    dll_pt_forward(B);
+    gapbuf* new = B->point->data;
+    // Move cursor forward.
+    gapbuf_forward(new);
+  }
+  // Otherwise, move gap/cursor forward.
+  if (!gapbuf_at_right(gapbuffer)) {
+    gapbuf_forward(gapbuffer);
+  }
+}
+
+// Move the cursor backward/left by 1.
+void tbuf_backward(tbuf* B)
+//@requires is_tbuf(B);
+//@ensures is_tbuf(B); 
+{
+  gapbuf* gapbuffer = B->point->data;
+
+  // If gap/cursor is at buffer's most left, shift point to prev node.
+  if (gapbuf_at_left(gapbuffer) && !dll_pt_at_left(B)) {
+    dll_pt_backward(B);
+    gapbuf* new = B->point->data;
+    // Move cursor back.
+    gapbuf_backward(new);
+  }
+  // Otherwise, move gap/cursor back.
+  if (!gapbuf_at_left(gapbuffer)) {
+    gapbuf_backward(gapbuffer);
+  }
+}
+
+// Insert c before the cursor.
+void tbuf_insert(tbuf* B, char c)
+//@requires is_tbuf(B);
+//@ensures is_tbuf(B);
+{
+  gapbuf* gapbuffer = B->point->data;
+  
+  // If buffer is full, split into 2.
+  if (gapbuf_full(gapbuffer)) {
+    tbuf_split_pt(B);
+  }
+  gapbuf* new_gb = B->point->data;
+  // Insert character.
+  gapbuf_insert(new_gb, c);
+}
+
+// Delete the char before the cursor and delete point if it is empty.
+void tbuf_delete(tbuf* B)
+//@requires is_tbuf(B);
+//@ensures is_tbuf(B);
+{
+  gapbuf* gapbuff = B->point->data;
+
+  // Delete character if gap is not left most of buffer.
+  if (!gapbuf_at_left(gapbuff)) {
+    gapbuf_delete(gapbuff);
+
+    gapbuf* new = B->point->data;
+    // If resulting buffer is empty and not the only nondummy node, remove it.
+    if (gapbuf_empty(new) && !(dll_pt_at_left(B) && dll_pt_at_right(B))) {
+      dll_pt_delete(B);
+    }
+  }
+
+  // Gap is at left most of buffer and point node isn't at left
+  else if (gapbuf_at_left(gapbuff) && !dll_pt_at_left(B)) {
+    // Move backward a node and delete character.
+    dll_pt_backward(B);
+    gapbuf_delete(B->point->data);
+
+    gapbuf* newbuf = B->point->data;
+    // If resulting buffer is empty and not the only nondummy node, remove it.
+    if (gapbuf_empty(newbuf) && !(dll_pt_at_left(B) && dll_pt_at_right(B))) {
+      dll_pt_delete(B);
+    }
+  }
+}

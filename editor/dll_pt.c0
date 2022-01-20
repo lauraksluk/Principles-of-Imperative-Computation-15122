@@ -1,0 +1,140 @@
+/*
+ * Doubly linked lists with point
+ *
+ * A text buffer is a doubly linked list (dll), where one of the
+ * elements in the dll is designated as containing the point.  The
+ * list is terminated on both ends with dummy nodes whose contents are
+ * never inspected.
+ *
+ * 15-122 Principles of Imperative Computation */
+
+/*** Interface (missing appropriate contracts) ***/
+#use <conio>
+
+typedef struct dll_node dll;
+struct dll_node {
+  elem data; /* This is defined elsewhere (gapbuf.c0 or elem-char.c0) */
+  dll* next;
+  dll* prev;
+};
+
+typedef struct dll_pt_header dll_pt;
+struct dll_pt_header {
+  dll* start; /* the first node of the list (to the left)  */
+  dll* point; /* the current node of the list (where the cursor is) */
+  dll* end;   /* the last node of the list (to the right) */
+};
+
+bool is_dll_pt(dll_pt* B);
+
+bool dll_pt_at_left(dll_pt* B);  /* Returns true if the point is first  */
+                                 /*   first (non-terminal) node         */
+bool dll_pt_at_right(dll_pt* B); /* Returns true if the point is last   */
+                                 /*   last (non-terminal) node          */
+
+void dll_pt_forward(dll_pt* B);  /* Moves the point forward (right)     */
+void dll_pt_backward(dll_pt* B); /* Moves the point backward (left)     */
+void dll_pt_delete(dll_pt* B);   /* Remove the current point            */
+
+//************************* Implementation *************************//
+
+// Returns boolean value depending on if nodes are a valid segment.
+// A valid segment needs the next link to proceed from the start node
+// to end node, while passing a point node along the way.
+bool is_dll_segment(dll* start, dll* point, dll* end) {
+
+  // Boolean flag to keep track of point node.
+  bool pass_point = false;
+
+  for (dll* p = start; p != NULL; p = p->next) {
+
+    // If point node is encountered, update flag.
+    if (p == point) pass_point = true;
+    
+    if (p == end && pass_point) return true;
+  }
+  return false;
+}
+
+// Returns boolean value depending on if prev links mirror next links.
+bool is_match(dll* start, dll* end) {
+  dll* p = start;
+  while (p != end) {
+    dll* old = p;
+    p = p->next;
+    if (p->prev != old) return false;
+  }
+  return true;
+}
+
+// Returns boolean value depending on if B satisfies the invariants of
+// doubly-linked lists with point.
+bool is_dll_pt(dll_pt* B) {
+  if (B == NULL) return false;
+  dll* start = B->start;
+  dll* point = B->point;
+  dll* end = B->end;
+
+  // Point needs to be distinct from start and end nodes (nonempty list).
+  if (point == start || point == end) return false;
+  
+  return is_dll_segment(start, point, end) && is_match(start, end);
+}
+
+// Returns true if the point is at first (nonterminal) node.
+bool dll_pt_at_left(dll_pt* B)
+//@requires is_dll_pt(B);
+{
+  return B->start->next == B->point;
+}
+
+// Returns true if the point is at last (non-terminal) node.
+bool dll_pt_at_right(dll_pt* B)
+//@requires is_dll_pt(B);
+{
+  return B->end->prev == B->point;
+}
+
+// Moves the point forward (right).
+void dll_pt_forward(dll_pt* B)
+//@requires is_dll_pt(B) && !dll_pt_at_right(B);
+//@ensures is_dll_pt(B);
+{
+  B->point = B->point->next;
+}
+
+// Moves the point backward (left).
+void dll_pt_backward(dll_pt* B)
+//@requires is_dll_pt(B) && !dll_pt_at_left(B);
+//@ensures is_dll_pt(B);
+{
+  B->point = B->point->prev;
+}
+
+// Helper function for dll_pt_delete.
+// Shifts prev and next pointers to mimic deleting an element from a list.
+// Did not include contracts because contracts are in main function.
+void delete(dll_pt* B) {
+  B->point->prev->next = B->point->next;
+  B->point->next->prev = B->point->prev;
+}
+
+// Removes the current node at point.
+void dll_pt_delete(dll_pt* B)
+//@requires is_dll_pt(B);
+//@requires !(dll_pt_at_left(B) && dll_pt_at_right(B));
+//@ensures is_dll_pt(B);
+{
+  if (dll_pt_at_right(B)) {
+    delete(B);
+    
+    // Reposition point.
+    B->point = B->point->prev;
+  }
+  else {
+    delete(B);
+
+    // Reposition point.
+    B->point = B->point->next;
+  }
+}
