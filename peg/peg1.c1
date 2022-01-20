@@ -1,0 +1,73 @@
+/*
+ * Peg solitaire solver
+ *
+ * 15-122 Principles of Imperative Computation */
+
+#use <conio>
+#use <util>
+
+// Recursive backtracking helper function.
+// Concept came from 15-112 backtracking template.
+int solve_peg(board B, stack_t currSol, int pegs)
+{
+  // Base case of solved board.
+  if (pegs == 1) return 1;
+
+  // Initialize minimum value and stack of possible moves for current board.
+  int min = pegs;
+  stack_t possible = stack_new();
+  all_moves(B, possible);
+
+  while (!stack_empty(possible)) {
+    // Obtain possible move and uncast from void*.
+    stackelem v_move = pop(possible);
+    move currMove = (move)v_move;
+
+    // Check if possible move is valid for current board.
+    if (validMove(B, currMove)) {
+      // Modify board to make the move.
+      make_move(B, currMove);
+      // Update number of pegs on board.
+      pegs -= 1;
+      // Cast move to void* to add move to stack of current moves.
+      stackelem voidMove = (void*)currMove;
+      push(currSol, voidMove);
+
+      // Recurse on updated board.
+      int temp = solve_peg(B, currSol, pegs);
+      if (temp < min) {
+        // Update minimum number of pegs.
+        min = temp;
+      }
+
+      // Undo move when board reached losing state.
+      if (temp > 1) {
+        undo_move(B, currMove);
+        //@assert !stack_empty(currSol);
+        pop(currSol);
+        pegs += 1;
+      }
+    }
+  }
+  return min;
+}
+
+// Returns the minimum number of pegs remaining after playing with given board.
+// Modifies Sol to contain all the valid moves to win for a solvable B.
+int solve(board B, stack_t Sol)
+//@requires is_board(B) && stack_empty(Sol);
+{
+  // Initialize number of pegs on board and possible solution stack.
+  int pegs = num_pegs(B);
+  stack_t currSol = stack_new();
+
+  // Call recursive backtracking helper function.
+  int result = solve_peg(B, currSol, pegs);
+
+  // Put all moves from currSol back into Sol to maintain order of moves.
+  while (!stack_empty(currSol)) {
+    push(Sol, pop(currSol));
+  }
+
+  return result;
+}

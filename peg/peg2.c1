@@ -1,0 +1,147 @@
+/*
+ * Peg solitaire solver
+ *
+ * 15-122 Principles of Imperative Computation */
+
+#use <conio>
+#use <util>
+
+
+struct compact_board {
+  int i1;         // First half of a compacted board
+  int i2;         // Second half of a compacted board
+};
+typedef struct compact_board cboard;
+
+// Returns a compressed version of the original board B.
+cboard* compress(board B)
+//@requires is_board(B);
+{
+  // Initialize the compacted board struct.
+  cboard* new = alloc(struct compact_board);
+
+  // Initialize field variables.
+  int first = 0;
+  int second = 0;
+
+  for (int i = 0; i < 32; i++) {
+    // Copy in data from first half of board array into 32-bit integer.
+    if (B[i] == 1) {
+      first = first | 0x01;
+    }
+    first = first << 1;
+  }
+
+  for (int j = 32; j < 64; j++) {
+    // Copy in data from second half of board array into 32-bit integer.
+    if (B[j] == 1) {
+      second = second | 0x01;
+    }
+    second = second << 1;
+  }
+  new->i1 = first;
+  new->i2 = second;
+  return new;
+}
+
+/* Client side implementation for hashtables.  See lib/hdict.c1 */
+
+// Returns the hash value associated with the given key.
+int cboard_hash(key k)
+//@requires k != NULL;
+{
+  int first = ((cboard*)k)->i1;
+  int second = ((cboard*)k)->i2;
+
+  // Large prime numbers (2) were found on:
+  // http://compoasso.free.fr/primelistweb/page/prime/liste_online_en.php
+  int answer = (26903*first + 29401) + (26903*second + 29401);
+  return answer;
+}
+
+// Returns Boolean value depending on if the 2 keys are equal.
+bool cboard_eq(key k1, key k2)
+//@requires k1 != NULL && k2 != NULL;
+{
+  // Uncast keys from void* to obtain integer representation of boards.
+  int first1 = ((cboard*)k1)->i1;
+  int first2 = ((cboard*)k1)->i2;
+  int second1 = ((cboard*)k2)->i1;
+  int second2 = ((cboard*)k2)->i2;
+  return (first1 == second1) && (first2 == second2);
+}
+
+// Key is defined to be the compressed board (entry).
+key cboard_key(entry e)
+//@requires e != NULL;
+//@ensures \result != NULL;
+{
+  return e;
+}
+
+// Recursive backtracking helper function.
+// Concept came from 15-112 backtracking template.
+// Utilizes memoization for lesser runtime.
+int solve_peg(board B, stack_t sol, int pegs, hdict* d)
+{
+  // Base case of solved board.
+  if (pegs == 1) return 1;
+
+  // Initialize minimum value and stack of possible moves for current board.
+  int min = pegs;
+  stack_t possible = stack_new();
+  all_moves(B, possible);
+
+  while (!stack_empty(possible)) {
+    // Make move.
+    move currMove = (move)(pop(possible));
+    make_move(B, currMove);
+    pegs -= 1;
+
+    // Compress board.
+    cboard* comBoard = compress(B);
+
+    // Current board doesn't exist in dictionary.
+    if (hdict_lookup(d, (void*)comBoard) == NULL) {
+
+      // Recurse on current board.
+      int temp = solve_peg(B, sol, pegs, d);
+
+      // Only push move if board wins to maintain order.
+      if (temp == 1) {
+        push(sol, (void*)currMove);
+        return 1;
+      }
+      // Update minimum value from recursive call.
+      if (temp < min) {
+        min = temp;
+      }
+      // Undo move and add current board into dictionary.
+      undo_move(B, currMove);
+      pegs += 1;
+      hdict_insert(d, (void*)comBoard);
+
+    // Current board is in dictionary.
+    } else {
+      // Undo move.
+      undo_move(B, currMove);
+      pegs += 1;
+    }
+  }
+  return min;
+}
+
+// Returns the minimum number of pegs remaining after playing with given board.
+// Modifies Sol to contain all the valid moves to win for a solvable B.
+int solve(board B, stack_t Sol)
+//@requires is_board(B) && stack_empty(Sol);
+{
+  // Initialize number of pegs on board, possible solution stack, dictionary.
+  int pegs = num_pegs(B);
+  hdict* d = hdict_new(5196, &cboard_key, &cboard_hash, &cboard_eq);
+
+  // Call recursive backtracking helper function.
+  int result = solve_peg(B, Sol, pegs, d);
+
+  return result;
+}

@@ -1,0 +1,246 @@
+/*
+ * Peg solitaire solver
+ *
+ * 15-122 Principles of Imperative Computation */
+
+#use <conio>
+#use <util>
+
+typedef struct move_header* move;
+struct move_header {
+  int pos;
+};
+
+// Returns Boolean value depending on if input is in bounds.
+// Concept taken from peg-main.c1
+bool validCoord(int n) {
+  return 0 <= n && n < 8;
+}
+
+// Returns a new move.
+move new_move(int from_row, int from_col, int to_row, int to_col)
+//@requires validCoord(from_row) && validCoord(from_col);
+//@requires validCoord(to_row) && validCoord(to_col);
+/*@requires (abs(from_row - to_row) == 2 && from_col == to_col)
+         || (abs(from_col - to_col) == 2 && from_row == to_row); @*/
+{
+  move new = alloc(struct move_header);
+  // Initialize before/after row:col positions.
+  // Add 1 in case any position value is 0.
+  int beforeRow = from_row + 1;
+  int beforeCol = from_col + 1;
+  int afterRow = to_row + 1;
+  int afterCol = to_col + 1;
+  // Initialize integer position value from before/after row:col.
+  new->pos = beforeRow*1000 + beforeCol*100 + afterRow*10 + afterCol;
+  return new;
+}
+
+// Returns the row of the peg before the move.
+int row_start(move m)
+//@requires m != NULL;
+//@ensures validCoord(\result);
+{
+  int position = m->pos;
+  return position/1000 - 1;
+}
+
+// Returns the column of the peg before the move.
+int col_start(move m)
+//@requires m != NULL;
+//@ensures validCoord(\result);
+{
+  int position = m->pos;
+  return ((position/100) % 10) - 1;
+}
+
+// Returns the row of the peg after the move.
+int row_end(move m)
+//@requires m != NULL;
+//@ensures validCoord(\result);
+{
+  int position = m->pos;
+  return ((position/10) % 10) - 1;
+}
+
+// Returns the column of the peg after the move.
+int col_end(move m)
+//@requires m != NULL;
+//@ensures validCoord(\result);
+{
+  int position = m->pos;
+  return (position % 10) - 1;
+}
+
+// Returns Boolean value depending on if m is a valid move on B.
+// Concept taken from peg-main.c1
+bool validMove(board B, move m)
+//@requires is_board(B);
+{
+  if (m == NULL) return false;
+
+  // Initialize before/after row/column variables.
+  int row1 = row_start(m);
+  int col1 = col_start(m);
+  int row2 = row_end(m);
+  int col2 = col_end(m);
+  // Convert row:col to indices.
+  int index1 = 8*row1 + col1;
+  int index2 = 8*row2 + col2;
+  int mid = (index1 + index2) / 2;
+
+  // Rows and columns must stay within bounds.
+  if (!(validCoord(row1) && validCoord(col1) 
+        && validCoord(row2) && validCoord(col2)))
+    return false;
+  // Peg movement can only be horizontal/vertical, skipping 1.
+  if (!((abs(row1-row2) == 2 && col1 == col2) ||
+                            (abs(col1-col2) == 2 && row1 == row2)))
+    return false;
+  // Must have peg in before position and in jumped location.
+  // Must have hole in after position.
+  if (!(B[index1] == 1 && B[index2] == 0 && B[mid] == 1))
+    return false;
+  else {
+    return true;
+  }
+}
+
+// Alters the board after the given move.
+void make_move(board B, move m)
+//@requires is_board(B) && validMove(B, m);
+//@ensures is_board(B);
+{
+  // Initialize before/after row/column variables.
+  int row1 = row_start(m);
+  int col1 = col_start(m);
+  int row2 = row_end(m);
+  int col2 = col_end(m);
+  // Convert row:col to indices.
+  int index1 = 8*row1 + col1;
+  int index2 = 8*row2 + col2;
+  int mid = (index1 + index2) / 2;
+
+  // Peg jumps from original position to hole, filling it.
+  // Peg that was jumped over is removed.
+  B[index1] = 0;
+  B[mid] = 0;
+  B[index2] = 1;
+}
+
+// Returns Boolean value depending on if m is a valid undo move on B.
+// Concept taken from peg-main.c1
+bool validUndoMove(board B, move m)
+//@requires is_board(B);
+{
+  if (m == NULL) return false;
+
+  // Initialize before/after row/column variables.
+  int row1 = row_start(m);
+  int col1 = col_start(m);
+  int row2 = row_end(m);
+  int col2 = col_end(m);
+  // Convert row:col to indices.
+  int index1 = 8*row1 + col1;
+  int index2 = 8*row2 + col2;
+  int mid = (index1 + index2) / 2;
+
+  // Rows and columns must stay within bounds.
+  if (!(validCoord(row1) && validCoord(col1) 
+        && validCoord(row2) && validCoord(col2)))
+    return false;
+  // Peg movement can only be horizontal/vertical, skipping 1.
+  if (!((abs(row1-row2) == 2 && col1 == col2) ||
+                            (abs(col1-col2) == 2 && row1 == row2)))
+    return false;
+  // Must have hole in before position and in jumped location.
+  // Must have peg in after position.
+  if (!(B[index1] == 0 && B[index2] == 1 && B[mid] == 0))
+    return false;
+  else {
+    return true;
+  }
+}
+
+// Alters the board after undo-ing the given move.
+void undo_move(board B, move m)
+//@requires is_board(B) && validUndoMove(B, m);
+//@ensures is_board(B);
+{
+  // Initialize before/after row/column variables.
+  int row1 = row_start(m);
+  int col1 = col_start(m);
+  int row2 = row_end(m);
+  int col2 = col_end(m);
+  // Convert row:col to indices.
+  int index1 = 8*row1 + col1;
+  int index2 = 8*row2 + col2;
+  int mid = (index1 + index2) / 2;
+
+  // Revert board to before move.
+  B[index1] = 1;
+  B[mid] = 1;
+  B[index2] = 0;
+}
+
+// Adds valid moves into stack.
+void addMoves(int row1, int col1, int row2, int col2, stack_t M) {
+  // Allocate new move and fill its fields.
+  move new = new_move(row1, col1, row2, col2);
+
+  // Cast move pointer to void pointer.
+  void* v_new = (void*)new;
+  // Push void pointer to stack.
+  push(M, v_new);
+}
+
+// Checks if all possible moves are valid. Adds to stack if they are.
+void checkAddMoves(board B, int row, int col, int index, stack_t M) {
+  int toIndex;
+  int midIndex;
+  // Check if peg can move down.
+  if (row <= 5) {
+    toIndex = index + 16;
+    midIndex = index + 8;
+    if (B[toIndex] == 0 && B[midIndex] == 1)
+      addMoves(row, col, toIndex/8, toIndex % 8, M);
+  }
+
+  // Check if peg can move to the right.
+  if (col <= 5) {
+    toIndex = index + 2;
+    midIndex = index + 1;
+    if (B[toIndex] == 0 && B[midIndex] == 1)
+      addMoves(row, col, toIndex/8, toIndex % 8, M);
+  }
+
+  // Check if peg can move up.
+  if (row >= 2) {
+    toIndex = index - 16;
+    midIndex = index - 8;
+    if (B[toIndex] == 0 && B[midIndex] == 1)
+      addMoves(row, col, toIndex/8, toIndex % 8, M);
+  }
+
+  // Check if peg can move to the left.
+  if (col >= 2) {
+    toIndex = index - 2;
+    midIndex = index - 1;
+    if (B[toIndex] == 0 && B[midIndex] == 1)
+      addMoves(row, col, toIndex/8, toIndex % 8, M);
+  }
+}
+
+// Adds all valid moves to stack.
+void all_moves(board B, stack_t M)
+//@requires is_board(B) && M != NULL;
+{
+  for (int i = 0; i < 8*8; i++) {
+    // Peg found.
+    if (B[i] == 1) {
+      int row = i / 8;
+      int col = i % 8;
+      checkAddMoves(B, row, col, i, M);
+    }
+  }
+}
