@@ -1,0 +1,64 @@
+// Returns the value of the new column, after reflecting it over
+// the y-axis.
+int revCol (int col, int width)
+//@requires 0 <= col && col < width;
+//@ensures 0 <= \result && \result < width;
+{
+  return (width - 1) - col;
+}
+  
+// Returns the value of the new row, after reflecting it over
+// the x-axis.
+int revRow(int row, int height)
+//@requires 0 <= row && row < height;
+//@ensures 0 <= \result && \result < height;
+{
+  return (height - 1) - row;
+}
+
+// Returns a new pixel array after a reflection effect.
+pixel_t[] reflect(pixel_t[] pixels, int width, int height)
+/*@requires is_valid_imagesize(width, height) 
+  @      && \length(pixels) == width*height; @*/
+//@ensures \result != pixels && \length(\result) == 4*\length(pixels);
+{
+  // Initialize new pixel array.
+  pixel_t[] refPixels = alloc_array(pixel_t,4*width*height);
+
+  for (int j = 0; j < height; j++)
+    //@loop_invariant 0 <= j;
+    {
+      int newRow = revRow(j, height) + height;
+
+      for (int i = 0; i < width; i++)
+      //@loop_invariant 0 <= i;
+      {
+        //@assert 0 <= j && j < height && 0 <= i && i < width;
+        // Obtain indices of old pixel array.
+        int oldIndex = get_index(j, i, width, height);
+        //@assert 0 <= oldIndex && oldIndex < \length(pixels);
+
+        int newCol = revCol(i, width);
+        // New indices for image in quadrant 1 (left, top).
+        int index1 = get_index(j, newCol, 2*width, 2*height);
+        //@assert 0 <= index1 && index1 < \length(refPixels);
+        refPixels[index1] = pixels[oldIndex];
+
+        // New indices for image in quadrant 2 (right, top).
+        int index2 = get_index(j, i + width, 2*width, 2*height);
+        //@assert 0 <= index2 && index2 < \length(refPixels);
+        refPixels[index2] = pixels[oldIndex];
+
+        // New indices for image in quadrant 3 (left, bottom).
+        int index3 = get_index(newRow, newCol, 2*width, 2*height);
+        //@assert 0 <= index3 && index3 < \length(refPixels);
+        refPixels[index3] = pixels[oldIndex];
+
+        // New indices for image in quadrant 4 (right, bottom).
+        int index4 = get_index(newRow, i + width, 2*width, 2*height);
+        //@assert 0 <= index4 && index4 < \length(refPixels);
+        refPixels[index4] = pixels[oldIndex];
+      }
+    }
+  return refPixels;
+}

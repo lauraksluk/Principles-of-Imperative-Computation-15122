@@ -1,0 +1,150 @@
+// Returns boolean value depending on if given mask is valid.
+bool validMask (int[] mask, int maskwidth)
+//@requires \length(mask) == maskwidth*maskwidth && maskwidth % 2 == 1;
+{
+  for (int i = 0; i < maskwidth*maskwidth; i++)
+  //@loop_invariant 0 <= i;
+  {
+    // All weights are nonnegative integers.
+    if (mask[i] < 0) return false;
+  }
+  int row = maskwidth/2;
+  int index = get_index(row, row, maskwidth, maskwidth);
+  //@assert 0 <= index && index < maskwidth*maskwidth;
+
+  // Weight at the origin cannot be 0.
+  return mask[index] != 0;
+}
+
+// Returns an integer array of the green component for each pixel.
+int[] getGreen (pixel_t[] pixels, int width, int height)
+//@requires \length(pixels) == width*height;
+//@ensures \length(\result) == \length(pixels);
+{
+  int[] green = alloc_array(int, width*height);
+
+  for (int i = 0; i < width*height; i++)
+  //@loop_invariant 0 <= i;
+  {
+    green[i] = get_green(pixels[i]);
+  }
+  return green;
+}
+
+// Returns an integer array of the red component for each pixel.
+int[] getRed (pixel_t[] pixels, int width, int height)
+//@requires \length(pixels) == width*height;
+//@ensures \length(\result) == \length(pixels);
+{
+  int[] red = alloc_array(int, width*height);
+
+  for (int i = 0; i < width*height; i++)
+  //@loop_invariant 0 <= i;
+  {
+    red[i] = get_red(pixels[i]);
+  }
+  return red;
+}
+
+// Returns an integer array of the blue component for each pixel.
+int[] getBlue (pixel_t[] pixels, int width, int height)
+//@requires \length(pixels) == width*height;
+//@ensures \length(\result) == \length(pixels);
+{
+  int[] blue = alloc_array(int, width*height);
+  
+  for (int i = 0; i < width*height; i++)
+  //@loop_invariant 0 <= i;
+  {
+    blue[i] = get_blue(pixels[i]);
+  }
+  return blue;
+}
+
+// Returns the new blurred value of the color component of the pixel 
+// at (row, col) in the original image of size width x height.
+int blurPixel (pixel_t[] pixels, int row, int col, int[] color,
+               int width, int height, int[] mask, int maskwidth)
+/*@requires is_valid_imagesize(width, height) 
+  @      && \length(pixels) == width*height
+  @      && \length(mask) == maskwidth*maskwidth
+  @      && maskwidth % 2 == 1 && validMask(mask, maskwidth); @*/
+{
+  int origin = maskwidth/2;
+  // Initialize sum of the weight * original intensity value.
+  int sum = 0;
+  // Initialize sum of weights.
+  int total = 0;
+
+  for (int j = 0; j < maskwidth; j++)
+  //@loop_invariant 0 <= j;
+  {
+    // Shift pixel's row to match row in mask.
+    int rowP = row - origin + j;
+
+    for (int i = 0; i < maskwidth; i++)
+    //@loop_invariant 0 <= i;
+    {
+      // Shift pixel's column to match column in mask.
+      int colP = col - origin + i;
+
+      // Ignore the pixels that go out of bounds of original image.
+      if (0 <= rowP && rowP < height && 0 <= colP && colP < width)
+      {
+        // Get index of current pixel.
+        int indexP = get_index(rowP, colP, width, height);
+        //@assert 0 <= indexP && indexP < \length(pixels);
+        // Get index of corresponding mask value.
+        int indexM = get_index(j, i, maskwidth, maskwidth);
+        //@assert 0 <= indexM && indexM < \length(mask);
+        total += mask[indexM];
+        sum += color[indexP]*mask[indexM];
+      }
+    }
+  }
+  return sum/total;
+}
+
+// Returns a new pixel array after the blurring effect.
+pixel_t[] blur (pixel_t[] pixels, int width, int height,
+                int[] mask, int maskwidth)
+/*@requires is_valid_imagesize(width, height) 
+  @      && \length(pixels) == width*height
+  @      && \length(mask) == maskwidth*maskwidth
+  @      && maskwidth % 2 == 1 && validMask(mask, maskwidth); @*/
+//@ensures \result != pixels && \length(\result) == \length(pixels);
+{
+  // Initialize new pixel array.
+  pixel_t[] blurP = alloc_array(pixel_t, width*height);
+
+  // Initialize integer arrays for each color component per pixel.
+  int[] red = getRed(pixels, width, height);
+  int[] green = getGreen(pixels, width, height);
+  int[] blue = getBlue(pixels, width, height);
+
+  for (int j = 0; j < height; j++)
+  //@loop_invariant 0 <= j;
+  {
+    for (int i = 0; i < width; i++)
+      //@loop_invariant 0 <= i;
+    {
+      //@assert 0 <= j && j < height && 0 <= i && i < width;
+      int oldIndex = get_index(j, i, width, height);
+      //@assert 0 <= oldIndex && oldIndex < \length(pixels);
+
+      // Apply blur effect to each color component.
+      int blurRed = blurPixel(pixels, j, i, red, width, height, 
+                              mask, maskwidth);
+      int blurGreen = blurPixel(pixels, j, i, green, width, height,
+                                mask, maskwidth);
+      int blurBlue = blurPixel(pixels, j, i, blue, width, height,
+                               mask, maskwidth);
+      // Alpha component is unchanged.
+      int alpha = get_alpha(pixels[oldIndex]);
+
+      //@assert \length(pixels) == \length(blurP);
+      blurP[oldIndex] = make_pixel(alpha, blurRed, blurGreen, blurBlue);
+    }
+  }
+  return blurP;
+}
