@@ -1,0 +1,31 @@
+// Test cases for speller.c0
+#use <parse>
+
+int main()
+{
+  string[] dict = parse_tokens("algae are bat cat cute dog fur man slow tail");
+  int d = 10;
+
+  assert(check_word(dict, d, "algae") == true);
+  assert(check_word(dict, d, "alg") == false);
+  assert(check_word(dict, d, "cutee") == false);
+  assert(check_word(dict, d, "dog") == true);
+  assert(check_word(dict, d, "") == false);
+  assert(check_word(dict, d, "tail") == true);
+
+  string[] miss1 = alloc_array(string, 6);
+  string[] text1 = parse_tokens("slos are ct man are ct");
+  assert(check_text_better(dict, d, text1, 6, miss1) == 2);
+
+  string[] miss2 = alloc_array(string, 11);
+  string[] text2 = parse_tokens
+                        ("furr dogg xxx alge are cute cat are sloww dogg ct");
+  assert(check_text_better(dict, d, text2, 11, miss2) == 6);
+
+  string[] miss3 = alloc_array(string, 13);
+  string[] text3 = parse_tokens
+          ("bat dog man algae man are sloww amazin are sloww dogg ct x");
+  assert(check_text_better(dict, d, text3, 13, miss3) == 5);
+
+  return 0;
+}

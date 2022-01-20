@@ -1,0 +1,115 @@
+#use <args>
+#use <conio>
+#use <string>
+
+// Prints out analysis of spellchecker.
+int main() {
+  // Taken from beginning of echo.c0
+  args_t args = args_parse();
+  int argc = args->argc;
+  string[] argv = args->argv;
+  
+  // Read files and initialize variables.
+  bundle_t d_bundle = read_words(argv[0]);
+  string[] dict = string_bundle_array(d_bundle);
+  int d = string_bundle_length(d_bundle);
+
+  bundle_t t_bundle = read_words(argv[1]);
+  string[] text = string_bundle_array(t_bundle);
+  int t = string_bundle_length(t_bundle);
+
+  string[] miss = alloc_array(string, t);
+  
+  // Make a copy of text to keep original.
+  string[] copy = alloc_array(string, t);
+  for (int i = 0; i < t; i++)
+  {
+    copy[i] = text[i];
+  }
+  
+  // Number of unique misspelled words in the text.
+  int misspelled = check_text_better(dict, d, text, t, miss);
+  if (misspelled > 1 || misspelled == 0)
+  {
+    print("There are ");
+    printint(misspelled);
+    print(" misspelled words in the text.");
+  }
+  else if (misspelled == 1)
+  {
+    print("There is ");
+    printint(misspelled);
+    print(" misspelled word in the text.");
+  }
+  
+  // Number of unique misspelled words of length 8 in the text.
+  int count8 = 0;
+  for (int i = 0; i < t; i++)
+  {
+    if (string_length(miss[i]) == 8)
+      count8 += 1;
+  }
+
+  if (count8 > 1 || count8 == 0)
+  {
+    print("\nThere are ");
+    printint(count8);
+    print(" misspelled words of length 8 in the text.");
+  }
+  else if (count8 == 1)
+  {
+    print("\nThere is ");
+    printint(count8);
+    print(" misspelled word of length 8 in the text.");
+  }
+  
+  // Lists the first 4 misspelled words of length 15 in 
+  // the text, alphabetically, N/A if it doesn't exist.
+  print("\nHere are the first 4 misspelled words of length 15 in the text:\n");
+  int count = 1;
+  for (int j = 0; j < t; j++)
+  {
+    if (count < 5)
+    {
+      if (string_length(miss[j]) == 15)
+      {
+        printint(count);
+        print(". ");
+        print(miss[j]);
+        print("\n");
+        count += 1;
+      }
+    }
+  }
+  while (count < 5)
+  {
+    printint(count);
+    print(". N/A\n");
+    count += 1;
+  }
+
+  // The number of times the alphabetically-last misspelled word appeared
+  // in the text.
+  if (misspelled == 0)
+    print("There are no misspelled words in the text.");
+  else {
+    print("The alphabetically-last misspelled word in the text is ");
+    string word = miss[misspelled - 1];
+    print(word);
+    print(" and appears ");
+    int times = 0;
+    for (int k = 0; k < t; k++)
+    {
+      if (string_equal(copy[k], word))
+        times += 1; 
+    }
+    printint(times);
+    if (times == 1)
+      print(" time.\n");
+    else {
+      print(" times.\n");
+    }
+  }
+  return 0;
+}
+

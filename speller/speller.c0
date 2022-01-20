@@ -1,0 +1,260 @@
+#use <string>
+#use <util>
+
+
+// Returns a boolean value depending on if the given word, w, is
+// in our dictionary, dict.
+// Implemented using binary search.
+// Utilized binary search code from Written HW 4.
+bool check_word(string[] dict, int d, string w)
+//@requires \length(dict) == d;
+//@requires is_sorted(dict, 0, d) && no_dupes(dict, 0, d);
+{
+  // Initialize low/high values.
+  int lo = 0;
+  int hi = d;
+
+  while (lo < hi)
+  //@loop_invariant 0 <= lo && lo <= hi && hi <= d;
+  //@loop_invariant gt_seg(w, dict, 0, lo);
+  //@loop_invariant lt_seg(w, dict, hi, d);
+  {
+    // Obtain middle index in current slice of array to search.
+    int mid = lo + (hi - lo) / 2;
+    //@assert lo <= mid && mid < hi;
+
+    // Word is found.
+    if (string_equal(dict[mid], w)) return true;
+
+    // Search upper half of dict.
+    if (string_compare(dict[mid], w) == -1)
+      lo = mid + 1;
+
+    // Search lower half of dict.
+    else { //@assert string_compare(dict[mid], w) == 1;
+      hi = mid;
+    }
+  }
+  //@assert lo == hi;
+
+  // Word is not found in dict.
+  return false;
+}
+
+
+// Returns the number of unique misspelled words in text.
+// Populates miss, with misspelled words in text, without repeptitions.
+int check_text_naive(string[] dict, int d, string[] text, int t, string[] miss)
+//@requires \length(dict) == d && \length(text) == t && \length(miss) >= t;
+//@requires is_sorted(dict, 0, d) && no_dupes(dict, 0, d);
+//@ensures 0 <= \result && \result <= t && no_dupes(miss, 0, \result);
+{
+  // Initialize counter for index of miss.
+  int count = 0;
+
+  for (int i = 0; i < t; i++)
+    //@loop_invariant 0 <= i && i <= \length(text);
+    {
+    // Obtain word in text to check its spelling.
+    string word = text[i];
+
+    // Populate miss with misspelled words.
+    if (!(check_word(dict, d, word))) {
+      miss[count] = word;
+      count += 1;
+
+      // Remove most recently added word, if duplicates exist in miss.
+      if (!(no_dupes(miss, 0, count + 1))) {
+        miss[count] = "";
+        count -= 1;
+      }
+    }
+  }
+  return count;
+}
+
+
+// Returns the number of misspelled words in text.
+// Populates miss with misspelled words.
+// Runtime in linear complexity.
+// Utilized merge code from Lecture 7 for inspiration.
+int check_sorted_text(string[] dict, int d, string[] text, int t,
+                                                    string[] miss)
+/*@requires \length(dict) == d && \length(text) >= t
+  @      && \length(miss) >= t && is_sorted(dict, 0, d)
+  @      && no_dupes(dict, 0, d) && is_sorted(text, 0, t)
+  @      && no_dupes(text, 0, t); @*/
+/*@ensures 0 <= \result && \result <= t && is_sorted(miss, 0, \result)
+  @     && no_dupes(miss, 0, \result); @*/
+{
+  // Initialize counter/index variables.
+  int count_dict = 0;
+  int count_text = 0;
+  int count_miss = 0;
+
+  // Loop through text and dictionary simultaneously.
+  while (count_text < t && count_dict < d)
+  //@loop_invariant 0 <= count_text && count_text <= t;
+  //@loop_invariant 0 <= count_dict && count_dict <= d;
+  {
+    // Word is found in dictionary, meaning it is correctly spelled.
+    if (string_compare(text[count_text], dict[count_dict]) == 0) {
+      count_text++; count_dict++;
+    }
+
+    // Current word in dictionary alphabetically comes before
+    // current word in text.
+    else if (string_compare(text[count_text], dict[count_dict]) == 1) {
+      // Go to next word in dictionary.
+      count_dict += 1;
+    }
+
+    // Current word in dictionary alphabetically comes after
+    // current word in text, meaning the word was not found.
+    else {
+      //@assert string_compare(text[count_text], dict[count_dict]) == -1;
+
+      // Populate miss with mispelled word and increment counters.
+      miss[count_miss] = text[count_text];
+      count_text += 1; count_miss += 1;
+    }
+  }
+
+  // Case where text has more words than dictionary does.
+  // Populate miss with remaining words in text.
+  while (count_text < t)
+  //@loop_invariant 0 <= count_text && count_text <= t;
+  {
+    miss[count_miss] = text[count_text];
+    count_miss += 1; count_text += 1;
+  }
+  return count_miss;
+}
+
+
+// Returns the number of unique elements in given array, A.
+// Alters original array to merge sorted segments, removing repetitions.
+// Utilized merge code from Lecture 7.
+int merge(string[] A, int lo1, int hi1, int lo2, int hi2)
+/*@requires 0 <= lo1 && lo1 < hi1 && hi1 <= lo2 && lo2 < hi2
+  @         && hi2 <= \length(A); @*/
+//@requires is_sorted(A, lo1, hi1) && no_dupes(A, lo1, hi1);
+//@requires is_sorted(A, lo2, hi2) && no_dupes(A, lo2, hi2);
+//@ensures 0 <= \result && \result <= hi2 - lo1;
+//@ensures is_sorted(A, lo1, lo1 + \result) && no_dupes(A, lo1, lo1 + \result);
+{
+  // Initialize counter and temporary array.
+  int count = 0;
+  string[] temp = alloc_array(string, hi2 - lo1);
+
+  int i = lo1;
+  int j = lo2;
+  int k = 0;
+
+  while (i < hi1 && j < hi2)
+  //@loop_invariant lo1 <= i && i <= hi1;
+  //@loop_invariant lo2 <= j && j <= hi2;
+  {
+    // Ignore the "junk".
+    if (string_equal(A[i], ""))
+      i++;
+    if (string_equal(A[j], ""))
+      j++;
+
+    // Add only 1 of the repeated words.
+    if (string_compare(A[i], A[j]) == 0) {
+      temp[k] = A[i];
+      count += 1;
+      i++; j++;
+    }
+
+    // Add "smaller" word into temporary array first.
+    else if (string_compare(A[i], A[j]) == -1) {
+      temp[k] = A[i];
+      count += 1;
+      i++;
+    }
+    else {
+      //@assert string_compare(A[i], A[j]) == 1;
+      temp[k] = A[j];
+      count += 1;
+      j++;
+    }
+    k++;
+  }
+
+  // Add in remaining words at the end, if any.
+  while (i < hi1)
+  //@loop_invariant lo1 <= i && i <= hi1;
+  {
+    temp[k] = A[i];
+    count += 1;
+    i++; k++;
+  }
+  while (j < hi2)
+  //@loop_invariant lo2 <= j && j <= hi2;
+  {
+    temp[k] = A[j];
+    count += 1;
+    j++; k++;
+  }
+
+  // Copy sorted temporary array back into original.
+  for (k = 0; k < hi2 - lo1; k++)
+  //@loop_invariant 0 <= k && k <= (hi2 - lo1);
+  {
+    A[lo1 + k] = temp[k];
+  }
+
+  // Return length of updated array.
+  return count;
+}
+
+
+// Returns the number of unique elements in given array, A.
+// Recursively mergesorts A.
+// Utilized mergesort code from Lecture 7.
+int mergesort(string[] A, int lo, int hi)
+//@requires 0 <= lo && lo <= hi && hi <= \length(A);
+//@ensures 0 <= \result && \result <= hi - lo;
+//@ensures is_sorted(A, lo, lo + \result) && no_dupes(A, lo, lo + \result);
+{
+  // Initialize counter.
+  int count = 0;
+
+  // Base case.
+  if ((hi - lo) <= 1)
+    return 1;
+
+  int mid = lo + (hi - lo) / 2;
+  //@assert lo <= mid && mid < hi;
+
+  // Recursive calls on both halves of array.
+  int first = mergesort(A, lo, mid);
+  int second = mergesort(A, mid, hi);
+
+  // Calls merge to combine halves.
+  count = merge(A, lo, lo + first, mid, mid + second);
+  return count;
+}
+
+
+// First sorts text, then spellchecks it.
+// Returns the number of misspelled words in text.
+// Populates miss with misspelled words.
+int check_text_better(string[] dict, int d, string[] text, int t, string[] miss)
+//@requires \length(dict) == d;
+//@requires \length(text) == t;
+//@requires \length(miss) >= t;
+//@requires is_sorted(dict, 0, d) && no_dupes(dict, 0, d);
+//@ensures 0 <= \result && \result <= t;
+//@ensures is_sorted(miss, 0, \result) && no_dupes(miss, 0, \result);
+{
+  // Call sorting helper function.
+  int unique = mergesort(text, 0, t);
+
+  // Call spellcheck helper function with updated length of text.
+  int misspelled = check_sorted_text(dict, d, text, unique, miss);
+
+  return misspelled;
+}
